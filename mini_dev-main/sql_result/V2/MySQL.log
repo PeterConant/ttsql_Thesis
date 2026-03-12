@@ -1,0 +1,104 @@
+start calculate EX
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    EX   =====================================
+EX                   33.78                14.00                7.84                 18.60               
+===========================================================================================
+Finished EX evaluation for V2\results_v2_Qwen-3-4B_20260306_162735.json on Mini Dev set
+
+start calculate Soft-F1
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    Soft-F1   =====================================
+Soft-F1              36.07                16.40                10.15                20.95               
+===========================================================================================
+Finished EX evaluation for V2\results_v2_Qwen-3-4B_20260306_162735.json on Mini Dev set
+
+start calculate EX
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    EX   =====================================
+EX                   39.86                18.80                7.84                 22.80               
+===========================================================================================
+Finished EX evaluation for V2\results_v2_Qwen-3-8B_20260309_154001.json on Mini Dev set
+
+start calculate Soft F1 
+March 09, 2026 15:54:16
+                     simple               moderate             challenging          total
+count                148                  250                  102                  500
+======================================    Soft-F1    =====================================
+Soft-F1              41.73                22.80                10.87                25.97
+===========================================================================================
+Finished EX evaluation for V2\results_v2_Qwen-3-8B_20260309_154001.json on Mini Dev setstart calculate EX
+V2\results_v2_Qwen-3-14B_20260309_164507.json
+
+*
+start calculate Soft-F1
+V2\results_v2_Qwen-3-14B_20260309_164507.json March 09, 2026 17:20:49
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    Soft-F1   =====================================
+Soft-F1              39.00                25.99                9.38                 26.45               
+===========================================================================================
+Finished EX evaluation for V2\results_v2_Qwen-3-14B_20260309_164507.json on Mini Dev setstart calculate EX
+
+
+V2\results_v2_Qwen-3-14B_20260309_164507.json
+March 10, 2026 11:09:37
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    EX   =====================================
+EX                   47.30                26.00                15.69                30.20               
+===========================================================================================
+Finished EX evaluation for V2\results_v2_gpt-oss-20B_20260310_104606.json on Mini Dev set
+
+start calculate Soft-F1
+C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\sql_result\V2\results_v2_Qwen-3-14B_20260309_164507.json
+March 10, 2026 11:11:25
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    Soft-F1   =====================================
+Soft-F1              49.46                30.08                17.72                33.29               
+===========================================================================================
+Finished EX evaluation for results_v2_gpt-oss-20B_20260310_104606.json on Mini Dev set
+
+start calculate EX
+results_v2_Qwen3-4B_Qwen3-14B_20260310_184130.json
+March 10, 2026 19:26:58
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    EX   =====================================
+EX                   35.81                18.00                7.84                 21.20               
+===========================================================================================
+Finished EX evaluation for results_v2_Qwen3-4B_Qwen3-14B_20260310_184130.json on Mini Dev set
+
+start calculate Soft-F1
+results_v2_Qwen3-4B_Qwen3-14B_20260310_184130.json
+March 10, 2026 19:29:03
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    Soft-F1   =====================================
+Soft-F1              39.84                21.36                8.89                 24.29               
+===========================================================================================
+Finished EX evaluation for results_v2_Qwen3-4B_Qwen3-14B_20260310_184130.json on Mini Dev set
+
+start calculate EX
+results_Qwen3-14B_Qwen3-14B_20260311_105307.json
+March 11, 2026 10:56:32
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    EX   =====================================
+EX                   36.49                21.20                7.84                 23.00               
+===========================================================================================
+Finished EX evaluation for results_Qwen3-14B_Qwen3-14B_20260311_105307.json on Mini Dev set
+
+start calculate Soft-F1
+results_Qwen3-14B_Qwen3-14B_20260311_105307.json
+March 11, 2026 10:58:30
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    Soft-F1   =====================================
+Soft-F1              39.00                26.00                9.38                 26.46               
+===========================================================================================
+Finished EX evaluation for results_Qwen3-14B_Qwen3-14B_20260311_105307.json on Mini Dev set
+
