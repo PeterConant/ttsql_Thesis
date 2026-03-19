@@ -1,0 +1,4502 @@
+{
+    "0": {
+        "tokens": {
+            "gen_input_tokens": 23461,
+            "gen_output_tokens": 128
+        },
+        "latency_s": 27.692381143569946,
+        "latency_m": 0.46153968572616577,
+        "db_id": "debit_card_specializing"
+    },
+    "5": {
+        "tokens": {
+            "gen_input_tokens": 23490,
+            "gen_output_tokens": 190
+        },
+        "latency_s": 31.88178825378418,
+        "latency_m": 0.5313631375630696,
+        "db_id": "debit_card_specializing"
+    },
+    "9": {
+        "tokens": {
+            "gen_input_tokens": 23495,
+            "gen_output_tokens": 192
+        },
+        "latency_s": 32.164897203445435,
+        "latency_m": 0.5360816200574239,
+        "db_id": "debit_card_specializing"
+    },
+    "4": {
+        "tokens": {
+            "gen_input_tokens": 23442,
+            "gen_output_tokens": 229
+        },
+        "latency_s": 38.03627324104309,
+        "latency_m": 0.6339378873507182,
+        "db_id": "debit_card_specializing"
+    },
+    "8": {
+        "tokens": {
+            "gen_input_tokens": 23493,
+            "gen_output_tokens": 234
+        },
+        "latency_s": 40.716479539871216,
+        "latency_m": 0.678607992331187,
+        "db_id": "debit_card_specializing"
+    },
+    "1": {
+        "tokens": {
+            "gen_input_tokens": 23472,
+            "gen_output_tokens": 297
+        },
+        "latency_s": 44.5140643119812,
+        "latency_m": 0.7419010718663533,
+        "db_id": "debit_card_specializing"
+    },
+    "2": {
+        "tokens": {
+            "gen_input_tokens": 23489,
+            "gen_output_tokens": 317
+        },
+        "latency_s": 47.444188833236694,
+        "latency_m": 0.7907364805539449,
+        "db_id": "debit_card_specializing"
+    },
+    "10": {
+        "tokens": {
+            "gen_input_tokens": 23458,
+            "gen_output_tokens": 196
+        },
+        "latency_s": 22.243865489959717,
+        "latency_m": 0.3707310914993286,
+        "db_id": "debit_card_specializing"
+    },
+    "3": {
+        "tokens": {
+            "gen_input_tokens": 23503,
+            "gen_output_tokens": 324
+        },
+        "latency_s": 49.97274684906006,
+        "latency_m": 0.832879114151001,
+        "db_id": "debit_card_specializing"
+    },
+    "13": {
+        "tokens": {
+            "gen_input_tokens": 23461,
+            "gen_output_tokens": 141
+        },
+        "latency_s": 18.097200870513916,
+        "latency_m": 0.3016200145085653,
+        "db_id": "debit_card_specializing"
+    },
+    "11": {
+        "tokens": {
+            "gen_input_tokens": 23476,
+            "gen_output_tokens": 207
+        },
+        "latency_s": 26.851953506469727,
+        "latency_m": 0.44753255844116213,
+        "db_id": "debit_card_specializing"
+    },
+    "12": {
+        "tokens": {
+            "gen_input_tokens": 23489,
+            "gen_output_tokens": 238
+        },
+        "latency_s": 29.918647527694702,
+        "latency_m": 0.4986441254615784,
+        "db_id": "debit_card_specializing"
+    },
+    "16": {
+        "tokens": {
+            "gen_input_tokens": 23444,
+            "gen_output_tokens": 155
+        },
+        "latency_s": 18.638084650039673,
+        "latency_m": 0.3106347441673279,
+        "db_id": "debit_card_specializing"
+    },
+    "18": {
+        "tokens": {
+            "gen_input_tokens": 23434,
+            "gen_output_tokens": 170
+        },
+        "latency_s": 19.375007152557373,
+        "latency_m": 0.32291678587595624,
+        "db_id": "debit_card_specializing"
+    },
+    "17": {
+        "tokens": {
+            "gen_input_tokens": 23450,
+            "gen_output_tokens": 179
+        },
+        "latency_s": 19.63412070274353,
+        "latency_m": 0.3272353450457255,
+        "db_id": "debit_card_specializing"
+    },
+    "15": {
+        "tokens": {
+            "gen_input_tokens": 23483,
+            "gen_output_tokens": 301
+        },
+        "latency_s": 32.48062610626221,
+        "latency_m": 0.5413437684377035,
+        "db_id": "debit_card_specializing"
+    },
+    "19": {
+        "tokens": {
+            "gen_input_tokens": 23461,
+            "gen_output_tokens": 218
+        },
+        "latency_s": 21.112952947616577,
+        "latency_m": 0.35188254912694295,
+        "db_id": "debit_card_specializing"
+    },
+    "7": {
+        "tokens": {
+            "gen_input_tokens": 23513,
+            "gen_output_tokens": 662
+        },
+        "latency_s": 83.72444081306458,
+        "latency_m": 1.3954073468844095,
+        "db_id": "debit_card_specializing"
+    },
+    "21": {
+        "tokens": {
+            "gen_input_tokens": 23465,
+            "gen_output_tokens": 282
+        },
+        "latency_s": 25.638831615447998,
+        "latency_m": 0.42731386025746665,
+        "db_id": "debit_card_specializing"
+    },
+    "24": {
+        "tokens": {
+            "gen_input_tokens": 23460,
+            "gen_output_tokens": 198
+        },
+        "latency_s": 18.173879146575928,
+        "latency_m": 0.3028979857762655,
+        "db_id": "debit_card_specializing"
+    },
+    "26": {
+        "tokens": {
+            "gen_input_tokens": 23431,
+            "gen_output_tokens": 156
+        },
+        "latency_s": 16.682594776153564,
+        "latency_m": 0.27804324626922605,
+        "db_id": "debit_card_specializing"
+    },
+    "20": {
+        "tokens": {
+            "gen_input_tokens": 23469,
+            "gen_output_tokens": 384
+        },
+        "latency_s": 37.79451608657837,
+        "latency_m": 0.6299086014429728,
+        "db_id": "debit_card_specializing"
+    },
+    "22": {
+        "tokens": {
+            "gen_input_tokens": 23530,
+            "gen_output_tokens": 298
+        },
+        "latency_s": 30.459624528884888,
+        "latency_m": 0.5076604088147482,
+        "db_id": "debit_card_specializing"
+    },
+    "30": {
+        "tokens": {
+            "gen_input_tokens": 23441,
+            "gen_output_tokens": 154
+        },
+        "latency_s": 12.396466970443726,
+        "latency_m": 0.20660778284072875,
+        "db_id": "student_club"
+    },
+    "31": {
+        "tokens": {
+            "gen_input_tokens": 23467,
+            "gen_output_tokens": 164
+        },
+        "latency_s": 12.976743936538696,
+        "latency_m": 0.21627906560897828,
+        "db_id": "student_club"
+    },
+    "29": {
+        "tokens": {
+            "gen_input_tokens": 23480,
+            "gen_output_tokens": 253
+        },
+        "latency_s": 24.60501718521118,
+        "latency_m": 0.4100836197535197,
+        "db_id": "debit_card_specializing"
+    },
+    "25": {
+        "tokens": {
+            "gen_input_tokens": 23508,
+            "gen_output_tokens": 387
+        },
+        "latency_s": 36.324585914611816,
+        "latency_m": 0.6054097652435303,
+        "db_id": "debit_card_specializing"
+    },
+    "28": {
+        "tokens": {
+            "gen_input_tokens": 23451,
+            "gen_output_tokens": 296
+        },
+        "latency_s": 30.275553226470947,
+        "latency_m": 0.5045925537745158,
+        "db_id": "debit_card_specializing"
+    },
+    "32": {
+        "tokens": {
+            "gen_input_tokens": 23462,
+            "gen_output_tokens": 248
+        },
+        "latency_s": 24.35059428215027,
+        "latency_m": 0.4058432380358378,
+        "db_id": "student_club"
+    },
+    "6": {
+        "tokens": {
+            "gen_input_tokens": 23564,
+            "gen_output_tokens": 1119
+        },
+        "latency_s": 125.79845094680786,
+        "latency_m": 2.0966408491134643,
+        "db_id": "debit_card_specializing"
+    },
+    "33": {
+        "tokens": {
+            "gen_input_tokens": 23457,
+            "gen_output_tokens": 177
+        },
+        "latency_s": 19.538899183273315,
+        "latency_m": 0.32564831972122193,
+        "db_id": "student_club"
+    },
+    "34": {
+        "tokens": {
+            "gen_input_tokens": 23442,
+            "gen_output_tokens": 150
+        },
+        "latency_s": 16.463836431503296,
+        "latency_m": 0.27439727385838825,
+        "db_id": "student_club"
+    },
+    "35": {
+        "tokens": {
+            "gen_input_tokens": 23439,
+            "gen_output_tokens": 203
+        },
+        "latency_s": 22.622843503952026,
+        "latency_m": 0.37704739173253377,
+        "db_id": "student_club"
+    },
+    "36": {
+        "tokens": {
+            "gen_input_tokens": 23468,
+            "gen_output_tokens": 225
+        },
+        "latency_s": 24.673524141311646,
+        "latency_m": 0.4112254023551941,
+        "db_id": "student_club"
+    },
+    "37": {
+        "tokens": {
+            "gen_input_tokens": 23492,
+            "gen_output_tokens": 199
+        },
+        "latency_s": 20.30286741256714,
+        "latency_m": 0.33838112354278566,
+        "db_id": "student_club"
+    },
+    "41": {
+        "tokens": {
+            "gen_input_tokens": 23485,
+            "gen_output_tokens": 148
+        },
+        "latency_s": 18.554877996444702,
+        "latency_m": 0.3092479666074117,
+        "db_id": "student_club"
+    },
+    "39": {
+        "tokens": {
+            "gen_input_tokens": 23466,
+            "gen_output_tokens": 173
+        },
+        "latency_s": 21.517063856124878,
+        "latency_m": 0.35861773093541466,
+        "db_id": "student_club"
+    },
+    "40": {
+        "tokens": {
+            "gen_input_tokens": 23438,
+            "gen_output_tokens": 175
+        },
+        "latency_s": 21.633060216903687,
+        "latency_m": 0.3605510036150614,
+        "db_id": "student_club"
+    },
+    "38": {
+        "tokens": {
+            "gen_input_tokens": 23496,
+            "gen_output_tokens": 306
+        },
+        "latency_s": 32.68349647521973,
+        "latency_m": 0.5447249412536621,
+        "db_id": "student_club"
+    },
+    "44": {
+        "tokens": {
+            "gen_input_tokens": 23430,
+            "gen_output_tokens": 153
+        },
+        "latency_s": 18.4339599609375,
+        "latency_m": 0.307232666015625,
+        "db_id": "student_club"
+    },
+    "42": {
+        "tokens": {
+            "gen_input_tokens": 23442,
+            "gen_output_tokens": 201
+        },
+        "latency_s": 24.668564796447754,
+        "latency_m": 0.4111427466074626,
+        "db_id": "student_club"
+    },
+    "43": {
+        "tokens": {
+            "gen_input_tokens": 23455,
+            "gen_output_tokens": 180
+        },
+        "latency_s": 21.752034187316895,
+        "latency_m": 0.3625339031219482,
+        "db_id": "student_club"
+    },
+    "47": {
+        "tokens": {
+            "gen_input_tokens": 23441,
+            "gen_output_tokens": 130
+        },
+        "latency_s": 17.719481229782104,
+        "latency_m": 0.29532468716303506,
+        "db_id": "student_club"
+    },
+    "45": {
+        "tokens": {
+            "gen_input_tokens": 23454,
+            "gen_output_tokens": 160
+        },
+        "latency_s": 20.984668970108032,
+        "latency_m": 0.3497444828351339,
+        "db_id": "student_club"
+    },
+    "46": {
+        "tokens": {
+            "gen_input_tokens": 23473,
+            "gen_output_tokens": 191
+        },
+        "latency_s": 24.239462852478027,
+        "latency_m": 0.40399104754130044,
+        "db_id": "student_club"
+    },
+    "49": {
+        "tokens": {
+            "gen_input_tokens": 23442,
+            "gen_output_tokens": 151
+        },
+        "latency_s": 18.58035397529602,
+        "latency_m": 0.30967256625493367,
+        "db_id": "student_club"
+    },
+    "50": {
+        "tokens": {
+            "gen_input_tokens": 23433,
+            "gen_output_tokens": 130
+        },
+        "latency_s": 15.728732109069824,
+        "latency_m": 0.26214553515116373,
+        "db_id": "student_club"
+    },
+    "48": {
+        "tokens": {
+            "gen_input_tokens": 23434,
+            "gen_output_tokens": 215
+        },
+        "latency_s": 27.176767349243164,
+        "latency_m": 0.4529461224873861,
+        "db_id": "student_club"
+    },
+    "53": {
+        "tokens": {
+            "gen_input_tokens": 23434,
+            "gen_output_tokens": 135
+        },
+        "latency_s": 16.99673819541931,
+        "latency_m": 0.2832789699236552,
+        "db_id": "student_club"
+    },
+    "51": {
+        "tokens": {
+            "gen_input_tokens": 23450,
+            "gen_output_tokens": 177
+        },
+        "latency_s": 25.823564529418945,
+        "latency_m": 0.4303927421569824,
+        "db_id": "student_club"
+    },
+    "54": {
+        "tokens": {
+            "gen_input_tokens": 23443,
+            "gen_output_tokens": 110
+        },
+        "latency_s": 17.015954971313477,
+        "latency_m": 0.28359924952189125,
+        "db_id": "student_club"
+    },
+    "52": {
+        "tokens": {
+            "gen_input_tokens": 23455,
+            "gen_output_tokens": 173
+        },
+        "latency_s": 23.49959683418274,
+        "latency_m": 0.391659947236379,
+        "db_id": "student_club"
+    },
+    "56": {
+        "tokens": {
+            "gen_input_tokens": 23455,
+            "gen_output_tokens": 190
+        },
+        "latency_s": 22.212657690048218,
+        "latency_m": 0.3702109615008036,
+        "db_id": "student_club"
+    },
+    "60": {
+        "tokens": {
+            "gen_input_tokens": 23435,
+            "gen_output_tokens": 137
+        },
+        "latency_s": 9.690766334533691,
+        "latency_m": 0.16151277224222818,
+        "db_id": "student_club"
+    },
+    "55": {
+        "tokens": {
+            "gen_input_tokens": 23459,
+            "gen_output_tokens": 213
+        },
+        "latency_s": 22.97386407852173,
+        "latency_m": 0.3828977346420288,
+        "db_id": "student_club"
+    },
+    "57": {
+        "tokens": {
+            "gen_input_tokens": 23430,
+            "gen_output_tokens": 191
+        },
+        "latency_s": 23.7038996219635,
+        "latency_m": 0.3950649936993917,
+        "db_id": "student_club"
+    },
+    "58": {
+        "tokens": {
+            "gen_input_tokens": 23458,
+            "gen_output_tokens": 192
+        },
+        "latency_s": 24.69038462638855,
+        "latency_m": 0.4115064104398092,
+        "db_id": "student_club"
+    },
+    "59": {
+        "tokens": {
+            "gen_input_tokens": 23474,
+            "gen_output_tokens": 202
+        },
+        "latency_s": 24.54619288444519,
+        "latency_m": 0.4091032147407532,
+        "db_id": "student_club"
+    },
+    "61": {
+        "tokens": {
+            "gen_input_tokens": 23447,
+            "gen_output_tokens": 183
+        },
+        "latency_s": 22.359446048736572,
+        "latency_m": 0.37265743414560953,
+        "db_id": "student_club"
+    },
+    "66": {
+        "tokens": {
+            "gen_input_tokens": 23465,
+            "gen_output_tokens": 147
+        },
+        "latency_s": 12.194968938827515,
+        "latency_m": 0.20324948231379192,
+        "db_id": "student_club"
+    },
+    "67": {
+        "tokens": {
+            "gen_input_tokens": 23451,
+            "gen_output_tokens": 131
+        },
+        "latency_s": 9.494396924972534,
+        "latency_m": 0.15823994874954223,
+        "db_id": "student_club"
+    },
+    "62": {
+        "tokens": {
+            "gen_input_tokens": 23451,
+            "gen_output_tokens": 207
+        },
+        "latency_s": 27.404299020767212,
+        "latency_m": 0.4567383170127869,
+        "db_id": "student_club"
+    },
+    "68": {
+        "tokens": {
+            "gen_input_tokens": 23446,
+            "gen_output_tokens": 167
+        },
+        "latency_s": 14.169593572616577,
+        "latency_m": 0.23615989287694295,
+        "db_id": "student_club"
+    },
+    "65": {
+        "tokens": {
+            "gen_input_tokens": 23445,
+            "gen_output_tokens": 253
+        },
+        "latency_s": 26.816171646118164,
+        "latency_m": 0.4469361941019694,
+        "db_id": "student_club"
+    },
+    "63": {
+        "tokens": {
+            "gen_input_tokens": 23441,
+            "gen_output_tokens": 279
+        },
+        "latency_s": 35.786911487579346,
+        "latency_m": 0.596448524792989,
+        "db_id": "student_club"
+    },
+    "64": {
+        "tokens": {
+            "gen_input_tokens": 23456,
+            "gen_output_tokens": 280
+        },
+        "latency_s": 35.887436389923096,
+        "latency_m": 0.5981239398320516,
+        "db_id": "student_club"
+    },
+    "69": {
+        "tokens": {
+            "gen_input_tokens": 23448,
+            "gen_output_tokens": 140
+        },
+        "latency_s": 20.264448404312134,
+        "latency_m": 0.33774080673853557,
+        "db_id": "student_club"
+    },
+    "70": {
+        "tokens": {
+            "gen_input_tokens": 23439,
+            "gen_output_tokens": 146
+        },
+        "latency_s": 20.37915849685669,
+        "latency_m": 0.33965264161427816,
+        "db_id": "student_club"
+    },
+    "71": {
+        "tokens": {
+            "gen_input_tokens": 23440,
+            "gen_output_tokens": 136
+        },
+        "latency_s": 20.080514669418335,
+        "latency_m": 0.33467524449030556,
+        "db_id": "student_club"
+    },
+    "72": {
+        "tokens": {
+            "gen_input_tokens": 23469,
+            "gen_output_tokens": 226
+        },
+        "latency_s": 25.414918899536133,
+        "latency_m": 0.42358198165893557,
+        "db_id": "student_club"
+    },
+    "75": {
+        "tokens": {
+            "gen_input_tokens": 23462,
+            "gen_output_tokens": 202
+        },
+        "latency_s": 20.511780977249146,
+        "latency_m": 0.3418630162874858,
+        "db_id": "student_club"
+    },
+    "76": {
+        "tokens": {
+            "gen_input_tokens": 23465,
+            "gen_output_tokens": 179
+        },
+        "latency_s": 17.582653760910034,
+        "latency_m": 0.29304422934850055,
+        "db_id": "student_club"
+    },
+    "14": {
+        "tokens": {
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": -1,
+        "latency_m": -1,
+        "db_id": "debit_card_specializing"
+    },
+    "78": {
+        "tokens": {
+            "gen_input_tokens": 23487,
+            "gen_output_tokens": 190
+        },
+        "latency_s": 17.962363243103027,
+        "latency_m": 0.2993727207183838,
+        "db_id": "thrombosis_prediction"
+    },
+    "77": {
+        "tokens": {
+            "gen_input_tokens": 23465,
+            "gen_output_tokens": 229
+        },
+        "latency_s": 25.502599954605103,
+        "latency_m": 0.4250433325767517,
+        "db_id": "student_club"
+    },
+    "74": {
+        "tokens": {
+            "gen_input_tokens": 23501,
+            "gen_output_tokens": 294
+        },
+        "latency_s": 34.40527558326721,
+        "latency_m": 0.5734212597211202,
+        "db_id": "student_club"
+    },
+    "73": {
+        "tokens": {
+            "gen_input_tokens": 23473,
+            "gen_output_tokens": 361
+        },
+        "latency_s": 41.13978362083435,
+        "latency_m": 0.6856630603472392,
+        "db_id": "student_club"
+    },
+    "80": {
+        "tokens": {
+            "gen_input_tokens": 23496,
+            "gen_output_tokens": 194
+        },
+        "latency_s": 22.275939226150513,
+        "latency_m": 0.3712656537691752,
+        "db_id": "thrombosis_prediction"
+    },
+    "83": {
+        "tokens": {
+            "gen_input_tokens": 23452,
+            "gen_output_tokens": 145
+        },
+        "latency_s": 14.096711158752441,
+        "latency_m": 0.23494518597920735,
+        "db_id": "thrombosis_prediction"
+    },
+    "79": {
+        "tokens": {
+            "gen_input_tokens": 23494,
+            "gen_output_tokens": 253
+        },
+        "latency_s": 26.570130348205566,
+        "latency_m": 0.4428355058034261,
+        "db_id": "thrombosis_prediction"
+    },
+    "84": {
+        "tokens": {
+            "gen_input_tokens": 23454,
+            "gen_output_tokens": 145
+        },
+        "latency_s": 18.337772846221924,
+        "latency_m": 0.3056295474370321,
+        "db_id": "thrombosis_prediction"
+    },
+    "81": {
+        "tokens": {
+            "gen_input_tokens": 23453,
+            "gen_output_tokens": 201
+        },
+        "latency_s": 26.652945041656494,
+        "latency_m": 0.4442157506942749,
+        "db_id": "thrombosis_prediction"
+    },
+    "85": {
+        "tokens": {
+            "gen_input_tokens": 23476,
+            "gen_output_tokens": 168
+        },
+        "latency_s": 21.306703329086304,
+        "latency_m": 0.3551117221514384,
+        "db_id": "thrombosis_prediction"
+    },
+    "82": {
+        "tokens": {
+            "gen_input_tokens": 23443,
+            "gen_output_tokens": 253
+        },
+        "latency_s": 33.213613748550415,
+        "latency_m": 0.5535602291425069,
+        "db_id": "thrombosis_prediction"
+    },
+    "23": {
+        "tokens": {
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": -1,
+        "latency_m": -1,
+        "db_id": "debit_card_specializing"
+    },
+    "87": {
+        "tokens": {
+            "gen_input_tokens": 23456,
+            "gen_output_tokens": 147
+        },
+        "latency_s": 22.555689811706543,
+        "latency_m": 0.3759281635284424,
+        "db_id": "thrombosis_prediction"
+    },
+    "91": {
+        "tokens": {
+            "gen_input_tokens": 23468,
+            "gen_output_tokens": 178
+        },
+        "latency_s": 19.71110439300537,
+        "latency_m": 0.3285184065500895,
+        "db_id": "thrombosis_prediction"
+    },
+    "90": {
+        "tokens": {
+            "gen_input_tokens": 23488,
+            "gen_output_tokens": 186
+        },
+        "latency_s": 19.96581721305847,
+        "latency_m": 0.3327636202176412,
+        "db_id": "thrombosis_prediction"
+    },
+    "89": {
+        "tokens": {
+            "gen_input_tokens": 23514,
+            "gen_output_tokens": 222
+        },
+        "latency_s": 31.611364126205444,
+        "latency_m": 0.5268560687700907,
+        "db_id": "thrombosis_prediction"
+    },
+    "27": {
+        "tokens": {
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": -1,
+        "latency_m": -1,
+        "db_id": "debit_card_specializing"
+    },
+    "88": {
+        "tokens": {
+            "gen_input_tokens": 23494,
+            "gen_output_tokens": 230
+        },
+        "latency_s": 31.89442729949951,
+        "latency_m": 0.5315737883249919,
+        "db_id": "thrombosis_prediction"
+    },
+    "92": {
+        "tokens": {
+            "gen_input_tokens": 23537,
+            "gen_output_tokens": 193
+        },
+        "latency_s": 26.395920991897583,
+        "latency_m": 0.4399320165316264,
+        "db_id": "thrombosis_prediction"
+    },
+    "95": {
+        "tokens": {
+            "gen_input_tokens": 23524,
+            "gen_output_tokens": 190
+        },
+        "latency_s": 22.032668113708496,
+        "latency_m": 0.3672111352284749,
+        "db_id": "thrombosis_prediction"
+    },
+    "98": {
+        "tokens": {
+            "gen_input_tokens": 23437,
+            "gen_output_tokens": 128
+        },
+        "latency_s": 15.593308687210083,
+        "latency_m": 0.2598884781201681,
+        "db_id": "thrombosis_prediction"
+    },
+    "93": {
+        "tokens": {
+            "gen_input_tokens": 23594,
+            "gen_output_tokens": 301
+        },
+        "latency_s": 33.74405598640442,
+        "latency_m": 0.5624009331067403,
+        "db_id": "thrombosis_prediction"
+    },
+    "97": {
+        "tokens": {
+            "gen_input_tokens": 23489,
+            "gen_output_tokens": 201
+        },
+        "latency_s": 26.551772594451904,
+        "latency_m": 0.4425295432408651,
+        "db_id": "thrombosis_prediction"
+    },
+    "96": {
+        "tokens": {
+            "gen_input_tokens": 23506,
+            "gen_output_tokens": 236
+        },
+        "latency_s": 30.027074813842773,
+        "latency_m": 0.5004512468973795,
+        "db_id": "thrombosis_prediction"
+    },
+    "86": {
+        "tokens": {
+            "gen_input_tokens": 23464,
+            "gen_output_tokens": 512
+        },
+        "latency_s": 61.22448253631592,
+        "latency_m": 1.020408042271932,
+        "db_id": "thrombosis_prediction"
+    },
+    "99": {
+        "tokens": {
+            "gen_input_tokens": 23492,
+            "gen_output_tokens": 224
+        },
+        "latency_s": 29.561763525009155,
+        "latency_m": 0.4926960587501526,
+        "db_id": "thrombosis_prediction"
+    },
+    "101": {
+        "tokens": {
+            "gen_input_tokens": 23486,
+            "gen_output_tokens": 205
+        },
+        "latency_s": 22.67348074913025,
+        "latency_m": 0.3778913458188375,
+        "db_id": "thrombosis_prediction"
+    },
+    "100": {
+        "tokens": {
+            "gen_input_tokens": 23466,
+            "gen_output_tokens": 241
+        },
+        "latency_s": 34.42246437072754,
+        "latency_m": 0.5737077395121256,
+        "db_id": "thrombosis_prediction"
+    },
+    "102": {
+        "tokens": {
+            "gen_input_tokens": 23479,
+            "gen_output_tokens": 245
+        },
+        "latency_s": 28.25328516960144,
+        "latency_m": 0.47088808616002403,
+        "db_id": "thrombosis_prediction"
+    },
+    "105": {
+        "tokens": {
+            "gen_input_tokens": 23471,
+            "gen_output_tokens": 179
+        },
+        "latency_s": 19.53877878189087,
+        "latency_m": 0.3256463130315145,
+        "db_id": "thrombosis_prediction"
+    },
+    "103": {
+        "tokens": {
+            "gen_input_tokens": 23455,
+            "gen_output_tokens": 237
+        },
+        "latency_s": 29.442412614822388,
+        "latency_m": 0.49070687691370646,
+        "db_id": "thrombosis_prediction"
+    },
+    "107": {
+        "tokens": {
+            "gen_input_tokens": 23510,
+            "gen_output_tokens": 163
+        },
+        "latency_s": 23.183310985565186,
+        "latency_m": 0.3863885164260864,
+        "db_id": "thrombosis_prediction"
+    },
+    "110": {
+        "tokens": {
+            "gen_input_tokens": 23482,
+            "gen_output_tokens": 193
+        },
+        "latency_s": 17.971246004104614,
+        "latency_m": 0.2995207667350769,
+        "db_id": "thrombosis_prediction"
+    },
+    "104": {
+        "tokens": {
+            "gen_input_tokens": 23461,
+            "gen_output_tokens": 311
+        },
+        "latency_s": 37.11510443687439,
+        "latency_m": 0.6185850739479065,
+        "db_id": "thrombosis_prediction"
+    },
+    "106": {
+        "tokens": {
+            "gen_input_tokens": 23491,
+            "gen_output_tokens": 262
+        },
+        "latency_s": 33.269859790802,
+        "latency_m": 0.5544976631800334,
+        "db_id": "thrombosis_prediction"
+    },
+    "109": {
+        "tokens": {
+            "gen_input_tokens": 23467,
+            "gen_output_tokens": 250
+        },
+        "latency_s": 28.288424730300903,
+        "latency_m": 0.47147374550501503,
+        "db_id": "thrombosis_prediction"
+    },
+    "112": {
+        "tokens": {
+            "gen_input_tokens": 23526,
+            "gen_output_tokens": 143
+        },
+        "latency_s": 22.487899780273438,
+        "latency_m": 0.37479832967122395,
+        "db_id": "thrombosis_prediction"
+    },
+    "108": {
+        "tokens": {
+            "gen_input_tokens": 23499,
+            "gen_output_tokens": 304
+        },
+        "latency_s": 36.771456480026245,
+        "latency_m": 0.6128576080004374,
+        "db_id": "thrombosis_prediction"
+    },
+    "114": {
+        "tokens": {
+            "gen_input_tokens": 23525,
+            "gen_output_tokens": 149
+        },
+        "latency_s": 18.467149019241333,
+        "latency_m": 0.3077858169873556,
+        "db_id": "thrombosis_prediction"
+    },
+    "116": {
+        "tokens": {
+            "gen_input_tokens": 23446,
+            "gen_output_tokens": 108
+        },
+        "latency_s": 18.881101846694946,
+        "latency_m": 0.3146850307782491,
+        "db_id": "thrombosis_prediction"
+    },
+    "115": {
+        "tokens": {
+            "gen_input_tokens": 23498,
+            "gen_output_tokens": 153
+        },
+        "latency_s": 22.721805095672607,
+        "latency_m": 0.37869675159454347,
+        "db_id": "thrombosis_prediction"
+    },
+    "111": {
+        "tokens": {
+            "gen_input_tokens": 23482,
+            "gen_output_tokens": 241
+        },
+        "latency_s": 34.408458948135376,
+        "latency_m": 0.5734743158022563,
+        "db_id": "thrombosis_prediction"
+    },
+    "113": {
+        "tokens": {
+            "gen_input_tokens": 23500,
+            "gen_output_tokens": 254
+        },
+        "latency_s": 35.24894714355469,
+        "latency_m": 0.5874824523925781,
+        "db_id": "thrombosis_prediction"
+    },
+    "117": {
+        "tokens": {
+            "gen_input_tokens": 23460,
+            "gen_output_tokens": 168
+        },
+        "latency_s": 25.347827911376953,
+        "latency_m": 0.42246379852294924,
+        "db_id": "thrombosis_prediction"
+    },
+    "119": {
+        "tokens": {
+            "gen_input_tokens": 23464,
+            "gen_output_tokens": 138
+        },
+        "latency_s": 20.096371173858643,
+        "latency_m": 0.33493951956431073,
+        "db_id": "thrombosis_prediction"
+    },
+    "120": {
+        "tokens": {
+            "gen_input_tokens": 23451,
+            "gen_output_tokens": 130
+        },
+        "latency_s": 22.040077447891235,
+        "latency_m": 0.36733462413152057,
+        "db_id": "thrombosis_prediction"
+    },
+    "118": {
+        "tokens": {
+            "gen_input_tokens": 23485,
+            "gen_output_tokens": 230
+        },
+        "latency_s": 33.818665742874146,
+        "latency_m": 0.5636444290479025,
+        "db_id": "thrombosis_prediction"
+    },
+    "122": {
+        "tokens": {
+            "gen_input_tokens": 23483,
+            "gen_output_tokens": 158
+        },
+        "latency_s": 22.21880316734314,
+        "latency_m": 0.3703133861223857,
+        "db_id": "thrombosis_prediction"
+    },
+    "125": {
+        "tokens": {
+            "gen_input_tokens": 23490,
+            "gen_output_tokens": 136
+        },
+        "latency_s": 17.990962982177734,
+        "latency_m": 0.29984938303629555,
+        "db_id": "thrombosis_prediction"
+    },
+    "124": {
+        "tokens": {
+            "gen_input_tokens": 23483,
+            "gen_output_tokens": 171
+        },
+        "latency_s": 25.58097767829895,
+        "latency_m": 0.42634962797164916,
+        "db_id": "thrombosis_prediction"
+    },
+    "123": {
+        "tokens": {
+            "gen_input_tokens": 23484,
+            "gen_output_tokens": 183
+        },
+        "latency_s": 26.60702109336853,
+        "latency_m": 0.44345035155614215,
+        "db_id": "thrombosis_prediction"
+    },
+    "121": {
+        "tokens": {
+            "gen_input_tokens": 23472,
+            "gen_output_tokens": 256
+        },
+        "latency_s": 37.65430998802185,
+        "latency_m": 0.6275718331336975,
+        "db_id": "thrombosis_prediction"
+    },
+    "126": {
+        "tokens": {
+            "gen_input_tokens": 23475,
+            "gen_output_tokens": 168
+        },
+        "latency_s": 25.463476419448853,
+        "latency_m": 0.42439127365748086,
+        "db_id": "thrombosis_prediction"
+    },
+    "130": {
+        "tokens": {
+            "gen_input_tokens": 23462,
+            "gen_output_tokens": 114
+        },
+        "latency_s": 17.6548810005188,
+        "latency_m": 0.2942480166753133,
+        "db_id": "european_football_2"
+    },
+    "128": {
+        "tokens": {
+            "gen_input_tokens": 23470,
+            "gen_output_tokens": 252
+        },
+        "latency_s": 28.530020475387573,
+        "latency_m": 0.47550034125645957,
+        "db_id": "european_football_2"
+    },
+    "127": {
+        "tokens": {
+            "gen_input_tokens": 23483,
+            "gen_output_tokens": 273
+        },
+        "latency_s": 33.42355227470398,
+        "latency_m": 0.5570592045783996,
+        "db_id": "thrombosis_prediction"
+    },
+    "134": {
+        "tokens": {
+            "gen_input_tokens": 23473,
+            "gen_output_tokens": 151
+        },
+        "latency_s": 17.65677833557129,
+        "latency_m": 0.29427963892618814,
+        "db_id": "european_football_2"
+    },
+    "133": {
+        "tokens": {
+            "gen_input_tokens": 23452,
+            "gen_output_tokens": 213
+        },
+        "latency_s": 24.149131059646606,
+        "latency_m": 0.4024855176607768,
+        "db_id": "european_football_2"
+    },
+    "129": {
+        "tokens": {
+            "gen_input_tokens": 23519,
+            "gen_output_tokens": 305
+        },
+        "latency_s": 36.77579164505005,
+        "latency_m": 0.6129298607508341,
+        "db_id": "european_football_2"
+    },
+    "132": {
+        "tokens": {
+            "gen_input_tokens": 23515,
+            "gen_output_tokens": 239
+        },
+        "latency_s": 28.018687963485718,
+        "latency_m": 0.46697813272476196,
+        "db_id": "european_football_2"
+    },
+    "131": {
+        "tokens": {
+            "gen_input_tokens": 23472,
+            "gen_output_tokens": 293
+        },
+        "latency_s": 36.28255558013916,
+        "latency_m": 0.604709259668986,
+        "db_id": "european_football_2"
+    },
+    "136": {
+        "tokens": {
+            "gen_input_tokens": 23518,
+            "gen_output_tokens": 226
+        },
+        "latency_s": 23.952545166015625,
+        "latency_m": 0.3992090861002604,
+        "db_id": "european_football_2"
+    },
+    "135": {
+        "tokens": {
+            "gen_input_tokens": 23513,
+            "gen_output_tokens": 284
+        },
+        "latency_s": 31.811317443847656,
+        "latency_m": 0.5301886240641276,
+        "db_id": "european_football_2"
+    },
+    "140": {
+        "tokens": {
+            "gen_input_tokens": 23480,
+            "gen_output_tokens": 158
+        },
+        "latency_s": 18.775062799453735,
+        "latency_m": 0.3129177133242289,
+        "db_id": "european_football_2"
+    },
+    "138": {
+        "tokens": {
+            "gen_input_tokens": 23472,
+            "gen_output_tokens": 242
+        },
+        "latency_s": 30.372619152069092,
+        "latency_m": 0.5062103192011516,
+        "db_id": "european_football_2"
+    },
+    "139": {
+        "tokens": {
+            "gen_input_tokens": 23521,
+            "gen_output_tokens": 258
+        },
+        "latency_s": 28.708906412124634,
+        "latency_m": 0.47848177353541055,
+        "db_id": "european_football_2"
+    },
+    "137": {
+        "tokens": {
+            "gen_input_tokens": 23447,
+            "gen_output_tokens": 295
+        },
+        "latency_s": 36.440670013427734,
+        "latency_m": 0.6073445002237956,
+        "db_id": "european_football_2"
+    },
+    "142": {
+        "tokens": {
+            "gen_input_tokens": 23480,
+            "gen_output_tokens": 197
+        },
+        "latency_s": 24.50122380256653,
+        "latency_m": 0.4083537300427755,
+        "db_id": "european_football_2"
+    },
+    "141": {
+        "tokens": {
+            "gen_input_tokens": 23453,
+            "gen_output_tokens": 239
+        },
+        "latency_s": 30.21025824546814,
+        "latency_m": 0.5035043040911357,
+        "db_id": "european_football_2"
+    },
+    "143": {
+        "tokens": {
+            "gen_input_tokens": 23459,
+            "gen_output_tokens": 207
+        },
+        "latency_s": 24.709106922149658,
+        "latency_m": 0.4118184487024943,
+        "db_id": "european_football_2"
+    },
+    "147": {
+        "tokens": {
+            "gen_input_tokens": 23424,
+            "gen_output_tokens": 90
+        },
+        "latency_s": 12.063103675842285,
+        "latency_m": 0.20105172793070475,
+        "db_id": "european_football_2"
+    },
+    "148": {
+        "tokens": {
+            "gen_input_tokens": 23473,
+            "gen_output_tokens": 97
+        },
+        "latency_s": 16.53682255744934,
+        "latency_m": 0.27561370929082235,
+        "db_id": "european_football_2"
+    },
+    "144": {
+        "tokens": {
+            "gen_input_tokens": 23508,
+            "gen_output_tokens": 245
+        },
+        "latency_s": 31.59186863899231,
+        "latency_m": 0.5265311439832051,
+        "db_id": "european_football_2"
+    },
+    "146": {
+        "tokens": {
+            "gen_input_tokens": 23441,
+            "gen_output_tokens": 184
+        },
+        "latency_s": 28.01146960258484,
+        "latency_m": 0.4668578267097473,
+        "db_id": "european_football_2"
+    },
+    "150": {
+        "tokens": {
+            "gen_input_tokens": 23468,
+            "gen_output_tokens": 139
+        },
+        "latency_s": 22.341111421585083,
+        "latency_m": 0.37235185702641804,
+        "db_id": "european_football_2"
+    },
+    "149": {
+        "tokens": {
+            "gen_input_tokens": 23494,
+            "gen_output_tokens": 189
+        },
+        "latency_s": 26.2283034324646,
+        "latency_m": 0.43713839054107667,
+        "db_id": "european_football_2"
+    },
+    "155": {
+        "tokens": {
+            "gen_input_tokens": 23459,
+            "gen_output_tokens": 126
+        },
+        "latency_s": 15.608072280883789,
+        "latency_m": 0.2601345380147298,
+        "db_id": "european_football_2"
+    },
+    "145": {
+        "tokens": {
+            "gen_input_tokens": 23523,
+            "gen_output_tokens": 354
+        },
+        "latency_s": 44.83037829399109,
+        "latency_m": 0.7471729715665182,
+        "db_id": "european_football_2"
+    },
+    "152": {
+        "tokens": {
+            "gen_input_tokens": 23474,
+            "gen_output_tokens": 207
+        },
+        "latency_s": 28.915678024291992,
+        "latency_m": 0.4819279670715332,
+        "db_id": "european_football_2"
+    },
+    "154": {
+        "tokens": {
+            "gen_input_tokens": 23445,
+            "gen_output_tokens": 171
+        },
+        "latency_s": 21.368608951568604,
+        "latency_m": 0.3561434825261434,
+        "db_id": "european_football_2"
+    },
+    "153": {
+        "tokens": {
+            "gen_input_tokens": 23491,
+            "gen_output_tokens": 212
+        },
+        "latency_s": 28.986467838287354,
+        "latency_m": 0.4831077973047892,
+        "db_id": "european_football_2"
+    },
+    "156": {
+        "tokens": {
+            "gen_input_tokens": 23506,
+            "gen_output_tokens": 176
+        },
+        "latency_s": 23.628146409988403,
+        "latency_m": 0.39380244016647337,
+        "db_id": "european_football_2"
+    },
+    "151": {
+        "tokens": {
+            "gen_input_tokens": 23471,
+            "gen_output_tokens": 306
+        },
+        "latency_s": 41.031904220581055,
+        "latency_m": 0.6838650703430176,
+        "db_id": "european_football_2"
+    },
+    "157": {
+        "tokens": {
+            "gen_input_tokens": 23471,
+            "gen_output_tokens": 232
+        },
+        "latency_s": 27.737902641296387,
+        "latency_m": 0.4622983773549398,
+        "db_id": "european_football_2"
+    },
+    "158": {
+        "tokens": {
+            "gen_input_tokens": 23476,
+            "gen_output_tokens": 197
+        },
+        "latency_s": 26.45287013053894,
+        "latency_m": 0.44088116884231565,
+        "db_id": "european_football_2"
+    },
+    "162": {
+        "tokens": {
+            "gen_input_tokens": 23531,
+            "gen_output_tokens": 149
+        },
+        "latency_s": 20.461031436920166,
+        "latency_m": 0.3410171906153361,
+        "db_id": "european_football_2"
+    },
+    "159": {
+        "tokens": {
+            "gen_input_tokens": 23450,
+            "gen_output_tokens": 206
+        },
+        "latency_s": 28.837390899658203,
+        "latency_m": 0.48062318166097007,
+        "db_id": "european_football_2"
+    },
+    "164": {
+        "tokens": {
+            "gen_input_tokens": 23441,
+            "gen_output_tokens": 156
+        },
+        "latency_s": 18.720083236694336,
+        "latency_m": 0.31200138727823895,
+        "db_id": "european_football_2"
+    },
+    "160": {
+        "tokens": {
+            "gen_input_tokens": 23480,
+            "gen_output_tokens": 230
+        },
+        "latency_s": 29.7267644405365,
+        "latency_m": 0.49544607400894164,
+        "db_id": "european_football_2"
+    },
+    "161": {
+        "tokens": {
+            "gen_input_tokens": 23490,
+            "gen_output_tokens": 224
+        },
+        "latency_s": 30.284467220306396,
+        "latency_m": 0.50474112033844,
+        "db_id": "european_football_2"
+    },
+    "163": {
+        "tokens": {
+            "gen_input_tokens": 23508,
+            "gen_output_tokens": 256
+        },
+        "latency_s": 34.89486885070801,
+        "latency_m": 0.5815811475118001,
+        "db_id": "european_football_2"
+    },
+    "165": {
+        "tokens": {
+            "gen_input_tokens": 23431,
+            "gen_output_tokens": 177
+        },
+        "latency_s": 25.001805543899536,
+        "latency_m": 0.41669675906499226,
+        "db_id": "european_football_2"
+    },
+    "166": {
+        "tokens": {
+            "gen_input_tokens": 23453,
+            "gen_output_tokens": 148
+        },
+        "latency_s": 24.64844536781311,
+        "latency_m": 0.41080742279688515,
+        "db_id": "european_football_2"
+    },
+    "167": {
+        "tokens": {
+            "gen_input_tokens": 23454,
+            "gen_output_tokens": 147
+        },
+        "latency_s": 24.64997386932373,
+        "latency_m": 0.41083289782206217,
+        "db_id": "european_football_2"
+    },
+    "169": {
+        "tokens": {
+            "gen_input_tokens": 23459,
+            "gen_output_tokens": 133
+        },
+        "latency_s": 22.059619188308716,
+        "latency_m": 0.36766031980514524,
+        "db_id": "european_football_2"
+    },
+    "168": {
+        "tokens": {
+            "gen_input_tokens": 23464,
+            "gen_output_tokens": 153
+        },
+        "latency_s": 24.853883028030396,
+        "latency_m": 0.4142313838005066,
+        "db_id": "european_football_2"
+    },
+    "94": {
+        "tokens": {
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": -1,
+        "latency_m": -1,
+        "db_id": "thrombosis_prediction"
+    },
+    "171": {
+        "tokens": {
+            "gen_input_tokens": 23461,
+            "gen_output_tokens": 178
+        },
+        "latency_s": 27.97685146331787,
+        "latency_m": 0.46628085772196454,
+        "db_id": "european_football_2"
+    },
+    "174": {
+        "tokens": {
+            "gen_input_tokens": 23449,
+            "gen_output_tokens": 166
+        },
+        "latency_s": 21.665865182876587,
+        "latency_m": 0.3610977530479431,
+        "db_id": "european_football_2"
+    },
+    "172": {
+        "tokens": {
+            "gen_input_tokens": 23515,
+            "gen_output_tokens": 249
+        },
+        "latency_s": 31.672614574432373,
+        "latency_m": 0.5278769095738729,
+        "db_id": "european_football_2"
+    },
+    "177": {
+        "tokens": {
+            "gen_input_tokens": 23434,
+            "gen_output_tokens": 160
+        },
+        "latency_s": 16.737705945968628,
+        "latency_m": 0.2789617657661438,
+        "db_id": "european_football_2"
+    },
+    "178": {
+        "tokens": {
+            "gen_input_tokens": 23466,
+            "gen_output_tokens": 166
+        },
+        "latency_s": 20.48296356201172,
+        "latency_m": 0.34138272603352865,
+        "db_id": "european_football_2"
+    },
+    "176": {
+        "tokens": {
+            "gen_input_tokens": 23455,
+            "gen_output_tokens": 192
+        },
+        "latency_s": 26.318415641784668,
+        "latency_m": 0.43864026069641116,
+        "db_id": "european_football_2"
+    },
+    "173": {
+        "tokens": {
+            "gen_input_tokens": 23465,
+            "gen_output_tokens": 227
+        },
+        "latency_s": 33.87295961380005,
+        "latency_m": 0.5645493268966675,
+        "db_id": "european_football_2"
+    },
+    "175": {
+        "tokens": {
+            "gen_input_tokens": 23477,
+            "gen_output_tokens": 222
+        },
+        "latency_s": 33.636603593826294,
+        "latency_m": 0.5606100598971049,
+        "db_id": "european_football_2"
+    },
+    "179": {
+        "tokens": {
+            "gen_input_tokens": 23475,
+            "gen_output_tokens": 166
+        },
+        "latency_s": 25.320191144943237,
+        "latency_m": 0.42200318574905393,
+        "db_id": "formula_1"
+    },
+    "180": {
+        "tokens": {
+            "gen_input_tokens": 23459,
+            "gen_output_tokens": 154
+        },
+        "latency_s": 24.87690567970276,
+        "latency_m": 0.41461509466171265,
+        "db_id": "formula_1"
+    },
+    "170": {
+        "tokens": {
+            "gen_input_tokens": 23462,
+            "gen_output_tokens": 357
+        },
+        "latency_s": 55.40893578529358,
+        "latency_m": 0.9234822630882263,
+        "db_id": "european_football_2"
+    },
+    "181": {
+        "tokens": {
+            "gen_input_tokens": 23432,
+            "gen_output_tokens": 185
+        },
+        "latency_s": 28.149829626083374,
+        "latency_m": 0.46916382710138954,
+        "db_id": "formula_1"
+    },
+    "185": {
+        "tokens": {
+            "gen_input_tokens": 23470,
+            "gen_output_tokens": 170
+        },
+        "latency_s": 21.277804613113403,
+        "latency_m": 0.3546300768852234,
+        "db_id": "formula_1"
+    },
+    "182": {
+        "tokens": {
+            "gen_input_tokens": 23448,
+            "gen_output_tokens": 190
+        },
+        "latency_s": 28.2458016872406,
+        "latency_m": 0.47076336145401,
+        "db_id": "formula_1"
+    },
+    "183": {
+        "tokens": {
+            "gen_input_tokens": 23446,
+            "gen_output_tokens": 201
+        },
+        "latency_s": 30.764740705490112,
+        "latency_m": 0.5127456784248352,
+        "db_id": "formula_1"
+    },
+    "186": {
+        "tokens": {
+            "gen_input_tokens": 23465,
+            "gen_output_tokens": 220
+        },
+        "latency_s": 29.327971935272217,
+        "latency_m": 0.48879953225453693,
+        "db_id": "formula_1"
+    },
+    "187": {
+        "tokens": {
+            "gen_input_tokens": 23485,
+            "gen_output_tokens": 217
+        },
+        "latency_s": 25.035427570343018,
+        "latency_m": 0.41725712617238364,
+        "db_id": "formula_1"
+    },
+    "188": {
+        "tokens": {
+            "gen_input_tokens": 23489,
+            "gen_output_tokens": 202
+        },
+        "latency_s": 26.628089427947998,
+        "latency_m": 0.4438014904658,
+        "db_id": "formula_1"
+    },
+    "190": {
+        "tokens": {
+            "gen_input_tokens": 23463,
+            "gen_output_tokens": 187
+        },
+        "latency_s": 24.028181552886963,
+        "latency_m": 0.40046969254811604,
+        "db_id": "formula_1"
+    },
+    "189": {
+        "tokens": {
+            "gen_input_tokens": 23447,
+            "gen_output_tokens": 213
+        },
+        "latency_s": 29.126732349395752,
+        "latency_m": 0.4854455391565959,
+        "db_id": "formula_1"
+    },
+    "191": {
+        "tokens": {
+            "gen_input_tokens": 23475,
+            "gen_output_tokens": 163
+        },
+        "latency_s": 25.238060235977173,
+        "latency_m": 0.42063433726628624,
+        "db_id": "formula_1"
+    },
+    "194": {
+        "tokens": {
+            "gen_input_tokens": 23440,
+            "gen_output_tokens": 147
+        },
+        "latency_s": 22.26403284072876,
+        "latency_m": 0.371067214012146,
+        "db_id": "formula_1"
+    },
+    "192": {
+        "tokens": {
+            "gen_input_tokens": 23444,
+            "gen_output_tokens": 150
+        },
+        "latency_s": 24.93395447731018,
+        "latency_m": 0.4155659079551697,
+        "db_id": "formula_1"
+    },
+    "184": {
+        "tokens": {
+            "gen_input_tokens": 23464,
+            "gen_output_tokens": 354
+        },
+        "latency_s": 49.309589862823486,
+        "latency_m": 0.8218264977137247,
+        "db_id": "formula_1"
+    },
+    "193": {
+        "tokens": {
+            "gen_input_tokens": 23461,
+            "gen_output_tokens": 217
+        },
+        "latency_s": 33.46071410179138,
+        "latency_m": 0.5576785683631897,
+        "db_id": "formula_1"
+    },
+    "197": {
+        "tokens": {
+            "gen_input_tokens": 23447,
+            "gen_output_tokens": 170
+        },
+        "latency_s": 23.28779411315918,
+        "latency_m": 0.38812990188598634,
+        "db_id": "formula_1"
+    },
+    "198": {
+        "tokens": {
+            "gen_input_tokens": 23451,
+            "gen_output_tokens": 169
+        },
+        "latency_s": 23.30820655822754,
+        "latency_m": 0.38847010930379233,
+        "db_id": "formula_1"
+    },
+    "196": {
+        "tokens": {
+            "gen_input_tokens": 23486,
+            "gen_output_tokens": 229
+        },
+        "latency_s": 33.67949819564819,
+        "latency_m": 0.5613249699274699,
+        "db_id": "formula_1"
+    },
+    "199": {
+        "tokens": {
+            "gen_input_tokens": 23458,
+            "gen_output_tokens": 213
+        },
+        "latency_s": 27.023465394973755,
+        "latency_m": 0.4503910899162292,
+        "db_id": "formula_1"
+    },
+    "200": {
+        "tokens": {
+            "gen_input_tokens": 23484,
+            "gen_output_tokens": 197
+        },
+        "latency_s": 24.28025197982788,
+        "latency_m": 0.4046708663304647,
+        "db_id": "formula_1"
+    },
+    "203": {
+        "tokens": {
+            "gen_input_tokens": 23469,
+            "gen_output_tokens": 167
+        },
+        "latency_s": 23.976278066635132,
+        "latency_m": 0.39960463444391886,
+        "db_id": "formula_1"
+    },
+    "201": {
+        "tokens": {
+            "gen_input_tokens": 23485,
+            "gen_output_tokens": 201
+        },
+        "latency_s": 28.75149393081665,
+        "latency_m": 0.47919156551361086,
+        "db_id": "formula_1"
+    },
+    "202": {
+        "tokens": {
+            "gen_input_tokens": 23463,
+            "gen_output_tokens": 255
+        },
+        "latency_s": 32.73306441307068,
+        "latency_m": 0.5455510735511779,
+        "db_id": "formula_1"
+    },
+    "204": {
+        "tokens": {
+            "gen_input_tokens": 23459,
+            "gen_output_tokens": 223
+        },
+        "latency_s": 27.474738597869873,
+        "latency_m": 0.4579123099644979,
+        "db_id": "formula_1"
+    },
+    "205": {
+        "tokens": {
+            "gen_input_tokens": 23470,
+            "gen_output_tokens": 213
+        },
+        "latency_s": 25.521965742111206,
+        "latency_m": 0.4253660957018534,
+        "db_id": "formula_1"
+    },
+    "207": {
+        "tokens": {
+            "gen_input_tokens": 23463,
+            "gen_output_tokens": 169
+        },
+        "latency_s": 19.749877452850342,
+        "latency_m": 0.32916462421417236,
+        "db_id": "formula_1"
+    },
+    "209": {
+        "tokens": {
+            "gen_input_tokens": 23443,
+            "gen_output_tokens": 147
+        },
+        "latency_s": 22.365942239761353,
+        "latency_m": 0.37276570399602255,
+        "db_id": "formula_1"
+    },
+    "210": {
+        "tokens": {
+            "gen_input_tokens": 23445,
+            "gen_output_tokens": 145
+        },
+        "latency_s": 19.401756048202515,
+        "latency_m": 0.32336260080337526,
+        "db_id": "formula_1"
+    },
+    "211": {
+        "tokens": {
+            "gen_input_tokens": 23444,
+            "gen_output_tokens": 124
+        },
+        "latency_s": 19.52990174293518,
+        "latency_m": 0.325498362382253,
+        "db_id": "formula_1"
+    },
+    "208": {
+        "tokens": {
+            "gen_input_tokens": 23480,
+            "gen_output_tokens": 198
+        },
+        "latency_s": 30.579371690750122,
+        "latency_m": 0.5096561948458354,
+        "db_id": "formula_1"
+    },
+    "206": {
+        "tokens": {
+            "gen_input_tokens": 23462,
+            "gen_output_tokens": 283
+        },
+        "latency_s": 39.99388575553894,
+        "latency_m": 0.6665647625923157,
+        "db_id": "formula_1"
+    },
+    "213": {
+        "tokens": {
+            "gen_input_tokens": 23457,
+            "gen_output_tokens": 155
+        },
+        "latency_s": 22.794032096862793,
+        "latency_m": 0.3799005349477132,
+        "db_id": "formula_1"
+    },
+    "215": {
+        "tokens": {
+            "gen_input_tokens": 23474,
+            "gen_output_tokens": 154
+        },
+        "latency_s": 21.987492322921753,
+        "latency_m": 0.3664582053820292,
+        "db_id": "formula_1"
+    },
+    "217": {
+        "tokens": {
+            "gen_input_tokens": 23468,
+            "gen_output_tokens": 166
+        },
+        "latency_s": 21.249969244003296,
+        "latency_m": 0.3541661540667216,
+        "db_id": "formula_1"
+    },
+    "219": {
+        "tokens": {
+            "gen_input_tokens": 23433,
+            "gen_output_tokens": 159
+        },
+        "latency_s": 16.75613498687744,
+        "latency_m": 0.27926891644795737,
+        "db_id": "formula_1"
+    },
+    "220": {
+        "tokens": {
+            "gen_input_tokens": 23430,
+            "gen_output_tokens": 135
+        },
+        "latency_s": 13.764697551727295,
+        "latency_m": 0.22941162586212158,
+        "db_id": "formula_1"
+    },
+    "212": {
+        "tokens": {
+            "gen_input_tokens": 23454,
+            "gen_output_tokens": 296
+        },
+        "latency_s": 40.5890429019928,
+        "latency_m": 0.6764840483665466,
+        "db_id": "formula_1"
+    },
+    "216": {
+        "tokens": {
+            "gen_input_tokens": 23452,
+            "gen_output_tokens": 272
+        },
+        "latency_s": 33.47024941444397,
+        "latency_m": 0.5578374902407328,
+        "db_id": "formula_1"
+    },
+    "221": {
+        "tokens": {
+            "gen_input_tokens": 23443,
+            "gen_output_tokens": 165
+        },
+        "latency_s": 21.158206701278687,
+        "latency_m": 0.3526367783546448,
+        "db_id": "formula_1"
+    },
+    "222": {
+        "tokens": {
+            "gen_input_tokens": 23449,
+            "gen_output_tokens": 221
+        },
+        "latency_s": 25.256274938583374,
+        "latency_m": 0.4209379156430562,
+        "db_id": "formula_1"
+    },
+    "224": {
+        "tokens": {
+            "gen_input_tokens": 23476,
+            "gen_output_tokens": 143
+        },
+        "latency_s": 16.197437047958374,
+        "latency_m": 0.2699572841326396,
+        "db_id": "formula_1"
+    },
+    "214": {
+        "tokens": {
+            "gen_input_tokens": 23460,
+            "gen_output_tokens": 409
+        },
+        "latency_s": 52.25036430358887,
+        "latency_m": 0.8708394050598145,
+        "db_id": "formula_1"
+    },
+    "218": {
+        "tokens": {
+            "gen_input_tokens": 23502,
+            "gen_output_tokens": 378
+        },
+        "latency_s": 43.65783762931824,
+        "latency_m": 0.7276306271553039,
+        "db_id": "formula_1"
+    },
+    "226": {
+        "tokens": {
+            "gen_input_tokens": 23462,
+            "gen_output_tokens": 165
+        },
+        "latency_s": 21.184008836746216,
+        "latency_m": 0.3530668139457703,
+        "db_id": "formula_1"
+    },
+    "229": {
+        "tokens": {
+            "gen_input_tokens": 23428,
+            "gen_output_tokens": 78
+        },
+        "latency_s": 13.68589997291565,
+        "latency_m": 0.2280983328819275,
+        "db_id": "formula_1"
+    },
+    "223": {
+        "tokens": {
+            "gen_input_tokens": 23522,
+            "gen_output_tokens": 282
+        },
+        "latency_s": 35.92566967010498,
+        "latency_m": 0.5987611611684164,
+        "db_id": "formula_1"
+    },
+    "228": {
+        "tokens": {
+            "gen_input_tokens": 23454,
+            "gen_output_tokens": 188
+        },
+        "latency_s": 24.071130990982056,
+        "latency_m": 0.4011855165163676,
+        "db_id": "formula_1"
+    },
+    "231": {
+        "tokens": {
+            "gen_input_tokens": 23438,
+            "gen_output_tokens": 131
+        },
+        "latency_s": 17.795007944107056,
+        "latency_m": 0.29658346573511757,
+        "db_id": "formula_1"
+    },
+    "225": {
+        "tokens": {
+            "gen_input_tokens": 23464,
+            "gen_output_tokens": 309
+        },
+        "latency_s": 41.14175319671631,
+        "latency_m": 0.6856958866119385,
+        "db_id": "formula_1"
+    },
+    "230": {
+        "tokens": {
+            "gen_input_tokens": 23453,
+            "gen_output_tokens": 243
+        },
+        "latency_s": 30.168992042541504,
+        "latency_m": 0.5028165340423584,
+        "db_id": "formula_1"
+    },
+    "234": {
+        "tokens": {
+            "gen_input_tokens": 23446,
+            "gen_output_tokens": 178
+        },
+        "latency_s": 19.576568603515625,
+        "latency_m": 0.32627614339192706,
+        "db_id": "formula_1"
+    },
+    "233": {
+        "tokens": {
+            "gen_input_tokens": 23473,
+            "gen_output_tokens": 231
+        },
+        "latency_s": 25.712445497512817,
+        "latency_m": 0.42854075829188026,
+        "db_id": "formula_1"
+    },
+    "235": {
+        "tokens": {
+            "gen_input_tokens": 23471,
+            "gen_output_tokens": 181
+        },
+        "latency_s": 19.688907861709595,
+        "latency_m": 0.3281484643618266,
+        "db_id": "formula_1"
+    },
+    "232": {
+        "tokens": {
+            "gen_input_tokens": 23473,
+            "gen_output_tokens": 284
+        },
+        "latency_s": 33.9388861656189,
+        "latency_m": 0.565648102760315,
+        "db_id": "formula_1"
+    },
+    "236": {
+        "tokens": {
+            "gen_input_tokens": 23507,
+            "gen_output_tokens": 198
+        },
+        "latency_s": 24.43263816833496,
+        "latency_m": 0.407210636138916,
+        "db_id": "formula_1"
+    },
+    "238": {
+        "tokens": {
+            "gen_input_tokens": 23471,
+            "gen_output_tokens": 194
+        },
+        "latency_s": 22.23074436187744,
+        "latency_m": 0.3705124060312907,
+        "db_id": "formula_1"
+    },
+    "227": {
+        "tokens": {
+            "gen_input_tokens": 23540,
+            "gen_output_tokens": 459
+        },
+        "latency_s": 55.0249137878418,
+        "latency_m": 0.9170818964640299,
+        "db_id": "formula_1"
+    },
+    "237": {
+        "tokens": {
+            "gen_input_tokens": 23454,
+            "gen_output_tokens": 249
+        },
+        "latency_s": 30.4833927154541,
+        "latency_m": 0.5080565452575684,
+        "db_id": "formula_1"
+    },
+    "239": {
+        "tokens": {
+            "gen_input_tokens": 23443,
+            "gen_output_tokens": 207
+        },
+        "latency_s": 26.817673683166504,
+        "latency_m": 0.44696122805277505,
+        "db_id": "superhero"
+    },
+    "240": {
+        "tokens": {
+            "gen_input_tokens": 23468,
+            "gen_output_tokens": 240
+        },
+        "latency_s": 28.06564497947693,
+        "latency_m": 0.46776074965794884,
+        "db_id": "formula_1"
+    },
+    "241": {
+        "tokens": {
+            "gen_input_tokens": 23481,
+            "gen_output_tokens": 248
+        },
+        "latency_s": 28.355384826660156,
+        "latency_m": 0.4725897471110026,
+        "db_id": "formula_1"
+    },
+    "245": {
+        "tokens": {
+            "gen_input_tokens": 23433,
+            "gen_output_tokens": 163
+        },
+        "latency_s": 16.869247674942017,
+        "latency_m": 0.28115412791570027,
+        "db_id": "formula_1"
+    },
+    "246": {
+        "tokens": {
+            "gen_input_tokens": 23472,
+            "gen_output_tokens": 166
+        },
+        "latency_s": 16.821772575378418,
+        "latency_m": 0.28036287625630696,
+        "db_id": "superhero"
+    },
+    "243": {
+        "tokens": {
+            "gen_input_tokens": 23454,
+            "gen_output_tokens": 215
+        },
+        "latency_s": 22.953558444976807,
+        "latency_m": 0.38255930741628014,
+        "db_id": "formula_1"
+    },
+    "244": {
+        "tokens": {
+            "gen_input_tokens": 23480,
+            "gen_output_tokens": 283
+        },
+        "latency_s": 31.701971769332886,
+        "latency_m": 0.5283661961555481,
+        "db_id": "formula_1"
+    },
+    "249": {
+        "tokens": {
+            "gen_input_tokens": 23452,
+            "gen_output_tokens": 121
+        },
+        "latency_s": 17.454707860946655,
+        "latency_m": 0.29091179768244424,
+        "db_id": "superhero"
+    },
+    "247": {
+        "tokens": {
+            "gen_input_tokens": 23464,
+            "gen_output_tokens": 270
+        },
+        "latency_s": 29.13811492919922,
+        "latency_m": 0.485635248819987,
+        "db_id": "superhero"
+    },
+    "248": {
+        "tokens": {
+            "gen_input_tokens": 23479,
+            "gen_output_tokens": 235
+        },
+        "latency_s": 28.238069534301758,
+        "latency_m": 0.4706344922383626,
+        "db_id": "superhero"
+    },
+    "252": {
+        "tokens": {
+            "gen_input_tokens": 23441,
+            "gen_output_tokens": 178
+        },
+        "latency_s": 23.730230569839478,
+        "latency_m": 0.395503842830658,
+        "db_id": "superhero"
+    },
+    "253": {
+        "tokens": {
+            "gen_input_tokens": 23452,
+            "gen_output_tokens": 178
+        },
+        "latency_s": 23.82738423347473,
+        "latency_m": 0.3971230705579122,
+        "db_id": "superhero"
+    },
+    "250": {
+        "tokens": {
+            "gen_input_tokens": 23455,
+            "gen_output_tokens": 188
+        },
+        "latency_s": 24.1207332611084,
+        "latency_m": 0.4020122210184733,
+        "db_id": "superhero"
+    },
+    "251": {
+        "tokens": {
+            "gen_input_tokens": 23457,
+            "gen_output_tokens": 201
+        },
+        "latency_s": 29.584081172943115,
+        "latency_m": 0.49306801954905194,
+        "db_id": "superhero"
+    },
+    "254": {
+        "tokens": {
+            "gen_input_tokens": 23436,
+            "gen_output_tokens": 145
+        },
+        "latency_s": 22.409504652023315,
+        "latency_m": 0.3734917442003886,
+        "db_id": "superhero"
+    },
+    "255": {
+        "tokens": {
+            "gen_input_tokens": 23425,
+            "gen_output_tokens": 194
+        },
+        "latency_s": 24.283345937728882,
+        "latency_m": 0.4047224322954814,
+        "db_id": "superhero"
+    },
+    "261": {
+        "tokens": {
+            "gen_input_tokens": 23426,
+            "gen_output_tokens": 96
+        },
+        "latency_s": 9.145280838012695,
+        "latency_m": 0.1524213473002116,
+        "db_id": "superhero"
+    },
+    "256": {
+        "tokens": {
+            "gen_input_tokens": 23448,
+            "gen_output_tokens": 178
+        },
+        "latency_s": 25.855223178863525,
+        "latency_m": 0.4309203863143921,
+        "db_id": "superhero"
+    },
+    "262": {
+        "tokens": {
+            "gen_input_tokens": 23432,
+            "gen_output_tokens": 106
+        },
+        "latency_s": 12.745995044708252,
+        "latency_m": 0.21243325074513753,
+        "db_id": "superhero"
+    },
+    "258": {
+        "tokens": {
+            "gen_input_tokens": 23456,
+            "gen_output_tokens": 164
+        },
+        "latency_s": 23.207419633865356,
+        "latency_m": 0.38679032723108925,
+        "db_id": "superhero"
+    },
+    "257": {
+        "tokens": {
+            "gen_input_tokens": 23449,
+            "gen_output_tokens": 196
+        },
+        "latency_s": 26.358154296875,
+        "latency_m": 0.43930257161458336,
+        "db_id": "superhero"
+    },
+    "259": {
+        "tokens": {
+            "gen_input_tokens": 23508,
+            "gen_output_tokens": 200
+        },
+        "latency_s": 30.798752784729004,
+        "latency_m": 0.5133125464121501,
+        "db_id": "superhero"
+    },
+    "265": {
+        "tokens": {
+            "gen_input_tokens": 23475,
+            "gen_output_tokens": 156
+        },
+        "latency_s": 16.642077445983887,
+        "latency_m": 0.2773679574330648,
+        "db_id": "superhero"
+    },
+    "264": {
+        "tokens": {
+            "gen_input_tokens": 23437,
+            "gen_output_tokens": 214
+        },
+        "latency_s": 25.22943615913391,
+        "latency_m": 0.42049060265223187,
+        "db_id": "superhero"
+    },
+    "268": {
+        "tokens": {
+            "gen_input_tokens": 23478,
+            "gen_output_tokens": 176
+        },
+        "latency_s": 19.38693118095398,
+        "latency_m": 0.3231155196825663,
+        "db_id": "superhero"
+    },
+    "260": {
+        "tokens": {
+            "gen_input_tokens": 23480,
+            "gen_output_tokens": 358
+        },
+        "latency_s": 43.03426790237427,
+        "latency_m": 0.7172377983729045,
+        "db_id": "superhero"
+    },
+    "269": {
+        "tokens": {
+            "gen_input_tokens": 23443,
+            "gen_output_tokens": 176
+        },
+        "latency_s": 17.5079288482666,
+        "latency_m": 0.2917988141377767,
+        "db_id": "superhero"
+    },
+    "267": {
+        "tokens": {
+            "gen_input_tokens": 23504,
+            "gen_output_tokens": 239
+        },
+        "latency_s": 28.181204795837402,
+        "latency_m": 0.46968674659729004,
+        "db_id": "superhero"
+    },
+    "266": {
+        "tokens": {
+            "gen_input_tokens": 23466,
+            "gen_output_tokens": 267
+        },
+        "latency_s": 31.6415593624115,
+        "latency_m": 0.5273593227068584,
+        "db_id": "superhero"
+    },
+    "263": {
+        "tokens": {
+            "gen_input_tokens": 23438,
+            "gen_output_tokens": 335
+        },
+        "latency_s": 42.17058038711548,
+        "latency_m": 0.7028430064519247,
+        "db_id": "superhero"
+    },
+    "195": {
+        "tokens": {
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": -1,
+        "latency_m": -1,
+        "db_id": "formula_1"
+    },
+    "270": {
+        "tokens": {
+            "gen_input_tokens": 23429,
+            "gen_output_tokens": 172
+        },
+        "latency_s": 23.50960421562195,
+        "latency_m": 0.39182673692703246,
+        "db_id": "superhero"
+    },
+    "271": {
+        "tokens": {
+            "gen_input_tokens": 23442,
+            "gen_output_tokens": 161
+        },
+        "latency_s": 25.117242097854614,
+        "latency_m": 0.41862070163091025,
+        "db_id": "superhero"
+    },
+    "272": {
+        "tokens": {
+            "gen_input_tokens": 23461,
+            "gen_output_tokens": 157
+        },
+        "latency_s": 24.971773386001587,
+        "latency_m": 0.41619622310002646,
+        "db_id": "superhero"
+    },
+    "273": {
+        "tokens": {
+            "gen_input_tokens": 23475,
+            "gen_output_tokens": 231
+        },
+        "latency_s": 29.638562202453613,
+        "latency_m": 0.49397603670756024,
+        "db_id": "superhero"
+    },
+    "276": {
+        "tokens": {
+            "gen_input_tokens": 23432,
+            "gen_output_tokens": 180
+        },
+        "latency_s": 21.666980028152466,
+        "latency_m": 0.3611163338025411,
+        "db_id": "superhero"
+    },
+    "278": {
+        "tokens": {
+            "gen_input_tokens": 23457,
+            "gen_output_tokens": 142
+        },
+        "latency_s": 16.120368242263794,
+        "latency_m": 0.2686728040377299,
+        "db_id": "superhero"
+    },
+    "274": {
+        "tokens": {
+            "gen_input_tokens": 23470,
+            "gen_output_tokens": 234
+        },
+        "latency_s": 27.84610652923584,
+        "latency_m": 0.464101775487264,
+        "db_id": "superhero"
+    },
+    "275": {
+        "tokens": {
+            "gen_input_tokens": 23482,
+            "gen_output_tokens": 213
+        },
+        "latency_s": 24.93878984451294,
+        "latency_m": 0.415646497408549,
+        "db_id": "superhero"
+    },
+    "279": {
+        "tokens": {
+            "gen_input_tokens": 23436,
+            "gen_output_tokens": 143
+        },
+        "latency_s": 16.38307547569275,
+        "latency_m": 0.2730512579282125,
+        "db_id": "superhero"
+    },
+    "280": {
+        "tokens": {
+            "gen_input_tokens": 23440,
+            "gen_output_tokens": 162
+        },
+        "latency_s": 22.91193723678589,
+        "latency_m": 0.38186562061309814,
+        "db_id": "superhero"
+    },
+    "281": {
+        "tokens": {
+            "gen_input_tokens": 23480,
+            "gen_output_tokens": 165
+        },
+        "latency_s": 22.972044467926025,
+        "latency_m": 0.3828674077987671,
+        "db_id": "superhero"
+    },
+    "277": {
+        "tokens": {
+            "gen_input_tokens": 23454,
+            "gen_output_tokens": 327
+        },
+        "latency_s": 39.40236282348633,
+        "latency_m": 0.6567060470581054,
+        "db_id": "superhero"
+    },
+    "283": {
+        "tokens": {
+            "gen_input_tokens": 23433,
+            "gen_output_tokens": 153
+        },
+        "latency_s": 23.16915225982666,
+        "latency_m": 0.38615253766377766,
+        "db_id": "superhero"
+    },
+    "282": {
+        "tokens": {
+            "gen_input_tokens": 23479,
+            "gen_output_tokens": 204
+        },
+        "latency_s": 27.242990732192993,
+        "latency_m": 0.45404984553654987,
+        "db_id": "superhero"
+    },
+    "287": {
+        "tokens": {
+            "gen_input_tokens": 23461,
+            "gen_output_tokens": 167
+        },
+        "latency_s": 27.895530700683594,
+        "latency_m": 0.4649255116780599,
+        "db_id": "superhero"
+    },
+    "286": {
+        "tokens": {
+            "gen_input_tokens": 23446,
+            "gen_output_tokens": 197
+        },
+        "latency_s": 31.13280415534973,
+        "latency_m": 0.5188800692558289,
+        "db_id": "superhero"
+    },
+    "289": {
+        "tokens": {
+            "gen_input_tokens": 23471,
+            "gen_output_tokens": 178
+        },
+        "latency_s": 19.546534299850464,
+        "latency_m": 0.3257755716641744,
+        "db_id": "superhero"
+    },
+    "288": {
+        "tokens": {
+            "gen_input_tokens": 23468,
+            "gen_output_tokens": 212
+        },
+        "latency_s": 24.969221830368042,
+        "latency_m": 0.4161536971728007,
+        "db_id": "superhero"
+    },
+    "284": {
+        "tokens": {
+            "gen_input_tokens": 23437,
+            "gen_output_tokens": 265
+        },
+        "latency_s": 39.838379859924316,
+        "latency_m": 0.6639729976654053,
+        "db_id": "superhero"
+    },
+    "291": {
+        "tokens": {
+            "gen_input_tokens": 23457,
+            "gen_output_tokens": 128
+        },
+        "latency_s": 19.75811767578125,
+        "latency_m": 0.32930196126302086,
+        "db_id": "superhero"
+    },
+    "294": {
+        "tokens": {
+            "gen_input_tokens": 23444,
+            "gen_output_tokens": 131
+        },
+        "latency_s": 15.699132919311523,
+        "latency_m": 0.2616522153218587,
+        "db_id": "superhero"
+    },
+    "293": {
+        "tokens": {
+            "gen_input_tokens": 23452,
+            "gen_output_tokens": 174
+        },
+        "latency_s": 21.49394917488098,
+        "latency_m": 0.35823248624801635,
+        "db_id": "superhero"
+    },
+    "292": {
+        "tokens": {
+            "gen_input_tokens": 23504,
+            "gen_output_tokens": 199
+        },
+        "latency_s": 25.879137992858887,
+        "latency_m": 0.4313189665476481,
+        "db_id": "superhero"
+    },
+    "298": {
+        "tokens": {
+            "gen_input_tokens": 23456,
+            "gen_output_tokens": 129
+        },
+        "latency_s": 13.51652717590332,
+        "latency_m": 0.225275452931722,
+        "db_id": "codebase_community"
+    },
+    "295": {
+        "tokens": {
+            "gen_input_tokens": 23439,
+            "gen_output_tokens": 198
+        },
+        "latency_s": 22.36766529083252,
+        "latency_m": 0.3727944215138753,
+        "db_id": "superhero"
+    },
+    "297": {
+        "tokens": {
+            "gen_input_tokens": 23448,
+            "gen_output_tokens": 175
+        },
+        "latency_s": 21.475899934768677,
+        "latency_m": 0.3579316655794779,
+        "db_id": "codebase_community"
+    },
+    "285": {
+        "tokens": {
+            "gen_input_tokens": 23438,
+            "gen_output_tokens": 452
+        },
+        "latency_s": 61.426074266433716,
+        "latency_m": 1.0237679044405619,
+        "db_id": "superhero"
+    },
+    "299": {
+        "tokens": {
+            "gen_input_tokens": 23459,
+            "gen_output_tokens": 118
+        },
+        "latency_s": 19.357447862625122,
+        "latency_m": 0.32262413104375204,
+        "db_id": "codebase_community"
+    },
+    "300": {
+        "tokens": {
+            "gen_input_tokens": 23446,
+            "gen_output_tokens": 151
+        },
+        "latency_s": 20.63166069984436,
+        "latency_m": 0.3438610116640727,
+        "db_id": "codebase_community"
+    },
+    "290": {
+        "tokens": {
+            "gen_input_tokens": 23461,
+            "gen_output_tokens": 406
+        },
+        "latency_s": 53.09373474121094,
+        "latency_m": 0.8848955790201823,
+        "db_id": "superhero"
+    },
+    "301": {
+        "tokens": {
+            "gen_input_tokens": 23434,
+            "gen_output_tokens": 181
+        },
+        "latency_s": 25.22927451133728,
+        "latency_m": 0.420487908522288,
+        "db_id": "codebase_community"
+    },
+    "302": {
+        "tokens": {
+            "gen_input_tokens": 23465,
+            "gen_output_tokens": 171
+        },
+        "latency_s": 23.457473039627075,
+        "latency_m": 0.39095788399378456,
+        "db_id": "codebase_community"
+    },
+    "305": {
+        "tokens": {
+            "gen_input_tokens": 23448,
+            "gen_output_tokens": 164
+        },
+        "latency_s": 21.054469108581543,
+        "latency_m": 0.35090781847635905,
+        "db_id": "codebase_community"
+    },
+    "303": {
+        "tokens": {
+            "gen_input_tokens": 23457,
+            "gen_output_tokens": 195
+        },
+        "latency_s": 26.331303596496582,
+        "latency_m": 0.4388550599416097,
+        "db_id": "codebase_community"
+    },
+    "304": {
+        "tokens": {
+            "gen_input_tokens": 23450,
+            "gen_output_tokens": 209
+        },
+        "latency_s": 26.976187705993652,
+        "latency_m": 0.44960312843322753,
+        "db_id": "codebase_community"
+    },
+    "296": {
+        "tokens": {
+            "gen_input_tokens": 23475,
+            "gen_output_tokens": 460
+        },
+        "latency_s": 55.035791635513306,
+        "latency_m": 0.9172631939252217,
+        "db_id": "superhero"
+    },
+    "309": {
+        "tokens": {
+            "gen_input_tokens": 23445,
+            "gen_output_tokens": 173
+        },
+        "latency_s": 19.860326528549194,
+        "latency_m": 0.33100544214248656,
+        "db_id": "codebase_community"
+    },
+    "306": {
+        "tokens": {
+            "gen_input_tokens": 23477,
+            "gen_output_tokens": 267
+        },
+        "latency_s": 31.197685480117798,
+        "latency_m": 0.5199614246686299,
+        "db_id": "codebase_community"
+    },
+    "307": {
+        "tokens": {
+            "gen_input_tokens": 23522,
+            "gen_output_tokens": 241
+        },
+        "latency_s": 30.217732667922974,
+        "latency_m": 0.5036288777987162,
+        "db_id": "codebase_community"
+    },
+    "313": {
+        "tokens": {
+            "gen_input_tokens": 23443,
+            "gen_output_tokens": 103
+        },
+        "latency_s": 12.563672304153442,
+        "latency_m": 0.20939453840255737,
+        "db_id": "codebase_community"
+    },
+    "311": {
+        "tokens": {
+            "gen_input_tokens": 23471,
+            "gen_output_tokens": 147
+        },
+        "latency_s": 18.98249387741089,
+        "latency_m": 0.31637489795684814,
+        "db_id": "codebase_community"
+    },
+    "310": {
+        "tokens": {
+            "gen_input_tokens": 23447,
+            "gen_output_tokens": 173
+        },
+        "latency_s": 27.702617168426514,
+        "latency_m": 0.4617102861404419,
+        "db_id": "codebase_community"
+    },
+    "312": {
+        "tokens": {
+            "gen_input_tokens": 23467,
+            "gen_output_tokens": 153
+        },
+        "latency_s": 24.630503177642822,
+        "latency_m": 0.410508386294047,
+        "db_id": "codebase_community"
+    },
+    "308": {
+        "tokens": {
+            "gen_input_tokens": 23534,
+            "gen_output_tokens": 263
+        },
+        "latency_s": 39.33545780181885,
+        "latency_m": 0.6555909633636474,
+        "db_id": "codebase_community"
+    },
+    "314": {
+        "tokens": {
+            "gen_input_tokens": 23440,
+            "gen_output_tokens": 148
+        },
+        "latency_s": 24.63783097267151,
+        "latency_m": 0.4106305162111918,
+        "db_id": "codebase_community"
+    },
+    "316": {
+        "tokens": {
+            "gen_input_tokens": 23452,
+            "gen_output_tokens": 148
+        },
+        "latency_s": 22.554195165634155,
+        "latency_m": 0.37590325276056924,
+        "db_id": "codebase_community"
+    },
+    "242": {
+        "tokens": {
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": -1,
+        "latency_m": -1,
+        "db_id": "formula_1"
+    },
+    "320": {
+        "tokens": {
+            "gen_input_tokens": 23442,
+            "gen_output_tokens": 146
+        },
+        "latency_s": 18.386794567108154,
+        "latency_m": 0.30644657611846926,
+        "db_id": "codebase_community"
+    },
+    "318": {
+        "tokens": {
+            "gen_input_tokens": 23459,
+            "gen_output_tokens": 166
+        },
+        "latency_s": 25.136460542678833,
+        "latency_m": 0.4189410090446472,
+        "db_id": "codebase_community"
+    },
+    "321": {
+        "tokens": {
+            "gen_input_tokens": 23455,
+            "gen_output_tokens": 208
+        },
+        "latency_s": 24.931851625442505,
+        "latency_m": 0.41553086042404175,
+        "db_id": "codebase_community"
+    },
+    "322": {
+        "tokens": {
+            "gen_input_tokens": 23534,
+            "gen_output_tokens": 205
+        },
+        "latency_s": 22.662147998809814,
+        "latency_m": 0.3777024666468302,
+        "db_id": "codebase_community"
+    },
+    "315": {
+        "tokens": {
+            "gen_input_tokens": 23462,
+            "gen_output_tokens": 310
+        },
+        "latency_s": 43.15694069862366,
+        "latency_m": 0.719282344977061,
+        "db_id": "codebase_community"
+    },
+    "324": {
+        "tokens": {
+            "gen_input_tokens": 23465,
+            "gen_output_tokens": 180
+        },
+        "latency_s": 21.740254402160645,
+        "latency_m": 0.3623375733693441,
+        "db_id": "codebase_community"
+    },
+    "326": {
+        "tokens": {
+            "gen_input_tokens": 23465,
+            "gen_output_tokens": 147
+        },
+        "latency_s": 17.71343731880188,
+        "latency_m": 0.29522395531336465,
+        "db_id": "codebase_community"
+    },
+    "319": {
+        "tokens": {
+            "gen_input_tokens": 23467,
+            "gen_output_tokens": 329
+        },
+        "latency_s": 45.19521355628967,
+        "latency_m": 0.7532535592714945,
+        "db_id": "codebase_community"
+    },
+    "327": {
+        "tokens": {
+            "gen_input_tokens": 23459,
+            "gen_output_tokens": 182
+        },
+        "latency_s": 23.924506902694702,
+        "latency_m": 0.39874178171157837,
+        "db_id": "codebase_community"
+    },
+    "329": {
+        "tokens": {
+            "gen_input_tokens": 23458,
+            "gen_output_tokens": 112
+        },
+        "latency_s": 15.005105257034302,
+        "latency_m": 0.25008508761723836,
+        "db_id": "codebase_community"
+    },
+    "317": {
+        "tokens": {
+            "gen_input_tokens": 23459,
+            "gen_output_tokens": 416
+        },
+        "latency_s": 55.44780921936035,
+        "latency_m": 0.9241301536560058,
+        "db_id": "codebase_community"
+    },
+    "331": {
+        "tokens": {
+            "gen_input_tokens": 23440,
+            "gen_output_tokens": 156
+        },
+        "latency_s": 18.737830638885498,
+        "latency_m": 0.3122971773147583,
+        "db_id": "codebase_community"
+    },
+    "330": {
+        "tokens": {
+            "gen_input_tokens": 23468,
+            "gen_output_tokens": 215
+        },
+        "latency_s": 25.048826694488525,
+        "latency_m": 0.41748044490814207,
+        "db_id": "codebase_community"
+    },
+    "323": {
+        "tokens": {
+            "gen_input_tokens": 23482,
+            "gen_output_tokens": 407
+        },
+        "latency_s": 46.76398801803589,
+        "latency_m": 0.7793998003005982,
+        "db_id": "codebase_community"
+    },
+    "332": {
+        "tokens": {
+            "gen_input_tokens": 23446,
+            "gen_output_tokens": 174
+        },
+        "latency_s": 21.183982849121094,
+        "latency_m": 0.3530663808186849,
+        "db_id": "codebase_community"
+    },
+    "325": {
+        "tokens": {
+            "gen_input_tokens": 23449,
+            "gen_output_tokens": 362
+        },
+        "latency_s": 47.16343069076538,
+        "latency_m": 0.786057178179423,
+        "db_id": "codebase_community"
+    },
+    "333": {
+        "tokens": {
+            "gen_input_tokens": 23457,
+            "gen_output_tokens": 164
+        },
+        "latency_s": 23.517444610595703,
+        "latency_m": 0.3919574101765951,
+        "db_id": "codebase_community"
+    },
+    "328": {
+        "tokens": {
+            "gen_input_tokens": 23465,
+            "gen_output_tokens": 304
+        },
+        "latency_s": 42.909034967422485,
+        "latency_m": 0.7151505827903748,
+        "db_id": "codebase_community"
+    },
+    "338": {
+        "tokens": {
+            "gen_input_tokens": 23433,
+            "gen_output_tokens": 100
+        },
+        "latency_s": 16.535027503967285,
+        "latency_m": 0.2755837917327881,
+        "db_id": "codebase_community"
+    },
+    "336": {
+        "tokens": {
+            "gen_input_tokens": 23474,
+            "gen_output_tokens": 215
+        },
+        "latency_s": 27.059784650802612,
+        "latency_m": 0.4509964108467102,
+        "db_id": "codebase_community"
+    },
+    "335": {
+        "tokens": {
+            "gen_input_tokens": 23465,
+            "gen_output_tokens": 263
+        },
+        "latency_s": 32.82573676109314,
+        "latency_m": 0.5470956126848857,
+        "db_id": "codebase_community"
+    },
+    "334": {
+        "tokens": {
+            "gen_input_tokens": 23451,
+            "gen_output_tokens": 286
+        },
+        "latency_s": 38.055861711502075,
+        "latency_m": 0.6342643618583679,
+        "db_id": "codebase_community"
+    },
+    "341": {
+        "tokens": {
+            "gen_input_tokens": 23438,
+            "gen_output_tokens": 146
+        },
+        "latency_s": 18.187453508377075,
+        "latency_m": 0.3031242251396179,
+        "db_id": "codebase_community"
+    },
+    "342": {
+        "tokens": {
+            "gen_input_tokens": 23441,
+            "gen_output_tokens": 144
+        },
+        "latency_s": 18.005656242370605,
+        "latency_m": 0.3000942707061768,
+        "db_id": "codebase_community"
+    },
+    "337": {
+        "tokens": {
+            "gen_input_tokens": 23465,
+            "gen_output_tokens": 222
+        },
+        "latency_s": 35.57662510871887,
+        "latency_m": 0.5929437518119812,
+        "db_id": "codebase_community"
+    },
+    "340": {
+        "tokens": {
+            "gen_input_tokens": 23474,
+            "gen_output_tokens": 217
+        },
+        "latency_s": 33.91758060455322,
+        "latency_m": 0.5652930100758871,
+        "db_id": "codebase_community"
+    },
+    "346": {
+        "tokens": {
+            "gen_input_tokens": 23446,
+            "gen_output_tokens": 91
+        },
+        "latency_s": 18.466147422790527,
+        "latency_m": 0.30776912371317544,
+        "db_id": "card_games"
+    },
+    "343": {
+        "tokens": {
+            "gen_input_tokens": 23477,
+            "gen_output_tokens": 197
+        },
+        "latency_s": 26.47469401359558,
+        "latency_m": 0.441244900226593,
+        "db_id": "codebase_community"
+    },
+    "339": {
+        "tokens": {
+            "gen_input_tokens": 23457,
+            "gen_output_tokens": 288
+        },
+        "latency_s": 44.20390772819519,
+        "latency_m": 0.7367317954699198,
+        "db_id": "codebase_community"
+    },
+    "344": {
+        "tokens": {
+            "gen_input_tokens": 23442,
+            "gen_output_tokens": 195
+        },
+        "latency_s": 30.524831295013428,
+        "latency_m": 0.5087471882502238,
+        "db_id": "codebase_community"
+    },
+    "347": {
+        "tokens": {
+            "gen_input_tokens": 23456,
+            "gen_output_tokens": 144
+        },
+        "latency_s": 22.38680934906006,
+        "latency_m": 0.37311348915100095,
+        "db_id": "card_games"
+    },
+    "348": {
+        "tokens": {
+            "gen_input_tokens": 23459,
+            "gen_output_tokens": 178
+        },
+        "latency_s": 27.684150218963623,
+        "latency_m": 0.4614025036493937,
+        "db_id": "card_games"
+    },
+    "345": {
+        "tokens": {
+            "gen_input_tokens": 23479,
+            "gen_output_tokens": 224
+        },
+        "latency_s": 35.798792600631714,
+        "latency_m": 0.5966465433438619,
+        "db_id": "codebase_community"
+    },
+    "351": {
+        "tokens": {
+            "gen_input_tokens": 23474,
+            "gen_output_tokens": 155
+        },
+        "latency_s": 22.812073230743408,
+        "latency_m": 0.38020122051239014,
+        "db_id": "card_games"
+    },
+    "349": {
+        "tokens": {
+            "gen_input_tokens": 23475,
+            "gen_output_tokens": 232
+        },
+        "latency_s": 36.00357699394226,
+        "latency_m": 0.6000596165657044,
+        "db_id": "card_games"
+    },
+    "350": {
+        "tokens": {
+            "gen_input_tokens": 23471,
+            "gen_output_tokens": 187
+        },
+        "latency_s": 28.15692114830017,
+        "latency_m": 0.46928201913833617,
+        "db_id": "card_games"
+    },
+    "353": {
+        "tokens": {
+            "gen_input_tokens": 23453,
+            "gen_output_tokens": 200
+        },
+        "latency_s": 28.506577253341675,
+        "latency_m": 0.4751096208890279,
+        "db_id": "card_games"
+    },
+    "356": {
+        "tokens": {
+            "gen_input_tokens": 23443,
+            "gen_output_tokens": 198
+        },
+        "latency_s": 24.301100730895996,
+        "latency_m": 0.40501834551493326,
+        "db_id": "card_games"
+    },
+    "355": {
+        "tokens": {
+            "gen_input_tokens": 23439,
+            "gen_output_tokens": 204
+        },
+        "latency_s": 24.65783715248108,
+        "latency_m": 0.4109639525413513,
+        "db_id": "card_games"
+    },
+    "357": {
+        "tokens": {
+            "gen_input_tokens": 23453,
+            "gen_output_tokens": 170
+        },
+        "latency_s": 20.563886165618896,
+        "latency_m": 0.34273143609364826,
+        "db_id": "card_games"
+    },
+    "361": {
+        "tokens": {
+            "gen_input_tokens": 23440,
+            "gen_output_tokens": 112
+        },
+        "latency_s": 14.4840247631073,
+        "latency_m": 0.241400412718455,
+        "db_id": "card_games"
+    },
+    "352": {
+        "tokens": {
+            "gen_input_tokens": 23460,
+            "gen_output_tokens": 285
+        },
+        "latency_s": 41.89868450164795,
+        "latency_m": 0.6983114083607992,
+        "db_id": "card_games"
+    },
+    "359": {
+        "tokens": {
+            "gen_input_tokens": 23443,
+            "gen_output_tokens": 151
+        },
+        "latency_s": 24.768248796463013,
+        "latency_m": 0.41280414660771686,
+        "db_id": "card_games"
+    },
+    "360": {
+        "tokens": {
+            "gen_input_tokens": 23435,
+            "gen_output_tokens": 140
+        },
+        "latency_s": 22.31931781768799,
+        "latency_m": 0.3719886302947998,
+        "db_id": "card_games"
+    },
+    "358": {
+        "tokens": {
+            "gen_input_tokens": 23482,
+            "gen_output_tokens": 223
+        },
+        "latency_s": 33.65153121948242,
+        "latency_m": 0.5608588536580403,
+        "db_id": "card_games"
+    },
+    "362": {
+        "tokens": {
+            "gen_input_tokens": 23455,
+            "gen_output_tokens": 200
+        },
+        "latency_s": 26.57903528213501,
+        "latency_m": 0.44298392136891684,
+        "db_id": "card_games"
+    },
+    "365": {
+        "tokens": {
+            "gen_input_tokens": 23454,
+            "gen_output_tokens": 144
+        },
+        "latency_s": 22.985485792160034,
+        "latency_m": 0.3830914298693339,
+        "db_id": "card_games"
+    },
+    "363": {
+        "tokens": {
+            "gen_input_tokens": 23476,
+            "gen_output_tokens": 166
+        },
+        "latency_s": 27.47128987312317,
+        "latency_m": 0.4578548312187195,
+        "db_id": "card_games"
+    },
+    "364": {
+        "tokens": {
+            "gen_input_tokens": 23493,
+            "gen_output_tokens": 167
+        },
+        "latency_s": 27.512166500091553,
+        "latency_m": 0.4585361083348592,
+        "db_id": "card_games"
+    },
+    "354": {
+        "tokens": {
+            "gen_input_tokens": 23426,
+            "gen_output_tokens": 400
+        },
+        "latency_s": 54.818339109420776,
+        "latency_m": 0.9136389851570129,
+        "db_id": "card_games"
+    },
+    "368": {
+        "tokens": {
+            "gen_input_tokens": 23463,
+            "gen_output_tokens": 162
+        },
+        "latency_s": 22.99903106689453,
+        "latency_m": 0.3833171844482422,
+        "db_id": "card_games"
+    },
+    "366": {
+        "tokens": {
+            "gen_input_tokens": 23448,
+            "gen_output_tokens": 219
+        },
+        "latency_s": 33.915700912475586,
+        "latency_m": 0.5652616818745931,
+        "db_id": "card_games"
+    },
+    "376": {
+        "tokens": {
+            "gen_input_tokens": 23441,
+            "gen_output_tokens": 138
+        },
+        "latency_s": 9.67914628982544,
+        "latency_m": 0.161319104830424,
+        "db_id": "card_games"
+    },
+    "373": {
+        "tokens": {
+            "gen_input_tokens": 23455,
+            "gen_output_tokens": 163
+        },
+        "latency_s": 16.853021383285522,
+        "latency_m": 0.28088368972142536,
+        "db_id": "card_games"
+    },
+    "375": {
+        "tokens": {
+            "gen_input_tokens": 23462,
+            "gen_output_tokens": 165
+        },
+        "latency_s": 16.87721061706543,
+        "latency_m": 0.2812868436177572,
+        "db_id": "card_games"
+    },
+    "370": {
+        "tokens": {
+            "gen_input_tokens": 23450,
+            "gen_output_tokens": 276
+        },
+        "latency_s": 33.45803618431091,
+        "latency_m": 0.5576339364051819,
+        "db_id": "card_games"
+    },
+    "369": {
+        "tokens": {
+            "gen_input_tokens": 23458,
+            "gen_output_tokens": 330
+        },
+        "latency_s": 39.40433716773987,
+        "latency_m": 0.6567389527956645,
+        "db_id": "card_games"
+    },
+    "377": {
+        "tokens": {
+            "gen_input_tokens": 23471,
+            "gen_output_tokens": 142
+        },
+        "latency_s": 18.08118748664856,
+        "latency_m": 0.301353124777476,
+        "db_id": "card_games"
+    },
+    "372": {
+        "tokens": {
+            "gen_input_tokens": 23477,
+            "gen_output_tokens": 283
+        },
+        "latency_s": 35.79654288291931,
+        "latency_m": 0.5966090480486552,
+        "db_id": "card_games"
+    },
+    "379": {
+        "tokens": {
+            "gen_input_tokens": 23471,
+            "gen_output_tokens": 178
+        },
+        "latency_s": 21.750858306884766,
+        "latency_m": 0.3625143051147461,
+        "db_id": "card_games"
+    },
+    "381": {
+        "tokens": {
+            "gen_input_tokens": 23466,
+            "gen_output_tokens": 161
+        },
+        "latency_s": 14.800870895385742,
+        "latency_m": 0.24668118158976238,
+        "db_id": "card_games"
+    },
+    "380": {
+        "tokens": {
+            "gen_input_tokens": 23471,
+            "gen_output_tokens": 188
+        },
+        "latency_s": 23.355954885482788,
+        "latency_m": 0.38926591475804645,
+        "db_id": "card_games"
+    },
+    "383": {
+        "tokens": {
+            "gen_input_tokens": 23460,
+            "gen_output_tokens": 174
+        },
+        "latency_s": 17.30806875228882,
+        "latency_m": 0.28846781253814696,
+        "db_id": "card_games"
+    },
+    "384": {
+        "tokens": {
+            "gen_input_tokens": 23464,
+            "gen_output_tokens": 149
+        },
+        "latency_s": 16.3671875,
+        "latency_m": 0.2727864583333333,
+        "db_id": "card_games"
+    },
+    "382": {
+        "tokens": {
+            "gen_input_tokens": 23464,
+            "gen_output_tokens": 233
+        },
+        "latency_s": 25.850054264068604,
+        "latency_m": 0.4308342377344767,
+        "db_id": "card_games"
+    },
+    "371": {
+        "tokens": {
+            "gen_input_tokens": 23476,
+            "gen_output_tokens": 466
+        },
+        "latency_s": 55.6572322845459,
+        "latency_m": 0.9276205380757649,
+        "db_id": "card_games"
+    },
+    "378": {
+        "tokens": {
+            "gen_input_tokens": 23468,
+            "gen_output_tokens": 274
+        },
+        "latency_s": 39.75615119934082,
+        "latency_m": 0.6626025199890136,
+        "db_id": "card_games"
+    },
+    "374": {
+        "tokens": {
+            "gen_input_tokens": 23466,
+            "gen_output_tokens": 459
+        },
+        "latency_s": 59.09164214134216,
+        "latency_m": 0.9848607023557027,
+        "db_id": "card_games"
+    },
+    "386": {
+        "tokens": {
+            "gen_input_tokens": 23478,
+            "gen_output_tokens": 138
+        },
+        "latency_s": 24.294007301330566,
+        "latency_m": 0.40490012168884276,
+        "db_id": "card_games"
+    },
+    "387": {
+        "tokens": {
+            "gen_input_tokens": 23480,
+            "gen_output_tokens": 152
+        },
+        "latency_s": 25.34983777999878,
+        "latency_m": 0.422497296333313,
+        "db_id": "card_games"
+    },
+    "385": {
+        "tokens": {
+            "gen_input_tokens": 23474,
+            "gen_output_tokens": 195
+        },
+        "latency_s": 30.704113960266113,
+        "latency_m": 0.5117352326711019,
+        "db_id": "card_games"
+    },
+    "390": {
+        "tokens": {
+            "gen_input_tokens": 23466,
+            "gen_output_tokens": 183
+        },
+        "latency_s": 23.766703844070435,
+        "latency_m": 0.39611173073450723,
+        "db_id": "card_games"
+    },
+    "391": {
+        "tokens": {
+            "gen_input_tokens": 23485,
+            "gen_output_tokens": 188
+        },
+        "latency_s": 23.312854528427124,
+        "latency_m": 0.3885475754737854,
+        "db_id": "card_games"
+    },
+    "394": {
+        "tokens": {
+            "gen_input_tokens": 23473,
+            "gen_output_tokens": 138
+        },
+        "latency_s": 16.02742338180542,
+        "latency_m": 0.26712372303009035,
+        "db_id": "card_games"
+    },
+    "392": {
+        "tokens": {
+            "gen_input_tokens": 23496,
+            "gen_output_tokens": 201
+        },
+        "latency_s": 22.498175859451294,
+        "latency_m": 0.3749695976575216,
+        "db_id": "card_games"
+    },
+    "393": {
+        "tokens": {
+            "gen_input_tokens": 23473,
+            "gen_output_tokens": 201
+        },
+        "latency_s": 24.5805401802063,
+        "latency_m": 0.409675669670105,
+        "db_id": "card_games"
+    },
+    "389": {
+        "tokens": {
+            "gen_input_tokens": 23450,
+            "gen_output_tokens": 266
+        },
+        "latency_s": 37.38493084907532,
+        "latency_m": 0.623082180817922,
+        "db_id": "card_games"
+    },
+    "388": {
+        "tokens": {
+            "gen_input_tokens": 23462,
+            "gen_output_tokens": 340
+        },
+        "latency_s": 44.296717405319214,
+        "latency_m": 0.7382786234219869,
+        "db_id": "card_games"
+    },
+    "397": {
+        "tokens": {
+            "gen_input_tokens": 23462,
+            "gen_output_tokens": 144
+        },
+        "latency_s": 20.344160318374634,
+        "latency_m": 0.3390693386395772,
+        "db_id": "card_games"
+    },
+    "396": {
+        "tokens": {
+            "gen_input_tokens": 23461,
+            "gen_output_tokens": 209
+        },
+        "latency_s": 27.016876220703125,
+        "latency_m": 0.4502812703450521,
+        "db_id": "card_games"
+    },
+    "395": {
+        "tokens": {
+            "gen_input_tokens": 23483,
+            "gen_output_tokens": 252
+        },
+        "latency_s": 30.69558358192444,
+        "latency_m": 0.5115930596987407,
+        "db_id": "card_games"
+    },
+    "398": {
+        "tokens": {
+            "gen_input_tokens": 23431,
+            "gen_output_tokens": 212
+        },
+        "latency_s": 28.915422201156616,
+        "latency_m": 0.48192370335261026,
+        "db_id": "toxicology"
+    },
+    "399": {
+        "tokens": {
+            "gen_input_tokens": 23449,
+            "gen_output_tokens": 198
+        },
+        "latency_s": 26.47928762435913,
+        "latency_m": 0.4413214604059855,
+        "db_id": "toxicology"
+    },
+    "401": {
+        "tokens": {
+            "gen_input_tokens": 23442,
+            "gen_output_tokens": 212
+        },
+        "latency_s": 24.911336183547974,
+        "latency_m": 0.41518893639246623,
+        "db_id": "toxicology"
+    },
+    "400": {
+        "tokens": {
+            "gen_input_tokens": 23458,
+            "gen_output_tokens": 242
+        },
+        "latency_s": 32.24666738510132,
+        "latency_m": 0.5374444564183553,
+        "db_id": "toxicology"
+    },
+    "404": {
+        "tokens": {
+            "gen_input_tokens": 23430,
+            "gen_output_tokens": 159
+        },
+        "latency_s": 20.86927843093872,
+        "latency_m": 0.347821307182312,
+        "db_id": "toxicology"
+    },
+    "403": {
+        "tokens": {
+            "gen_input_tokens": 23452,
+            "gen_output_tokens": 203
+        },
+        "latency_s": 24.535059690475464,
+        "latency_m": 0.4089176615079244,
+        "db_id": "toxicology"
+    },
+    "405": {
+        "tokens": {
+            "gen_input_tokens": 23446,
+            "gen_output_tokens": 163
+        },
+        "latency_s": 23.10600233078003,
+        "latency_m": 0.3851000388463338,
+        "db_id": "toxicology"
+    },
+    "406": {
+        "tokens": {
+            "gen_input_tokens": 23446,
+            "gen_output_tokens": 187
+        },
+        "latency_s": 26.0954167842865,
+        "latency_m": 0.4349236130714417,
+        "db_id": "toxicology"
+    },
+    "402": {
+        "tokens": {
+            "gen_input_tokens": 23457,
+            "gen_output_tokens": 321
+        },
+        "latency_s": 39.36074924468994,
+        "latency_m": 0.656012487411499,
+        "db_id": "toxicology"
+    },
+    "408": {
+        "tokens": {
+            "gen_input_tokens": 23468,
+            "gen_output_tokens": 165
+        },
+        "latency_s": 21.137045860290527,
+        "latency_m": 0.3522840976715088,
+        "db_id": "toxicology"
+    },
+    "411": {
+        "tokens": {
+            "gen_input_tokens": 23440,
+            "gen_output_tokens": 133
+        },
+        "latency_s": 17.903225898742676,
+        "latency_m": 0.2983870983123779,
+        "db_id": "toxicology"
+    },
+    "413": {
+        "tokens": {
+            "gen_input_tokens": 23460,
+            "gen_output_tokens": 132
+        },
+        "latency_s": 15.711871862411499,
+        "latency_m": 0.26186453104019164,
+        "db_id": "toxicology"
+    },
+    "410": {
+        "tokens": {
+            "gen_input_tokens": 23471,
+            "gen_output_tokens": 184
+        },
+        "latency_s": 23.92566990852356,
+        "latency_m": 0.39876116514205934,
+        "db_id": "toxicology"
+    },
+    "412": {
+        "tokens": {
+            "gen_input_tokens": 23485,
+            "gen_output_tokens": 155
+        },
+        "latency_s": 22.13267469406128,
+        "latency_m": 0.368877911567688,
+        "db_id": "toxicology"
+    },
+    "409": {
+        "tokens": {
+            "gen_input_tokens": 23478,
+            "gen_output_tokens": 225
+        },
+        "latency_s": 33.774627923965454,
+        "latency_m": 0.5629104653994242,
+        "db_id": "toxicology"
+    },
+    "414": {
+        "tokens": {
+            "gen_input_tokens": 23482,
+            "gen_output_tokens": 187
+        },
+        "latency_s": 24.02804923057556,
+        "latency_m": 0.40046748717625935,
+        "db_id": "toxicology"
+    },
+    "415": {
+        "tokens": {
+            "gen_input_tokens": 23438,
+            "gen_output_tokens": 201
+        },
+        "latency_s": 24.556267261505127,
+        "latency_m": 0.40927112102508545,
+        "db_id": "toxicology"
+    },
+    "416": {
+        "tokens": {
+            "gen_input_tokens": 23463,
+            "gen_output_tokens": 210
+        },
+        "latency_s": 26.01556086540222,
+        "latency_m": 0.433592681090037,
+        "db_id": "toxicology"
+    },
+    "418": {
+        "tokens": {
+            "gen_input_tokens": 23471,
+            "gen_output_tokens": 173
+        },
+        "latency_s": 21.489537000656128,
+        "latency_m": 0.35815895001093545,
+        "db_id": "toxicology"
+    },
+    "421": {
+        "tokens": {
+            "gen_input_tokens": 23437,
+            "gen_output_tokens": 155
+        },
+        "latency_s": 14.529036521911621,
+        "latency_m": 0.24215060869852703,
+        "db_id": "toxicology"
+    },
+    "420": {
+        "tokens": {
+            "gen_input_tokens": 23444,
+            "gen_output_tokens": 179
+        },
+        "latency_s": 20.752812385559082,
+        "latency_m": 0.3458802064259847,
+        "db_id": "toxicology"
+    },
+    "407": {
+        "tokens": {
+            "gen_input_tokens": 23491,
+            "gen_output_tokens": 474
+        },
+        "latency_s": 61.762123584747314,
+        "latency_m": 1.0293687264124551,
+        "db_id": "toxicology"
+    },
+    "419": {
+        "tokens": {
+            "gen_input_tokens": 23442,
+            "gen_output_tokens": 236
+        },
+        "latency_s": 32.15898561477661,
+        "latency_m": 0.5359830935796102,
+        "db_id": "toxicology"
+    },
+    "422": {
+        "tokens": {
+            "gen_input_tokens": 23473,
+            "gen_output_tokens": 191
+        },
+        "latency_s": 24.19543480873108,
+        "latency_m": 0.40325724681218467,
+        "db_id": "toxicology"
+    },
+    "417": {
+        "tokens": {
+            "gen_input_tokens": 23467,
+            "gen_output_tokens": 328
+        },
+        "latency_s": 41.77534747123718,
+        "latency_m": 0.6962557911872864,
+        "db_id": "toxicology"
+    },
+    "426": {
+        "tokens": {
+            "gen_input_tokens": 23441,
+            "gen_output_tokens": 125
+        },
+        "latency_s": 17.340898513793945,
+        "latency_m": 0.2890149752298991,
+        "db_id": "toxicology"
+    },
+    "423": {
+        "tokens": {
+            "gen_input_tokens": 23451,
+            "gen_output_tokens": 195
+        },
+        "latency_s": 28.518200159072876,
+        "latency_m": 0.47530333598454794,
+        "db_id": "toxicology"
+    },
+    "428": {
+        "tokens": {
+            "gen_input_tokens": 23444,
+            "gen_output_tokens": 154
+        },
+        "latency_s": 18.633567333221436,
+        "latency_m": 0.3105594555536906,
+        "db_id": "toxicology"
+    },
+    "427": {
+        "tokens": {
+            "gen_input_tokens": 23446,
+            "gen_output_tokens": 221
+        },
+        "latency_s": 28.722273111343384,
+        "latency_m": 0.4787045518557231,
+        "db_id": "toxicology"
+    },
+    "430": {
+        "tokens": {
+            "gen_input_tokens": 23476,
+            "gen_output_tokens": 145
+        },
+        "latency_s": 18.31545615196228,
+        "latency_m": 0.3052576025327047,
+        "db_id": "toxicology"
+    },
+    "429": {
+        "tokens": {
+            "gen_input_tokens": 23429,
+            "gen_output_tokens": 194
+        },
+        "latency_s": 24.302210092544556,
+        "latency_m": 0.4050368348757426,
+        "db_id": "toxicology"
+    },
+    "433": {
+        "tokens": {
+            "gen_input_tokens": 23444,
+            "gen_output_tokens": 98
+        },
+        "latency_s": 12.442568063735962,
+        "latency_m": 0.20737613439559938,
+        "db_id": "toxicology"
+    },
+    "424": {
+        "tokens": {
+            "gen_input_tokens": 23440,
+            "gen_output_tokens": 349
+        },
+        "latency_s": 45.120583057403564,
+        "latency_m": 0.7520097176233927,
+        "db_id": "toxicology"
+    },
+    "432": {
+        "tokens": {
+            "gen_input_tokens": 23466,
+            "gen_output_tokens": 169
+        },
+        "latency_s": 23.3753559589386,
+        "latency_m": 0.38958926598231,
+        "db_id": "toxicology"
+    },
+    "431": {
+        "tokens": {
+            "gen_input_tokens": 23456,
+            "gen_output_tokens": 311
+        },
+        "latency_s": 32.96460795402527,
+        "latency_m": 0.5494101325670878,
+        "db_id": "toxicology"
+    },
+    "437": {
+        "tokens": {
+            "gen_input_tokens": 23454,
+            "gen_output_tokens": 206
+        },
+        "latency_s": 18.513848781585693,
+        "latency_m": 0.30856414635976154,
+        "db_id": "toxicology"
+    },
+    "436": {
+        "tokens": {
+            "gen_input_tokens": 23487,
+            "gen_output_tokens": 232
+        },
+        "latency_s": 22.904340982437134,
+        "latency_m": 0.38173901637395224,
+        "db_id": "toxicology"
+    },
+    "435": {
+        "tokens": {
+            "gen_input_tokens": 23464,
+            "gen_output_tokens": 260
+        },
+        "latency_s": 28.83123779296875,
+        "latency_m": 0.4805206298828125,
+        "db_id": "toxicology"
+    },
+    "434": {
+        "tokens": {
+            "gen_input_tokens": 23462,
+            "gen_output_tokens": 310
+        },
+        "latency_s": 34.880595207214355,
+        "latency_m": 0.5813432534535726,
+        "db_id": "toxicology"
+    },
+    "438": {
+        "tokens": {
+            "gen_input_tokens": 23445,
+            "gen_output_tokens": 247
+        },
+        "latency_s": 26.37763738632202,
+        "latency_m": 0.4396272897720337,
+        "db_id": "california_schools"
+    },
+    "367": {
+        "tokens": {
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": -1,
+        "latency_m": -1,
+        "db_id": "card_games"
+    },
+    "440": {
+        "tokens": {
+            "gen_input_tokens": 23498,
+            "gen_output_tokens": 325
+        },
+        "latency_s": 31.399522304534912,
+        "latency_m": 0.5233253717422486,
+        "db_id": "california_schools"
+    },
+    "439": {
+        "tokens": {
+            "gen_input_tokens": 23457,
+            "gen_output_tokens": 347
+        },
+        "latency_s": 34.2373731136322,
+        "latency_m": 0.5706228852272034,
+        "db_id": "california_schools"
+    },
+    "441": {
+        "tokens": {
+            "gen_input_tokens": 23444,
+            "gen_output_tokens": 209
+        },
+        "latency_s": 24.858734369277954,
+        "latency_m": 0.4143122394879659,
+        "db_id": "california_schools"
+    },
+    "442": {
+        "tokens": {
+            "gen_input_tokens": 23478,
+            "gen_output_tokens": 220
+        },
+        "latency_s": 27.348866939544678,
+        "latency_m": 0.4558144489924113,
+        "db_id": "california_schools"
+    },
+    "444": {
+        "tokens": {
+            "gen_input_tokens": 23459,
+            "gen_output_tokens": 238
+        },
+        "latency_s": 25.925479412078857,
+        "latency_m": 0.43209132353464763,
+        "db_id": "california_schools"
+    },
+    "445": {
+        "tokens": {
+            "gen_input_tokens": 23461,
+            "gen_output_tokens": 267
+        },
+        "latency_s": 26.997897148132324,
+        "latency_m": 0.4499649524688721,
+        "db_id": "california_schools"
+    },
+    "450": {
+        "tokens": {
+            "gen_input_tokens": 23466,
+            "gen_output_tokens": 233
+        },
+        "latency_s": 19.410056829452515,
+        "latency_m": 0.3235009471575419,
+        "db_id": "california_schools"
+    },
+    "446": {
+        "tokens": {
+            "gen_input_tokens": 23469,
+            "gen_output_tokens": 393
+        },
+        "latency_s": 33.722338914871216,
+        "latency_m": 0.5620389819145203,
+        "db_id": "california_schools"
+    },
+    "443": {
+        "tokens": {
+            "gen_input_tokens": 23481,
+            "gen_output_tokens": 437
+        },
+        "latency_s": 42.888431549072266,
+        "latency_m": 0.7148071924845377,
+        "db_id": "california_schools"
+    },
+    "448": {
+        "tokens": {
+            "gen_input_tokens": 23491,
+            "gen_output_tokens": 302
+        },
+        "latency_s": 30.570386171340942,
+        "latency_m": 0.5095064361890157,
+        "db_id": "california_schools"
+    },
+    "453": {
+        "tokens": {
+            "gen_input_tokens": 23438,
+            "gen_output_tokens": 217
+        },
+        "latency_s": 18.975768566131592,
+        "latency_m": 0.31626280943552654,
+        "db_id": "california_schools"
+    },
+    "452": {
+        "tokens": {
+            "gen_input_tokens": 23479,
+            "gen_output_tokens": 270
+        },
+        "latency_s": 22.9874746799469,
+        "latency_m": 0.383124577999115,
+        "db_id": "california_schools"
+    },
+    "447": {
+        "tokens": {
+            "gen_input_tokens": 23493,
+            "gen_output_tokens": 478
+        },
+        "latency_s": 45.302356243133545,
+        "latency_m": 0.7550392707188924,
+        "db_id": "california_schools"
+    },
+    "451": {
+        "tokens": {
+            "gen_input_tokens": 23481,
+            "gen_output_tokens": 444
+        },
+        "latency_s": 37.83892297744751,
+        "latency_m": 0.6306487162907918,
+        "db_id": "california_schools"
+    },
+    "454": {
+        "tokens": {
+            "gen_input_tokens": 23452,
+            "gen_output_tokens": 269
+        },
+        "latency_s": 27.08865237236023,
+        "latency_m": 0.45147753953933717,
+        "db_id": "california_schools"
+    },
+    "456": {
+        "tokens": {
+            "gen_input_tokens": 23455,
+            "gen_output_tokens": 292
+        },
+        "latency_s": 26.985836029052734,
+        "latency_m": 0.4497639338175456,
+        "db_id": "california_schools"
+    },
+    "459": {
+        "tokens": {
+            "gen_input_tokens": 23444,
+            "gen_output_tokens": 194
+        },
+        "latency_s": 17.927818775177002,
+        "latency_m": 0.2987969795862834,
+        "db_id": "california_schools"
+    },
+    "458": {
+        "tokens": {
+            "gen_input_tokens": 23453,
+            "gen_output_tokens": 203
+        },
+        "latency_s": 21.146713972091675,
+        "latency_m": 0.35244523286819457,
+        "db_id": "california_schools"
+    },
+    "460": {
+        "tokens": {
+            "gen_input_tokens": 23516,
+            "gen_output_tokens": 298
+        },
+        "latency_s": 24.172298669815063,
+        "latency_m": 0.4028716444969177,
+        "db_id": "california_schools"
+    },
+    "464": {
+        "tokens": {
+            "gen_input_tokens": 23439,
+            "gen_output_tokens": 167
+        },
+        "latency_s": 14.832910776138306,
+        "latency_m": 0.2472151796023051,
+        "db_id": "california_schools"
+    },
+    "461": {
+        "tokens": {
+            "gen_input_tokens": 23462,
+            "gen_output_tokens": 245
+        },
+        "latency_s": 24.113938093185425,
+        "latency_m": 0.40189896821975707,
+        "db_id": "california_schools"
+    },
+    "462": {
+        "tokens": {
+            "gen_input_tokens": 23500,
+            "gen_output_tokens": 254
+        },
+        "latency_s": 24.464585781097412,
+        "latency_m": 0.40774309635162354,
+        "db_id": "california_schools"
+    },
+    "465": {
+        "tokens": {
+            "gen_input_tokens": 23512,
+            "gen_output_tokens": 236
+        },
+        "latency_s": 20.7919602394104,
+        "latency_m": 0.34653267065684,
+        "db_id": "california_schools"
+    },
+    "463": {
+        "tokens": {
+            "gen_input_tokens": 23453,
+            "gen_output_tokens": 252
+        },
+        "latency_s": 25.72469401359558,
+        "latency_m": 0.428744900226593,
+        "db_id": "california_schools"
+    },
+    "468": {
+        "tokens": {
+            "gen_input_tokens": 23455,
+            "gen_output_tokens": 181
+        },
+        "latency_s": 15.533281326293945,
+        "latency_m": 0.2588880221048991,
+        "db_id": "financial"
+    },
+    "466": {
+        "tokens": {
+            "gen_input_tokens": 23486,
+            "gen_output_tokens": 257
+        },
+        "latency_s": 24.657174825668335,
+        "latency_m": 0.4109529137611389,
+        "db_id": "california_schools"
+    },
+    "470": {
+        "tokens": {
+            "gen_input_tokens": 23456,
+            "gen_output_tokens": 192
+        },
+        "latency_s": 15.913913011550903,
+        "latency_m": 0.26523188352584837,
+        "db_id": "financial"
+    },
+    "469": {
+        "tokens": {
+            "gen_input_tokens": 23458,
+            "gen_output_tokens": 242
+        },
+        "latency_s": 21.94837999343872,
+        "latency_m": 0.36580633322397865,
+        "db_id": "financial"
+    },
+    "467": {
+        "tokens": {
+            "gen_input_tokens": 23536,
+            "gen_output_tokens": 305
+        },
+        "latency_s": 28.48304843902588,
+        "latency_m": 0.4747174739837646,
+        "db_id": "california_schools"
+    },
+    "474": {
+        "tokens": {
+            "gen_input_tokens": 23462,
+            "gen_output_tokens": 163
+        },
+        "latency_s": 12.755366086959839,
+        "latency_m": 0.21258943478266398,
+        "db_id": "financial"
+    },
+    "476": {
+        "tokens": {
+            "gen_input_tokens": 23452,
+            "gen_output_tokens": 161
+        },
+        "latency_s": 12.550301313400269,
+        "latency_m": 0.20917168855667115,
+        "db_id": "financial"
+    },
+    "473": {
+        "tokens": {
+            "gen_input_tokens": 23455,
+            "gen_output_tokens": 235
+        },
+        "latency_s": 19.567307710647583,
+        "latency_m": 0.3261217951774597,
+        "db_id": "financial"
+    },
+    "475": {
+        "tokens": {
+            "gen_input_tokens": 23457,
+            "gen_output_tokens": 204
+        },
+        "latency_s": 18.514950275421143,
+        "latency_m": 0.30858250459035236,
+        "db_id": "financial"
+    },
+    "472": {
+        "tokens": {
+            "gen_input_tokens": 23458,
+            "gen_output_tokens": 316
+        },
+        "latency_s": 31.074432611465454,
+        "latency_m": 0.5179072101910909,
+        "db_id": "financial"
+    },
+    "471": {
+        "tokens": {
+            "gen_input_tokens": 23491,
+            "gen_output_tokens": 461
+        },
+        "latency_s": 41.13917398452759,
+        "latency_m": 0.6856528997421265,
+        "db_id": "financial"
+    },
+    "425": {
+        "tokens": {
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": -1,
+        "latency_m": -1,
+        "db_id": "toxicology"
+    },
+    "477": {
+        "tokens": {
+            "gen_input_tokens": 23483,
+            "gen_output_tokens": 204
+        },
+        "latency_s": 22.673407077789307,
+        "latency_m": 0.37789011796315514,
+        "db_id": "financial"
+    },
+    "479": {
+        "tokens": {
+            "gen_input_tokens": 23475,
+            "gen_output_tokens": 193
+        },
+        "latency_s": 22.078450679779053,
+        "latency_m": 0.36797417799631754,
+        "db_id": "financial"
+    },
+    "482": {
+        "tokens": {
+            "gen_input_tokens": 23449,
+            "gen_output_tokens": 167
+        },
+        "latency_s": 15.025758981704712,
+        "latency_m": 0.2504293163617452,
+        "db_id": "financial"
+    },
+    "480": {
+        "tokens": {
+            "gen_input_tokens": 23477,
+            "gen_output_tokens": 202
+        },
+        "latency_s": 20.42778205871582,
+        "latency_m": 0.3404630343119303,
+        "db_id": "financial"
+    },
+    "481": {
+        "tokens": {
+            "gen_input_tokens": 23539,
+            "gen_output_tokens": 218
+        },
+        "latency_s": 21.039921283721924,
+        "latency_m": 0.35066535472869875,
+        "db_id": "financial"
+    },
+    "484": {
+        "tokens": {
+            "gen_input_tokens": 23450,
+            "gen_output_tokens": 140
+        },
+        "latency_s": 11.834381818771362,
+        "latency_m": 0.1972396969795227,
+        "db_id": "financial"
+    },
+    "487": {
+        "tokens": {
+            "gen_input_tokens": 23450,
+            "gen_output_tokens": 140
+        },
+        "latency_s": 9.439968347549438,
+        "latency_m": 0.15733280579249065,
+        "db_id": "financial"
+    },
+    "483": {
+        "tokens": {
+            "gen_input_tokens": 23477,
+            "gen_output_tokens": 283
+        },
+        "latency_s": 23.489582061767578,
+        "latency_m": 0.391493034362793,
+        "db_id": "financial"
+    },
+    "488": {
+        "tokens": {
+            "gen_input_tokens": 23463,
+            "gen_output_tokens": 200
+        },
+        "latency_s": 14.056454181671143,
+        "latency_m": 0.23427423636118572,
+        "db_id": "financial"
+    },
+    "485": {
+        "tokens": {
+            "gen_input_tokens": 23463,
+            "gen_output_tokens": 272
+        },
+        "latency_s": 20.965094089508057,
+        "latency_m": 0.3494182348251343,
+        "db_id": "financial"
+    },
+    "478": {
+        "tokens": {
+            "gen_input_tokens": 23495,
+            "gen_output_tokens": 513
+        },
+        "latency_s": 48.75666952133179,
+        "latency_m": 0.8126111586888631,
+        "db_id": "financial"
+    },
+    "486": {
+        "tokens": {
+            "gen_input_tokens": 23483,
+            "gen_output_tokens": 280
+        },
+        "latency_s": 23.282053470611572,
+        "latency_m": 0.38803422451019287,
+        "db_id": "financial"
+    },
+    "490": {
+        "tokens": {
+            "gen_input_tokens": 23483,
+            "gen_output_tokens": 243
+        },
+        "latency_s": 21.965006589889526,
+        "latency_m": 0.36608344316482544,
+        "db_id": "financial"
+    },
+    "491": {
+        "tokens": {
+            "gen_input_tokens": 23480,
+            "gen_output_tokens": 213
+        },
+        "latency_s": 20.84560489654541,
+        "latency_m": 0.3474267482757568,
+        "db_id": "financial"
+    },
+    "495": {
+        "tokens": {
+            "gen_input_tokens": 23449,
+            "gen_output_tokens": 156
+        },
+        "latency_s": 14.363617181777954,
+        "latency_m": 0.23939361969629924,
+        "db_id": "financial"
+    },
+    "493": {
+        "tokens": {
+            "gen_input_tokens": 23460,
+            "gen_output_tokens": 200
+        },
+        "latency_s": 21.044970273971558,
+        "latency_m": 0.35074950456619264,
+        "db_id": "financial"
+    },
+    "492": {
+        "tokens": {
+            "gen_input_tokens": 23443,
+            "gen_output_tokens": 218
+        },
+        "latency_s": 25.22045660018921,
+        "latency_m": 0.4203409433364868,
+        "db_id": "financial"
+    },
+    "489": {
+        "tokens": {
+            "gen_input_tokens": 23457,
+            "gen_output_tokens": 390
+        },
+        "latency_s": 37.96698212623596,
+        "latency_m": 0.632783035437266,
+        "db_id": "financial"
+    },
+    "494": {
+        "tokens": {
+            "gen_input_tokens": 23489,
+            "gen_output_tokens": 256
+        },
+        "latency_s": 22.371645212173462,
+        "latency_m": 0.3728607535362244,
+        "db_id": "financial"
+    },
+    "449": {
+        "tokens": {
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": -1,
+        "latency_m": -1,
+        "db_id": "california_schools"
+    },
+    "496": {
+        "tokens": {
+            "gen_input_tokens": 23473,
+            "gen_output_tokens": 229
+        },
+        "latency_s": 16.539865732192993,
+        "latency_m": 0.27566442886988324,
+        "db_id": "financial"
+    },
+    "497": {
+        "tokens": {
+            "gen_input_tokens": 23445,
+            "gen_output_tokens": 195
+        },
+        "latency_s": 13.178935766220093,
+        "latency_m": 0.21964892943700154,
+        "db_id": "financial"
+    },
+    "499": {
+        "tokens": {
+            "gen_input_tokens": 23456,
+            "gen_output_tokens": 292
+        },
+        "latency_s": 12.653525829315186,
+        "latency_m": 0.2108920971552531,
+        "db_id": "financial"
+    },
+    "498": {
+        "tokens": {
+            "gen_input_tokens": 23475,
+            "gen_output_tokens": 305
+        },
+        "latency_s": 13.824502229690552,
+        "latency_m": 0.23040837049484253,
+        "db_id": "financial"
+    },
+    "455": {
+        "tokens": {
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": -1,
+        "latency_m": -1,
+        "db_id": "california_schools"
+    },
+    "457": {
+        "tokens": {
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": -1,
+        "latency_m": -1,
+        "db_id": "california_schools"
+    }
+}

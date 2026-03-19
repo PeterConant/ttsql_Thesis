@@ -1,0 +1,142 @@
+{
+    "4": {
+        "tables": [
+            "ERROR"
+        ],
+        "tokens": {
+            "tool_input_tokens": -1,
+            "tool_output_tokens": -1,
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": 2.7179718017578125e-05,
+        "latency_m": 4.5299530029296873e-07,
+        "db_id": "debit_card_specializing"
+    },
+    "7": {
+        "tables": [
+            "ERROR"
+        ],
+        "tokens": {
+            "tool_input_tokens": -1,
+            "tool_output_tokens": -1,
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": 0.0002491474151611328,
+        "latency_m": 4.152456919352214e-06,
+        "db_id": "debit_card_specializing"
+    },
+    "6": {
+        "tables": [
+            "ERROR"
+        ],
+        "tokens": {
+            "tool_input_tokens": -1,
+            "tool_output_tokens": -1,
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": 2.4318695068359375e-05,
+        "latency_m": 4.0531158447265624e-07,
+        "db_id": "debit_card_specializing"
+    },
+    "2": {
+        "tables": [
+            "ERROR"
+        ],
+        "tokens": {
+            "tool_input_tokens": -1,
+            "tool_output_tokens": -1,
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": 2.1457672119140625e-05,
+        "latency_m": 3.5762786865234375e-07,
+        "db_id": "debit_card_specializing"
+    },
+    "1": {
+        "tables": [
+            "ERROR"
+        ],
+        "tokens": {
+            "tool_input_tokens": -1,
+            "tool_output_tokens": -1,
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": 0.00010776519775390625,
+        "latency_m": 1.7960866292317708e-06,
+        "db_id": "debit_card_specializing"
+    },
+    "5": {
+        "tables": [
+            "ERROR"
+        ],
+        "tokens": {
+            "tool_input_tokens": -1,
+            "tool_output_tokens": -1,
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": 2.288818359375e-05,
+        "latency_m": 3.814697265625e-07,
+        "db_id": "debit_card_specializing"
+    },
+    "3": {
+        "tables": [
+            "ERROR"
+        ],
+        "tokens": {
+            "tool_input_tokens": -1,
+            "tool_output_tokens": -1,
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": 4.410743713378906e-05,
+        "latency_m": 7.351239522298177e-07,
+        "db_id": "debit_card_specializing"
+    },
+    "0": {
+        "tables": [
+            "ERROR"
+        ],
+        "tokens": {
+            "tool_input_tokens": -1,
+            "tool_output_tokens": -1,
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": 5.745887756347656e-05,
+        "latency_m": 9.57647959391276e-07,
+        "db_id": "debit_card_specializing"
+    },
+    "9": {
+        "tables": [
+            "ERROR"
+        ],
+        "tokens": {
+            "tool_input_tokens": -1,
+            "tool_output_tokens": -1,
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": 1.430511474609375e-05,
+        "latency_m": 2.384185791015625e-07,
+        "db_id": "debit_card_specializing"
+    },
+    "8": {
+        "tables": [
+            "ERROR"
+        ],
+        "tokens": {
+            "tool_input_tokens": -1,
+            "tool_output_tokens": -1,
+            "gen_input_tokens": -1,
+            "gen_output_tokens": -1
+        },
+        "latency_s": 3.981590270996094e-05,
+        "latency_m": 6.635983784993489e-07,
+        "db_id": "debit_card_specializing"
+    }
+}

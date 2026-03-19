@@ -1,0 +1,224 @@
+{
+    "0": {
+        "tables": [
+            "customers"
+        ],
+        "tokens": {
+            "tool_input_tokens": 809,
+            "tool_output_tokens": 28,
+            "gen_input_tokens": 365,
+            "gen_output_tokens": 142
+        },
+        "latency_s": 3.284349203109741,
+        "latency_m": 0.05473915338516235,
+        "db_id": "debit_card_specializing"
+    },
+    "1": {
+        "tables": [
+            "yearmonth",
+            "laboratory"
+        ],
+        "tokens": {
+            "tool_input_tokens": 820,
+            "tool_output_tokens": 34,
+            "gen_input_tokens": 1032,
+            "gen_output_tokens": 150
+        },
+        "latency_s": 3.4973227977752686,
+        "latency_m": 0.05828871329625448,
+        "db_id": "debit_card_specializing"
+    },
+    "4": {
+        "tables": [
+            "yearmonth",
+            "gasstations"
+        ],
+        "tokens": {
+            "tool_input_tokens": 790,
+            "tool_output_tokens": 33,
+            "gen_input_tokens": 559,
+            "gen_output_tokens": 167
+        },
+        "latency_s": 3.7688515186309814,
+        "latency_m": 0.06281419197718302,
+        "db_id": "debit_card_specializing"
+    },
+    "2": {
+        "tables": [
+            "customers",
+            "yearmonth"
+        ],
+        "tokens": {
+            "tool_input_tokens": 837,
+            "tool_output_tokens": 32,
+            "gen_input_tokens": 572,
+            "gen_output_tokens": 184
+        },
+        "latency_s": 4.066310167312622,
+        "latency_m": 0.06777183612187704,
+        "db_id": "debit_card_specializing"
+    },
+    "3": {
+        "tables": [
+            "customers",
+            "yearmonth"
+        ],
+        "tokens": {
+            "tool_input_tokens": 851,
+            "tool_output_tokens": 32,
+            "gen_input_tokens": 586,
+            "gen_output_tokens": 260
+        },
+        "latency_s": 5.350847005844116,
+        "latency_m": 0.08918078343073527,
+        "db_id": "debit_card_specializing"
+    },
+    "5": {
+        "tables": [
+            "yearmonth",
+            "customers"
+        ],
+        "tokens": {
+            "tool_input_tokens": 838,
+            "tool_output_tokens": 32,
+            "gen_input_tokens": 573,
+            "gen_output_tokens": 162
+        },
+        "latency_s": 3.519592046737671,
+        "latency_m": 0.05865986744562785,
+        "db_id": "debit_card_specializing"
+    },
+    "7": {
+        "tables": [
+            "yearmonth",
+            "consumption"
+        ],
+        "tokens": {
+            "tool_input_tokens": 861,
+            "tool_output_tokens": 33,
+            "gen_input_tokens": 481,
+            "gen_output_tokens": 138
+        },
+        "latency_s": 3.1416192054748535,
+        "latency_m": 0.05236032009124756,
+        "db_id": "debit_card_specializing"
+    },
+    "8": {
+        "tables": [
+            "customers",
+            "yearmonth"
+        ],
+        "tokens": {
+            "tool_input_tokens": 841,
+            "tool_output_tokens": 32,
+            "gen_input_tokens": 576,
+            "gen_output_tokens": 142
+        },
+        "latency_s": 3.1621110439300537,
+        "latency_m": 0.052701850732167564,
+        "db_id": "debit_card_specializing"
+    },
+    "9": {
+        "tables": [
+            "gasstations"
+        ],
+        "tokens": {
+            "tool_input_tokens": 843,
+            "tool_output_tokens": 29,
+            "gen_input_tokens": 433,
+            "gen_output_tokens": 110
+        },
+        "latency_s": 2.5505542755126953,
+        "latency_m": 0.042509237925211586,
+        "db_id": "debit_card_specializing"
+    },
+    "11": {
+        "tables": [
+            "customers"
+        ],
+        "tokens": {
+            "tool_input_tokens": 824,
+            "tool_output_tokens": 28,
+            "gen_input_tokens": 380,
+            "gen_output_tokens": 82
+        },
+        "latency_s": 2.0553338527679443,
+        "latency_m": 0.03425556421279907,
+        "db_id": "debit_card_specializing"
+    },
+    "10": {
+        "tables": [
+            "customers",
+            "transactions_1k"
+        ],
+        "tokens": {
+            "tool_input_tokens": 806,
+            "tool_output_tokens": 34,
+            "gen_input_tokens": 680,
+            "gen_output_tokens": 184
+        },
+        "latency_s": 3.9279000759124756,
+        "latency_m": 0.06546500126520792,
+        "db_id": "debit_card_specializing"
+    },
+    "13": {
+        "tables": [
+            "yearmonth"
+        ],
+        "tokens": {
+            "tool_input_tokens": 809,
+            "tool_output_tokens": 29,
+            "gen_input_tokens": 412,
+            "gen_output_tokens": 162
+        },
+        "latency_s": 3.4576075077056885,
+        "latency_m": 0.057626791795094806,
+        "db_id": "debit_card_specializing"
+    },
+    "12": {
+        "tables": [
+            "customers",
+            "yearmonth"
+        ],
+        "tokens": {
+            "tool_input_tokens": 837,
+            "tool_output_tokens": 32,
+            "gen_input_tokens": 572,
+            "gen_output_tokens": 225
+        },
+        "latency_s": 4.601398229598999,
+        "latency_m": 0.07668997049331665,
+        "db_id": "debit_card_specializing"
+    },
+    "14": {
+        "tables": [
+            "products",
+            "yearmonth"
+        ],
+        "tokens": {
+            "tool_input_tokens": 828,
+            "tool_output_tokens": 32,
+            "gen_input_tokens": 550,
+            "gen_output_tokens": 237
+        },
+        "latency_s": 4.792402267456055,
+        "latency_m": 0.07987337112426758,
+        "db_id": "debit_card_specializing"
+    },
+    "6": {
+        "tables": [
+            "customers",
+            "yearmonth",
+            "transactions_1k"
+        ],
+        "tokens": {
+            "tool_input_tokens": 912,
+            "tool_output_tokens": 38,
+            "gen_input_tokens": 965,
+            "gen_output_tokens": 956
+        },
+        "latency_s": 17.216460466384888,
+        "latency_m": 0.28694100777308146,
+        "db_id": "debit_card_specializing"
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "1": {
+        "tokens": {
+            "gen_input_tokens": 212,
+            "gen_output_tokens": 149
+        },
+        "latency_s": 16.1605806350708,
+        "latency_m": 0.2693430105845133,
+        "db_id": "debit_card_specializing"
+    },
+    "0": {
+        "tokens": {
+            "gen_input_tokens": 201,
+            "gen_output_tokens": 142
+        },
+        "latency_s": 3.272453784942627,
+        "latency_m": 0.05454089641571045,
+        "db_id": "debit_card_specializing"
+    },
+    "2": {
+        "tokens": {
+            "gen_input_tokens": 229,
+            "gen_output_tokens": 141
+        },
+        "latency_s": 16.235300540924072,
+        "latency_m": 0.2705883423487345,
+        "db_id": "debit_card_specializing"
+    },
+    "4": {
+        "tokens": {
+            "gen_input_tokens": 182,
+            "gen_output_tokens": 141
+        },
+        "latency_s": 16.289287328720093,
+        "latency_m": 0.27148812214533485,
+        "db_id": "debit_card_specializing"
+    },
+    "3": {
+        "tokens": {
+            "gen_input_tokens": 243,
+            "gen_output_tokens": 192
+        },
+        "latency_s": 16.364465713500977,
+        "latency_m": 0.2727410952250163,
+        "db_id": "debit_card_specializing"
+    },
+    "9": {
+        "tokens": {
+            "gen_input_tokens": 235,
+            "gen_output_tokens": 133
+        },
+        "latency_s": 3.181041955947876,
+        "latency_m": 0.0530173659324646,
+        "db_id": "debit_card_specializing"
+    },
+    "8": {
+        "tokens": {
+            "gen_input_tokens": 233,
+            "gen_output_tokens": 163
+        },
+        "latency_s": 3.750547170639038,
+        "latency_m": 0.06250911951065063,
+        "db_id": "debit_card_specializing"
+    },
+    "5": {
+        "tokens": {
+            "gen_input_tokens": 230,
+            "gen_output_tokens": 207
+        },
+        "latency_s": 4.589503765106201,
+        "latency_m": 0.07649172941843668,
+        "db_id": "debit_card_specializing"
+    },
+    "7": {
+        "tokens": {
+            "gen_input_tokens": 253,
+            "gen_output_tokens": 277
+        },
+        "latency_s": 5.645236968994141,
+        "latency_m": 0.09408728281656902,
+        "db_id": "debit_card_specializing"
+    },
+    "6": {
+        "tokens": {
+            "gen_input_tokens": 304,
+            "gen_output_tokens": 596
+        },
+        "latency_s": 11.088594913482666,
+        "latency_m": 0.1848099152247111,
+        "db_id": "debit_card_specializing"
+    }
+}

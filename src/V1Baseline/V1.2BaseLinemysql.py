@@ -85,15 +85,16 @@ def get_schema() -> str:
         schema = database.run(schema_query)
         
         # Get first 3 rows
-        #sample_query = f"SELECT * FROM `{table_name}` LIMIT 3;"
-        #sample_data = database.run(sample_query)
+        sample_query = f"SELECT * FROM `{table_name}` LIMIT 3;"
+        sample_data = database.run(sample_query)
         
         # Format for LLM
         table_info = dedent(f"""
             Table: {table_name}
             Schema: {schema}
+            Sample Data (first 3 rows): {sample_data}
             ---
-            """) #Sample Data (first 3 rows): {sample_data}
+            """) 
         database_info.append(table_info)
 
     # Combine all table information
@@ -229,29 +230,29 @@ def llm_SQLGenerator_call(state: State):
 
 
 
-def execution_tool_node(state: State):
-    """Performs the SQL statement execution tool call"""
+# def execution_tool_node(state: State):
+#     """Performs the SQL statement execution tool call"""
 
-    result = []
-    for tool_call in state["messages"][-1].tool_calls:
-        tool = tools_by_name[tool_call["name"]]
-        observation = tool.invoke(tool_call["args"])
-        result.append(ToolMessage(content=observation, tool_call_id=tool_call["id"]))
-    return {"messages":result}
+#     result = []
+#     for tool_call in state["messages"][-1].tool_calls:
+#         tool = tools_by_name[tool_call["name"]]
+#         observation = tool.invoke(tool_call["args"])
+#         result.append(ToolMessage(content=observation, tool_call_id=tool_call["id"]))
+#     return {"messages":result}
 
 
 
-def should_continue(state: State) -> Literal["environment", END]:
-    """Decide if we should continue the loop or stop base upon whether the LLM made a tool call"""
+# def should_continue(state: State) -> Literal["environment", END]:
+#     """Decide if we should continue the loop or stop base upon whether the LLM made a tool call"""
 
-    messages = state["messages"]
-    last_message = messages[-1]
-    # If the LLM makes a tool call, then perform an action
-    if last_message.tool_calls:
-        return "Action"
-    # Otherwise, we stop
-    #return END
-    return END
+#     messages = state["messages"]
+#     last_message = messages[-1]
+#     # If the LLM makes a tool call, then perform an action
+#     if last_message.tool_calls:
+#         return "Action"
+#     # Otherwise, we stop
+#     #return END
+#     return END
 
 
 
