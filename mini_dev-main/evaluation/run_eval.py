@@ -1,8 +1,8 @@
 import subprocess
 import sys
 
-predicted_sql_path = rf"C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\sql_result\V2\results_Qwen3-14B_Qwen3-14B_20260311_105307.json"
-output_log_path = "C:\\Users\\peter\\Documents\\SJSU\\Thesis\\code\\mini_dev-main\\sql_result\\V2\\MySQL.log" # Baseline\\MySQL.log
+predicted_sql_path = rf"C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\sql_result\Baseline\results_Qwen3-4B_defualt_max-model-len_20260313_174733.json"
+output_log_path = "C:\\Users\\peter\\Documents\\SJSU\\Thesis\\code\\mini_dev-main\\sql_result\\Baseline\\MySQL.log" # Baseline\\MySQL.log
 
 
 # Define scripts with their arguments
