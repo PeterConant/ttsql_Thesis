@@ -1,25 +1,13 @@
 from langchain.tools import tool
 from langchain_community.utilities import SQLDatabase
-from langgraph.graph import StateGraph, MessagesState, START, END
-from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
-from langchain_openai import ChatOpenAI
-from langchain_core.callbacks import get_usage_metadata_callback
+from langchain_core.messages import ToolMessage
 
 from sentence_transformers import SentenceTransformer
-from transformers import AutoTokenizer
 
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from IPython.display import Image, display
-from typing_extensions import Literal
-from pydantic import BaseModel, Field
-from datetime import datetime
-from textwrap import dedent
-from statistics import mean
-from tqdm import tqdm
 import numpy as np
 import faiss
 import json
-import time
+import ast
 
 database = SQLDatabase.from_uri("mysql+pymysql://readonly-agent:bird@localhost:3306/bird_mini_dev", max_string_length = 3000)
 
@@ -49,7 +37,7 @@ def get_tables_tool():
 
 
 # Get Schemas
-def get_table_schemas(tables:list[str]):
+def get_table_schemas_and_samples(tables:list[str]):
     return database.get_table_info_no_throw(tables)
 
 # Tools
@@ -64,7 +52,7 @@ def get_table_schemas_tool(table_list: list[str]) -> str:
         Formatted string containing schema and sample data for each table
     """
 
-    return get_table_schemas(table_list)
+    return get_table_schemas_and_samples(table_list)
 
 
 
@@ -73,8 +61,8 @@ def get_table_schemas_tool(table_list: list[str]) -> str:
 file_name = 'tableName_createTable_valueExample'
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
-embeddings = np.load(f'embeddings/{file_name}.npy')
-with open(f'embeddings/{file_name}.json', 'r') as f:
+embeddings = np.load(f'src/V4/embeddings/{file_name}.npy')
+with open(f'src/V4/embeddings/{file_name}.json', 'r') as f:
     table_metadata = json.load(f)
 
 def get_tables_semantic_search(query, k, similarity_threshold=0.0):

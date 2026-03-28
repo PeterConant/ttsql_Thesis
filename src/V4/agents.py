@@ -1,28 +1,11 @@
-from tools import get_tables, get_tables_tool, get_table_schemas, get_table_schemas_tool, get_tables_semantic_search
-from nodes import user_node, tool_node, gen_llm_call, agent_llm_call, should_continue
+from tools import get_tables, get_tables_tool, get_table_schemas_and_samples, get_table_schemas_tool, get_tables_semantic_search
+from nodes import State, user_node, tool_node, gen_llm_call, agent_llm_call, should_continue
 
-from langchain.tools import get_tables, get_tables_tool, get_table_schemas, get_table_schemas_tool, get_tables_semantic_search
-from langchain_community.utilities import SQLDatabase
-from langgraph.graph import StateGraph,  MessagesState, START, END
-from langgraph.graph.state import CompiledStateGraph
+from langgraph.graph import StateGraph, START, END
 from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
 from langchain_openai import ChatOpenAI
-from langchain_core.callbacks import get_usage_metadata_callback
 
-from sentence_transformers import SentenceTransformer
-from transformers import AutoTokenizer
-
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from IPython.display import Image, display
-from typing_extensions import Literal
-from pydantic import BaseModel, Field
-from datetime import datetime
 from textwrap import dedent
-from statistics import mean
-from tqdm import tqdm
-import numpy as np
-import faiss
-import json
 import time
 
 
@@ -42,8 +25,13 @@ class Agent:
         )
         self.llm_path = llm_path
 
-class SemanticSearchAgent(Agent):
+        def build_agent():
+            pass
 
+        def call_agent():
+            pass
+
+class BaselineAgent(Agent):
     def __init__(self,llm_path,max_completion_tokens):
         super().__init__(llm_path=llm_path,max_completion_tokens=max_completion_tokens)
         self.agent = self.build_agent()
@@ -54,25 +42,70 @@ class SemanticSearchAgent(Agent):
         agent_builder = StateGraph(State)
 
         # Add nodes
-        #agent_builder.add_node("user", user_node)
         agent_builder.add_node("generator_llm_call", gen_llm_call)
-        agent_builder.add_node("environment", tool_node)
+
 
         # Add edges to connect nodes
-
-        agent_builder.add_edge(START, "user")
-        agent_builder.add_edge("user", "generator_llm_call")
+        agent_builder.add_edge(START, "generator_llm_call")
+        agent_builder.add_edge("generator_llm_call", END)
 
         return agent_builder.compile() 
 
-    def call_semeanticSearch_agent():
-        return "sql"
+    def call_agent(self, i, entry, error_catching: bool):
+        
+        call_start_time = time.time()
+
+        tables = get_tables()
+        all_table_schemas = get_table_schemas_and_samples(tables)
+
+        messages = [HumanMessage(content=dedent("""{question} Supporting evidence: {evidence}
+                                        Here are the all tables available in the database:
+                                        {table_list}""".format(
+                question=entry['question'],
+                evidence=entry['evidence'],
+                table_list=all_table_schemas)))]
+
+        messages = []
+        
+
+        if error_catching:
+            try:
+                response = self.agent.invoke({"messages": messages})
+                result= f'{response['sql']}\t----- bird -----\t{entry["db_id"]}'
+
+                call_elapsed = time.time() - call_start_time
+                call_elapsed_min = call_elapsed/60
+
+                meta_data = {'tokens': {'gen_input_tokens': response['gen_input_tokens'], 'gen_output_tokens': response['gen_output_tokens']},
+                        'latency_s': call_elapsed,
+                        'latency_m': call_elapsed_min,
+                        'db_id': entry["db_id"]}
+            except Exception as e:
+                result = f"ERROR: {str(e)}"
+                call_elapsed = time.time() - call_start_time
+                meta_data = {'tokens': {'gen_input_tokens': -1, 'gen_output_tokens': -1},
+                        'latency_s': -1,
+                        'db_id': entry["db_id"]}
+
+        else:
+            response = self.agent.invoke({"messages": messages})
+            result= f'{response['sql']}\t----- bird -----\t{entry["db_id"]}'
+
+            call_elapsed = time.time() - call_start_time
+
+
+            meta_data = {'tokens': {'gen_input_tokens': response['gen_input_tokens'], 'gen_output_tokens': response['gen_output_tokens']},
+                        'latency_s': call_elapsed,
+                        'db_id': entry["db_id"]}
+        return i, result, meta_data
+
 
 class LLMSearchAgent(Agent):
 
-    def __init__(self,llm_path,max_completion_tokens,secondar_llm_path,secondary_max_completion_tokens):
+    def __init__(self,llm_path, max_completion_tokens, secondar_llm_path:str=None, secondary_max_completion_tokens:str=None):
         super().__init__(llm_path=llm_path,max_completion_tokens=max_completion_tokens)
         self.agent = self.build_agent()
+        self.tools = [get_table_schemas_tool]
 
     def build_agent(self):
         # Build workflow
@@ -103,7 +136,7 @@ class LLMSearchAgent(Agent):
     def call_agent(self, i, entry, error_catching: bool):
         call_start_time = time.time()
 
-        table_list = get_tables_node()
+        table_list = get_tables()
 
         messages = [HumanMessage(content=dedent("""{question} Supporting evidence: {evidence}
                                                 Here are the all tables available in the database:
@@ -115,7 +148,8 @@ class LLMSearchAgent(Agent):
 
         if(error_catching):
             try:
-                response = self.agent.invoke({"messages": messages, "llm":self.llm, "llm_path":self.llm_path, "tables": [], "input_tokens": [], "output_tokens": []})
+                response = self.agent.invoke({"messages": messages, "llm":self.llm, "llm_path":self.llm_path, "tools":self.tools,
+                                              "tables": [], "input_tokens": [], "output_tokens": []})
                 result= f'{response['sql']}\t----- bird -----\t{entry["db_id"]}'
 
                 call_elapsed = time.time() - call_start_time
@@ -152,3 +186,35 @@ class LLMSearchAgent(Agent):
                         'db_id': entry["db_id"]}
         
         return i, result, meta_data
+    
+
+
+
+
+
+
+class SemanticSearchAgent(Agent):
+
+    def __init__(self,llm_path,max_completion_tokens):
+        super().__init__(llm_path=llm_path,max_completion_tokens=max_completion_tokens)
+        self.agent = self.build_agent()
+
+
+    def build_agent():
+        # Build workflow
+        agent_builder = StateGraph(State)
+
+        # Add nodes
+        #agent_builder.add_node("user", user_node)
+        agent_builder.add_node("generator_llm_call", gen_llm_call)
+        agent_builder.add_node("environment", tool_node)
+
+        # Add edges to connect nodes
+
+        agent_builder.add_edge(START, "user")
+        agent_builder.add_edge("user", "generator_llm_call")
+
+        return agent_builder.compile() 
+
+    def call_agent():
+        return "sql"
