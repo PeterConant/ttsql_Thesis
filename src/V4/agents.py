@@ -31,6 +31,27 @@ class Agent:
         def call_agent():
             pass
 
+        def invoke_agent(messages, entry, call_start_time):
+            response = self.agent.invoke({"messages": messages, "llm":self.llm, "llm_path":self.llm_path, "tools":self.tools,
+                                "tables": [], "input_tokens": [], "output_tokens": []})
+            
+            call_elapsed = time.time() - call_start_time
+
+            sql_result= f'{response['sql']}\t----- bird -----\t{entry["db_id"]}'
+            meta_data = {'tables': response['tables'], 
+                'input_tokens': response['input_tokens'], 
+                'output_tokens': response['output_tokens'],
+                'latency_s': call_elapsed,
+                #'db_id': entry["db_id"]
+                }
+
+            # if 'secondary_input_token' in response:
+            #     meta_data['secondary_input_tokens'] = response['secondary_input_tokens']
+            #     meta_data['secondary_output_tokens'] = response['secondary_output_tokens']
+            return sql_result, meta_data
+
+
+
 class BaselineAgent(Agent):
     def __init__(self,llm_path,max_completion_tokens):
         super().__init__(llm_path=llm_path,max_completion_tokens=max_completion_tokens)
@@ -68,35 +89,23 @@ class BaselineAgent(Agent):
         messages = []
         
 
-        if error_catching:
+        if(error_catching):
             try:
-                response = self.agent.invoke({"messages": messages})
-                result= f'{response['sql']}\t----- bird -----\t{entry["db_id"]}'
-
-                call_elapsed = time.time() - call_start_time
-                call_elapsed_min = call_elapsed/60
-
-                meta_data = {'tokens': {'gen_input_tokens': response['gen_input_tokens'], 'gen_output_tokens': response['gen_output_tokens']},
-                        'latency_s': call_elapsed,
-                        'latency_m': call_elapsed_min,
-                        'db_id': entry["db_id"]}
+                super.invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
+                
             except Exception as e:
                 result = f"ERROR: {str(e)}"
-                call_elapsed = time.time() - call_start_time
-                meta_data = {'tokens': {'gen_input_tokens': -1, 'gen_output_tokens': -1},
-                        'latency_s': -1,
-                        'db_id': entry["db_id"]}
+                meta_data = {'tables': ['ERROR'], 
+                    'input_tokens': [-1], 
+                    'output_tokens': [-1],
+                    'latency_s': -1,
+                    #'db_id': entry["db_id"]
+                    }
 
-        else:
-            response = self.agent.invoke({"messages": messages})
-            result= f'{response['sql']}\t----- bird -----\t{entry["db_id"]}'
-
-            call_elapsed = time.time() - call_start_time
-
-
-            meta_data = {'tokens': {'gen_input_tokens': response['gen_input_tokens'], 'gen_output_tokens': response['gen_output_tokens']},
-                        'latency_s': call_elapsed,
-                        'db_id': entry["db_id"]}
+        else: 
+            super.invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
+        
+        return i, result, meta_data
         return i, result, meta_data
 
 
@@ -148,42 +157,19 @@ class LLMSearchAgent(Agent):
 
         if(error_catching):
             try:
-                response = self.agent.invoke({"messages": messages, "llm":self.llm, "llm_path":self.llm_path, "tools":self.tools,
-                                              "tables": [], "input_tokens": [], "output_tokens": []})
-                result= f'{response['sql']}\t----- bird -----\t{entry["db_id"]}'
-
-                call_elapsed = time.time() - call_start_time
-                call_elapsed_min = call_elapsed/60
-
-                meta_data = {'tables': response['tables'], 
-                            'tokens': {'input_tokens': response['input_tokens'], 'output_tokens': response['output_tokens']},
-                            'latency_s': call_elapsed,
-                            'latency_m': call_elapsed_min,
-                            'db_id': entry["db_id"]}
+                super.invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
+                
             except Exception as e:
                 result = f"ERROR: {str(e)}"
-                call_elapsed = time.time() - call_start_time
-                call_elapsed_min = call_elapsed/60
                 meta_data = {'tables': ['ERROR'], 
-                    'tokens': {'tool_input_tokens': -1, 'tool_output_tokens':-1,
-                        'gen_input_tokens': -1, 'gen_output_tokens': -1},
+                    'input_tokens': [-1], 
+                    'output_tokens': [-1],
                     'latency_s': -1,
-                    'latency_m': -1,
-                    'db_id': entry["db_id"]}
-
+                    #'db_id': entry["db_id"]
+                    }
 
         else: 
-            response = self.agent.invoke({"messages": messages, "tables": [], "input_tokens": [], "output_tokens": []})
-            result = f'{response['sql']}\t----- bird -----\t{entry["db_id"]}'
-
-            call_elapsed = time.time() - call_start_time
-            call_elapsed_min = call_elapsed/60
-
-            meta_data = {'tables': response['tables'], 
-                        'tokens': {'input_tokens': response['input_tokens'], 'output_tokens': response['output_tokens']},
-                        'latency_s': call_elapsed,
-                        'latency_m': call_elapsed_min,
-                        'db_id': entry["db_id"]}
+            super.invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
         
         return i, result, meta_data
     

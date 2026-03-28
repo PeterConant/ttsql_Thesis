@@ -9,16 +9,15 @@ from tqdm import tqdm
 import json
 import time
 
-error_catching = True
-vLLM_max_model_len = '8k'
 agent_name = 'llmsearch'
 model_name=''
 llm_path=''
 max_completion_tokens = 2000
 vllm_max_model_len = -1
 
+error_catching = False
 max_workers = 10
-data_subset=10
+data_subset=1
 
 results = {}
 metadatadict = {}
@@ -45,7 +44,7 @@ def run_BIRD_test(agent_name:str, llm_path:str, max_completion_tokens:int=2000, 
         # Submit all tasks
         futures = {
             executor.submit(agent.call_agent, i, entry, error_catching): i 
-            for i, entry in enumerate(mini_dev_sql) #number of items to test
+            for i, entry in enumerate(mini_dev_sql)
         }
         
         # Process completed tasks with progress bar
@@ -70,7 +69,7 @@ def run_BIRD_test(agent_name:str, llm_path:str, max_completion_tokens:int=2000, 
 
     with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\sql_result\{agent_name}\{model_name}\metadata\results_{dt_now}.log', 'w') as f:
         averages ={}
-        gen_token_keys = ['gen_input_tokens', 'gen_output_tokens']
+        gen_token_keys = ['input_tokens', 'output_tokens']
         
         
         
@@ -85,11 +84,11 @@ def run_BIRD_test(agent_name:str, llm_path:str, max_completion_tokens:int=2000, 
         f.write(f'Total Latency (seconds):  {round(elapsed,2)}s / Latency (minutes):  {round(elapsed_min,2)}min\n')
         f.write(f"Avg  Latency (seconds):  {averages['latency_s']:.2f}/ Avg  Latency (minutes):  {averages['latency_m']:.4f}\n")
         
-        gen_stats = {}
+        token_stats = {}
         for key in gen_token_keys:
             values = [entry['tokens'][key] for entry in metadatadict.values() if entry['tokens'][key] != -1]
             
-            gen_stats[key] = {
+            token_stats[key] = {
                 'mean': mean(values),
                 'median': median(values),
                 'std': stdev(values) if len(values) > 1 else 0,
@@ -97,10 +96,10 @@ def run_BIRD_test(agent_name:str, llm_path:str, max_completion_tokens:int=2000, 
                 'min': min(values)
             }
 
-        f.write(f"Avg Gen Input Tokens:   {gen_stats['gen_input_tokens']['mean']:.2f}\n")
-        f.write(f"Avg Gen Output Tokens:  {gen_stats['gen_output_tokens']['mean']:.2f}\n")
-        f.write(f"Max Gen Input Tokens:   {gen_stats['gen_input_tokens']['max']:.2f}\n")
-        f.write(f"Max Gen Output Tokens:  {gen_stats['gen_output_tokens']['max']:.2f}\n")
+        f.write(f"Avg Gen Input Tokens:   {token_stats['input_tokens']['mean']:.2f}\n")
+        f.write(f"Avg Gen Output Tokens:  {token_stats['output_tokens']['mean']:.2f}\n")
+        f.write(f"Max Gen Input Tokens:   {token_stats['input_tokens']['max']:.2f}\n")
+        f.write(f"Max Gen Output Tokens:  {token_stats['output_tokens']['max']:.2f}\n")
 
         if agent_name in ['llmsearch']:
             tool_token_keys = ['tool_input_tokens', 'tool_output_tokens']
@@ -124,6 +123,10 @@ def run_BIRD_test(agent_name:str, llm_path:str, max_completion_tokens:int=2000, 
 
         f.write(f'Langgraph gen_llm max_tokens: {max_completion_tokens}\n')
         f.write(f'vLLM model max-model-len: {vllm_max_model_len}\n')
+
+
+
+
 
 run_BIRD_test(agent_name=agent_name,llm_path=llm_path, max_completion_tokens=max_completion_tokens, vllm_max_model_len=vllm_max_model_len, 
               data_subset=data_subset, max_workers=max_workers, error_catching=error_catching)
