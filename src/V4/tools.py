@@ -15,16 +15,7 @@ database = SQLDatabase.from_uri("mysql+pymysql://readonly-agent:bird@localhost:3
 # Get Tables
 def get_tables():
     """Performs the tool call"""
-
-    query = f"SHOW TABLES;"
-
-    tables = database.run(query)
-    tables = ast.literal_eval(tables)
-    _tables = []
-    for table in tables:
-        _tables.append(table[0])
-    tables = _tables
-    return tables
+    return database.get_usable_table_names()
 
 @tool
 def get_tables_tool():
@@ -58,24 +49,35 @@ def get_table_schemas_tool(table_list: list[str]) -> str:
 
 ################## EMBEDDINGS SIMILARITY #########################
 
-file_name = 'tableName_createTable_valueExample'
+file_name = 'createTable_valueExample'
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 embeddings = np.load(f'src/V4/embeddings/{file_name}.npy')
 with open(f'src/V4/embeddings/{file_name}.json', 'r') as f:
-    table_metadata = json.load(f)
+    table_metadata = json.load(f) #list of {'table':table_name, 'chunk'=chunk_to_be(or_has_been)_embedded}
+
+dimension = embeddings.shape[1]
+index = faiss.IndexFlatIP(dimension)
+index.add(embeddings.astype('float32'))
+
+faiss.normalize_L2(embeddings)
+index = faiss.IndexFlatIP(embeddings.shape[1])
+index.add(embeddings.astype('float32'))
 
 def get_tables_semantic_search(query, k, similarity_threshold=0.0):
-    query_embedding = embedding_model.encode([query]).astype('float32')
+    query_embedding = embedding_model.encode([query], convert_to_numpy=True)
+    query_embedding = query_embedding.astype('float32')
     faiss.normalize_L2(query_embedding)
 
     D, I = index.search(query_embedding, k)
 
+    retrieved_tables = []
     for rank, idx in enumerate(I[0]):
         score = D[0][rank]
         if score < similarity_threshold:
             continue
 
-    response = "A similarity search between the user question and possible databases found these tables the most relavent to the user question: \n" + tables
-    result = ToolMessage(content=response, tool_call_id="get_tables_node")
-    return result, similarity_measures
+        table_name = table_metadata[idx]['table']
+        retrieved_tables.append(table_name)
+
+    return retrieved_tables

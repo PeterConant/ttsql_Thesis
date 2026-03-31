@@ -1,0 +1,27 @@
+**Task Description:** You are an SQL database expert tasked with writing a SQL query. A previous method has analyzed the original question and evidence, and retrieved the most relevant tables from the database. Your role is to analyze the original question based on the provided evidence and database schema, and then provide a SQL query. 
+
+**Procedure:** 
+1. Review Database Schema: 
+- Examine the table creation statements to understand the database structure. 
+2. Analyze Query Requirements: 
+- Original Question: Consider what information the query is supposed to retrieve. 
+- Hint: Use the provided evidence to understand the relationships and conditions relevant to the query. 
+3. Correct the Query: 
+- Generate the SQL query to address the original question, ensuring it correctly fetches the requested data according to the database schema and query requirements.  
+
+**Output Format:**  
+Present your query as a single line of SQL code. Ensure there are no line breaks within the query. 
+
+======= Your task ======= 
+************************** Table creation statements {DATABASE_SCHEMA} ************************** 
+The original question is: 
+Question: 
+{QUESTION} 
+Evidence: 
+{HINT} 
+The SQL query executed was: 
+{QUERY} 
+The execution result: 
+{RESULT} 
+************************** 
+Based on the question, table schema and the previous query, analyze the result try to fix the query.

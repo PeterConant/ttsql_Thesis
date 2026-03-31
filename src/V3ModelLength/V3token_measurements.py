@@ -16,7 +16,7 @@ import json
 import time
 
 
-with open(r'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\mysql\mini_dev_mysql.json') as f:
+with open(r'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\mysql\mini_dev_mysql.json') as f:
     mini_dev_sql = json.load(f)
 
 database = SQLDatabase.from_uri("mysql+pymysql://readonly-agent:bird@localhost:3306/bird_mini_dev")
@@ -253,16 +253,16 @@ elapsed_min = elapsed/60
 
 dt_now = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\sql_result\{version}\results_{model_name}_{dt_now}.json', 'w') as f:
+with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\sql_result\{version}\results_{model_name}_{dt_now}.json', 'w') as f:
     json.dump(results, f, indent=4)
 
-with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\sql_result\{version}\\tables\tables_{model_name}_{dt_now}.json', 'w') as f:
+with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\sql_result\{version}\\tables\tables_{model_name}_{dt_now}.json', 'w') as f:
     json.dump(tables, f, indent=4)
 
-with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\sql_result\{version}\tokens\tokens_{model_name}_{dt_now}.json', 'w') as f:
+with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\sql_result\{version}\tokens\tokens_{model_name}_{dt_now}.json', 'w') as f:
     json.dump(tokens, f, indent=4)
 
-with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\sql_result\{version}\results_{model_name}_{dt_now}.log', 'w') as f:
+with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\sql_result\{version}\results_{model_name}_{dt_now}.log', 'w') as f:
     f.write(f'Latency: {round(elapsed,2)}s / {round(elapsed_min,2)}min\n')
     f.write(f'Langgraph tool_llm max_tokens: {max_completion_tokens}\n')
     f.write(f'Langgraph gen_llm max_tokens: {max_completion_tokens}\n')

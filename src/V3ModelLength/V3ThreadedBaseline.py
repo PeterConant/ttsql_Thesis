@@ -19,7 +19,7 @@ import time
 import ast
 
 
-with open(r'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\mysql\mini_dev_mysql.json') as f:
+with open(r'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\mysql\mini_dev_mysql.json') as f:
     mini_dev_sql = json.load(f)
 
 database = SQLDatabase.from_uri("mysql+pymysql://readonly-agent:bird@localhost:3306/bird_mini_dev")
@@ -253,13 +253,13 @@ dt_now = datetime.now().strftime("%Y%m%d_%H%M%S")
 
 #metadatadict = 'average': averages , 'individual': metadata
 
-with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\sql_result\{version}\results_{file_name}_{dt_now}.json', 'w') as f:
+with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\sql_result\{version}\results_{file_name}_{dt_now}.json', 'w') as f:
     json.dump(results, f, indent=4)
 
-with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\sql_result\{version}\metadata\metadata_{file_name}_{dt_now}.json', 'w') as f:
+with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\sql_result\{version}\metadata\metadata_{file_name}_{dt_now}.json', 'w') as f:
     json.dump(metadatadict, f, indent=4)
 
-with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\sql_result\{version}\metadata\results_{file_name}_{dt_now}.log', 'w') as f:
+with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\sql_result\{version}\metadata\results_{file_name}_{dt_now}.log', 'w') as f:
     token_keys = ['gen_input_tokens', 'gen_output_tokens']
     averages = {
         key: mean(entry['tokens'][key] for entry in metadatadict.values() if entry['tokens'][key] != -1) 

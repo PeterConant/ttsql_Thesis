@@ -55,7 +55,7 @@ elif args.env == 'hpc':
         max_completion_tokens=max_completion_tokens
     )
 
-with open('mini_dev-main/mysql/mini_dev_mysql.json') as f:
+with open('mini_dev_main/mysql/mini_dev_mysql.json') as f:
     mini_dev_sql = json.load(f)
 
 
@@ -308,9 +308,9 @@ def run_minidev_MySQL(db_path=None):
 
     dt_now = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-    with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\sql_result\Baseline\results_baseline_{model_name}_{dt_now}.json', 'w') as f:
+    with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\sql_result\Baseline\results_baseline_{model_name}_{dt_now}.json', 'w') as f:
         json.dump(results, f, indent=4)
-    with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev-main\sql_result\Baseline\results_baseline_{model_name}_{dt_now}.log', 'w') as f:
+    with open(rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\sql_result\Baseline\results_baseline_{model_name}_{dt_now}.log', 'w') as f:
         f.write(f'Latency: {elapsed}s / {elapsed_min}m\n')
         f.write(f'Max_tokens: {max_completion_tokens}')
         

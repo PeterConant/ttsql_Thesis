@@ -5,6 +5,7 @@ from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
 from langchain_openai import ChatOpenAI
 from langchain_core.callbacks import get_usage_metadata_callback
 
+from sentence_transformers import SentenceTransformer
 from transformers import AutoTokenizer
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -15,6 +16,8 @@ from datetime import datetime
 from textwrap import dedent
 from statistics import mean
 from tqdm import tqdm
+import numpy as np
+import faiss
 import json
 import time
 
@@ -42,6 +45,21 @@ llm = ChatOpenAI(
     max_completion_tokens=max_completion_tokens
 )
 
+embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+
+embeddings = np.load(f'embeddings/{file_name}.npy')
+with open(f'embeddings/{file_name}.json', 'r') as f:
+    table_metadata = json.load(f)
+
+# Rebuild FAISS index from saved embeddings
+faiss.normalize_L2(embeddings)
+dimension = embeddings.shape[1]
+index = faiss.IndexFlatIP(dimension)
+index.add(embeddings.astype('float32'))
+
+
+
+
 class State(MessagesState):
     tables: list[str] = Field(default=[], description="List of tables requested by get_table_schema_llm.")
     input_tokens: list[int] = Field(default=[], description="Number of tokens")
@@ -58,15 +76,22 @@ def user_node(state: State):
 
     return {"messages":state["messages"]}
 
-def get_tables_node():
-    """Performs the tool call"""
 
-    query = f"SHOW TABLES;"
 
-    tables = database.run(query)
-    response = "Result of SHOW TABLES query: \n" + tables
+def get_tables_semantic_search(query, k, similarity_threshold=0.0):
+    query_embedding = embedding_model.encode([query]).astype('float32')
+    faiss.normalize_L2(query_embedding)
+
+    D, I = index.search(query_embedding, k)
+
+    for rank, idx in enumerate(I[0]):
+        score = D[0][rank]
+        if score < similarity_threshold:
+            continue
+
+    response = "A similarity search between the user question and possible databases found these tables the most relavent to the user question: \n" + tables
     result = ToolMessage(content=response, tool_call_id="get_tables_node")
-    return {"messages":result}
+    return result, similarity_measures
     
 
 
@@ -140,16 +165,12 @@ class Generated_SQL(BaseModel):
 tools = [get_table_schemas]
 tools_by_name = {tool.name: tool for tool in tools}
 
-structured_sql_gen_llm = llm.with_structured_output(Generated_SQL,
-                    strict=True,
-                    tools=tools,
-                    include_raw=True
-                )
+
 
 
 # LLM Calls
 dialect = 'MySQL'
-def agent_llm_call(state: State):
+def gen_llm_call(state: State):
     """LLM decides whether to call a tool or not"""
     
     system_message_content = dedent("""You are a helpful {dialect} generation agent. Your task is to generate a {dialect} query for the user request.
@@ -210,23 +231,13 @@ agent_builder = StateGraph(State)
 
 # Add nodes
 agent_builder.add_node("user", user_node)
-agent_builder.add_node("agent_llm_call", agent_llm_call)
+agent_builder.add_node("generator_llm_call", gen_llm_call)
 agent_builder.add_node("environment", tool_node)
 
 # Add edges to connect nodes
 
 agent_builder.add_edge(START, "user")
-agent_builder.add_edge("user", "agent_llm_call")
-agent_builder.add_conditional_edges(
-    "agent_llm_call",
-    should_continue,
-    {
-        # Name returned by should_continue : Name of next node to visit
-        "Action": "environment",
-        END: END,
-    },
-)
-agent_builder.add_edge("environment", "agent_llm_call")
+agent_builder.add_edge("user", "generator_llm_call")
 
 agent = agent_builder.compile() 
 
@@ -291,7 +302,7 @@ with ThreadPoolExecutor(max_workers=max_workers) as executor:
     # Submit all tasks
     futures = {
         executor.submit(call_agent, i, entry): i 
-        for i, entry in enumerate(mini_dev_sql)
+        for i, entry in enumerate(mini_dev_sql) #number of items to test
     }
     
     # Process completed tasks with progress bar

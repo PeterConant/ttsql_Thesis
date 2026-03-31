@@ -1,9 +1,0 @@
-500 entries):
-Avg Gen Input Tokens:   21047.05
-Avg Gen Output Tokens:  485.59
-Max Gen Input Tokens:   21146.00
-Max Gen Output Tokens:  2044.00
-Total Latency (seconds):  1389.62s / Latency (minutes):  23.16min
-Avg  Latency (seconds):  23.14/ Avg  Latency (minutes):  0.3857
-Langgraph gen_llm max_tokens: 2048
-vLLM model max-model-len: defualt 131072

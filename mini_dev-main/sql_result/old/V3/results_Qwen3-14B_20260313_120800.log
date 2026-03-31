@@ -1,4 +1,0 @@
-Latency: 20.55s / 0.34min
-Langgraph tool_llm max_tokens: 2048
-Langgraph gen_llm max_tokens: 2048
-vLLM model max-model-len: Defualt (model config.json file)

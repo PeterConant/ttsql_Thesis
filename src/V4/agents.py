@@ -25,40 +25,40 @@ class Agent:
         )
         self.llm_path = llm_path
 
-        def build_agent():
+    def build_agent():
+        pass
+
+    def call_agent():
             pass
 
-        def call_agent():
-            pass
+    def invoke_agent(self, messages, entry, call_start_time):
+        response = self.agent.invoke({"messages": messages, "llm":self.llm, "llm_path":self.llm_path, "tools":self.tools,
+                            "tables": [], "input_tokens": [], "output_tokens": []})
+        
+        call_elapsed = time.time() - call_start_time
 
-        def invoke_agent(messages, entry, call_start_time):
-            response = self.agent.invoke({"messages": messages, "llm":self.llm, "llm_path":self.llm_path, "tools":self.tools,
-                                "tables": [], "input_tokens": [], "output_tokens": []})
-            
-            call_elapsed = time.time() - call_start_time
+        sql_result= f'{response['sql']}\t----- bird -----\t{entry["db_id"]}'
+        meta_data = {'tables': response['tables'], 
+            'input_tokens': response['input_tokens'], 
+            'output_tokens': response['output_tokens'],
+            'latency_s': call_elapsed,
+            #'db_id': entry["db_id"]
+            }
 
-            sql_result= f'{response['sql']}\t----- bird -----\t{entry["db_id"]}'
-            meta_data = {'tables': response['tables'], 
-                'input_tokens': response['input_tokens'], 
-                'output_tokens': response['output_tokens'],
-                'latency_s': call_elapsed,
-                #'db_id': entry["db_id"]
-                }
-
-            # if 'secondary_input_token' in response:
-            #     meta_data['secondary_input_tokens'] = response['secondary_input_tokens']
-            #     meta_data['secondary_output_tokens'] = response['secondary_output_tokens']
-            return sql_result, meta_data
-
+        # if 'secondary_input_token' in response:
+        #     meta_data['secondary_input_tokens'] = response['secondary_input_tokens']
+        #     meta_data['secondary_output_tokens'] = response['secondary_output_tokens']
+        return sql_result, meta_data
 
 
 class BaselineAgent(Agent):
     def __init__(self,llm_path,max_completion_tokens):
         super().__init__(llm_path=llm_path,max_completion_tokens=max_completion_tokens)
         self.agent = self.build_agent()
+        self.tools = []
 
 
-    def build_agent():
+    def build_agent(self):
         # Build workflow
         agent_builder = StateGraph(State)
 
@@ -85,16 +85,14 @@ class BaselineAgent(Agent):
                 question=entry['question'],
                 evidence=entry['evidence'],
                 table_list=all_table_schemas)))]
-
-        messages = []
         
 
         if(error_catching):
             try:
-                super.invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
+                sql_result, meta_data = super().invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
                 
             except Exception as e:
-                result = f"ERROR: {str(e)}"
+                sql_result = f"ERROR: {str(e)}"
                 meta_data = {'tables': ['ERROR'], 
                     'input_tokens': [-1], 
                     'output_tokens': [-1],
@@ -103,10 +101,9 @@ class BaselineAgent(Agent):
                     }
 
         else: 
-            super.invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
+            sql_result, meta_data = super().invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
         
-        return i, result, meta_data
-        return i, result, meta_data
+        return i, sql_result, meta_data
 
 
 class LLMSearchAgent(Agent):
@@ -157,10 +154,10 @@ class LLMSearchAgent(Agent):
 
         if(error_catching):
             try:
-                super.invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
+                sql_result, meta_data = super().invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
                 
             except Exception as e:
-                result = f"ERROR: {str(e)}"
+                sql_result = f"ERROR: {str(e)}"
                 meta_data = {'tables': ['ERROR'], 
                     'input_tokens': [-1], 
                     'output_tokens': [-1],
@@ -169,9 +166,9 @@ class LLMSearchAgent(Agent):
                     }
 
         else: 
-            super.invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
+            sql_result, meta_data = super().invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
         
-        return i, result, meta_data
+        return i, sql_result, meta_data
     
 
 
@@ -184,23 +181,52 @@ class SemanticSearchAgent(Agent):
     def __init__(self,llm_path,max_completion_tokens):
         super().__init__(llm_path=llm_path,max_completion_tokens=max_completion_tokens)
         self.agent = self.build_agent()
+        self.tools = []
 
 
-    def build_agent():
+    def build_agent(self):
         # Build workflow
         agent_builder = StateGraph(State)
 
         # Add nodes
         #agent_builder.add_node("user", user_node)
         agent_builder.add_node("generator_llm_call", gen_llm_call)
-        agent_builder.add_node("environment", tool_node)
 
         # Add edges to connect nodes
-
-        agent_builder.add_edge(START, "user")
-        agent_builder.add_edge("user", "generator_llm_call")
+        agent_builder.add_edge(START, "generator_llm_call")
+        agent_builder.add_edge("generator_llm_call",END)
 
         return agent_builder.compile() 
 
-    def call_agent():
-        return "sql"
+    def call_agent(self, i, entry, error_catching: bool):
+        call_start_time = time.time()
+        question=entry['question']
+        evidence=entry['evidence']
+        retrieved_tables = get_tables_semantic_search(question + ' ' + evidence, 5)
+        schema_context = get_table_schemas_and_samples(retrieved_tables)
+
+        messages = [HumanMessage(content=dedent("""{question} Supporting evidence: {evidence}
+                                        The following tables are from the database:
+                                        {table_list}""".format(
+                question=entry['question'],
+                evidence=entry['evidence'],
+                table_list=schema_context)))]
+        
+
+        if(error_catching):
+            try:
+                sql_result, meta_data = super().invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
+                
+            except Exception as e:
+                sql_result = f"ERROR: {str(e)}"
+                meta_data = {'tables': ['ERROR'], 
+                    'input_tokens': [-1], 
+                    'output_tokens': [-1],
+                    'latency_s': -1,
+                    #'db_id': entry["db_id"]
+                    }
+
+        else: 
+            sql_result, meta_data = super().invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
+        
+        return i, sql_result, meta_data

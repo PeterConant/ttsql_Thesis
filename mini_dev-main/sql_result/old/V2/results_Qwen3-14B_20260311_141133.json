@@ -1,5 +1,0 @@
-{
-    "0": "SELECT COUNT(CASE WHEN Currency = 'EUR' THEN 1 END) / COUNT(CASE WHEN Currency = 'CZK' THEN 1 END) AS ratio FROM customers;\t----- bird -----\tdebit_card_specializing",
-    "1": "SELECT CustomerID, SUM(Consumption) AS TotalConsumption FROM yearmonth WHERE Date BETWEEN '201201' AND '201212' GROUP BY CustomerID ORDER BY TotalConsumption ASC LIMIT 1;\t----- bird -----\tdebit_card_specializing",
-    "2": "SELECT SUM(y.Consumption)/12 AS AverageMonthlyConsumption FROM customers c INNER JOIN yearmonth y ON c.CustomerID = y.CustomerID WHERE c.Segment = 'SME' AND y.Date BETWEEN '201301' AND '201312';\t----- bird -----\tdebit_card_specializing"
-}
