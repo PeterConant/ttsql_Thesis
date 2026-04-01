@@ -49,7 +49,7 @@ def get_table_schemas_tool(table_list: list[str]) -> str:
 
 ################## EMBEDDINGS SIMILARITY #########################
 
-file_name = 'createTable_valueExample'
+file_name = 'csv_table_descriptions'
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 embeddings = np.load(f'src/V4/embeddings/{file_name}.npy')
@@ -64,7 +64,7 @@ faiss.normalize_L2(embeddings)
 index = faiss.IndexFlatIP(embeddings.shape[1])
 index.add(embeddings.astype('float32'))
 
-def get_tables_semantic_search(query, k, similarity_threshold=0.0):
+def get_tables_semantic_search(query, k=10):
     query_embedding = embedding_model.encode([query], convert_to_numpy=True)
     query_embedding = query_embedding.astype('float32')
     faiss.normalize_L2(query_embedding)
@@ -73,9 +73,6 @@ def get_tables_semantic_search(query, k, similarity_threshold=0.0):
 
     retrieved_tables = []
     for rank, idx in enumerate(I[0]):
-        score = D[0][rank]
-        if score < similarity_threshold:
-            continue
 
         table_name = table_metadata[idx]['table']
         retrieved_tables.append(table_name)

@@ -12,12 +12,14 @@ import json
 import time
 import os
 
-
-agent_name = 'baseline' #lowercase
+k = 10
+agent_name = 'semanticsearch' #lowercase
 model_name='gpt-oss-20b'
 llm_path='/home/012155624/.cache/huggingface/hub/models--openai--gpt-oss-20b/snapshots/6cee5e81ee83917806bbde320786a8fb61efebee'
 max_completion_tokens = 2000 #int
-vllm_max_model_len = '27k' # str
+vllm_max_model_len = '10k' # str
+
+
 
 error_catching = True
 max_workers = 10
@@ -71,6 +73,9 @@ def run_BIRD_test(agent_name:str, llm_path:str, max_completion_tokens:int=2000, 
     elapsed_min = elapsed/60
 
     dt_now = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    if agent_name == 'semanticsearch':
+        agent_name += f'_k{k}'
 
     directory = rf'C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\sql_result\{agent_name}\{model_name}'
     os.makedirs(directory, exist_ok=True)

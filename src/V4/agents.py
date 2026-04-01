@@ -202,7 +202,7 @@ class SemanticSearchAgent(Agent):
         call_start_time = time.time()
         question=entry['question']
         evidence=entry['evidence']
-        retrieved_tables = get_tables_semantic_search(question + ' ' + evidence, 5)
+        retrieved_tables = get_tables_semantic_search(question + ' ' + evidence)
         schema_context = get_table_schemas_and_samples(retrieved_tables)
 
         messages = [HumanMessage(content=dedent("""{question} Supporting evidence: {evidence}
