@@ -1,5 +1,5 @@
 from tools import get_tables, get_tables_tool, get_table_schemas_and_samples, get_table_schemas_tool, get_tables_semantic_search
-from nodes import State, user_node, tool_node, gen_llm_call, agent_llm_call, should_continue
+from nodes import State, user_node, tool_node, gen_llm_call, search_llm_call, should_continue
 
 from langgraph.graph import StateGraph, START, END
 from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
@@ -118,24 +118,23 @@ class LLMSearchAgent(Agent):
         agent_builder = StateGraph(State)
 
         # Add nodes
-        agent_builder.add_node("user", user_node)
-        agent_builder.add_node("agent_llm_call", agent_llm_call)
+        agent_builder.add_node("search_llm_call", search_llm_call)
         agent_builder.add_node("environment", tool_node)
+        agent_builder.add_node("generator_llm_call", gen_llm_call)
 
         # Add edges to connect nodes
 
-        agent_builder.add_edge(START, "user")
-        agent_builder.add_edge("user", "agent_llm_call")
+        agent_builder.add_edge(START, "search_llm_call")
         agent_builder.add_conditional_edges(
-            "agent_llm_call",
+            "search_llm_call",
             should_continue,
             {
                 # Name returned by should_continue : Name of next node to visit
                 "Action": "environment",
-                END: END,
+                "Finish": "gen_llm_call",
             },
         )
-        agent_builder.add_edge("environment", "agent_llm_call")
+        agent_builder.add_edge("environment", "search_llm_call")
 
         return agent_builder.compile()
 

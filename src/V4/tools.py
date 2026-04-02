@@ -45,6 +45,31 @@ def get_table_schemas_tool(table_list: list[str]) -> str:
 
     return get_table_schemas_and_samples(table_list)
 
+def det_distinct_values(table, column):
+    try:
+        response = database.run(f'SELECT DISTINCT `Low Grade` FROM frpm')
+        list_data = ast.literal_eval(response)
+        # If you want just the values without the tuples:
+        flat_list = [item[0] for item in list_data]
+        if len(flat_list) > 25:
+            return flat_list[:26]
+    except:
+        
+
+
+
+@tool
+def det_distinct_values_tool(table, column):
+    """Get detailed information about a list of tables including columns, types, constraints, and the top 3 rows.
+    
+    Args:
+        table_names: List of table name strings
+
+    Returns:
+        Formatted string containing schema and sample data for each table
+    """
+    return det_distinct_values(table, column)
+
 
 
 ################## EMBEDDINGS SIMILARITY #########################

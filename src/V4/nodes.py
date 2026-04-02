@@ -107,7 +107,7 @@ def gen_llm_call(state: State):
 
     # LLM Calls
 dialect = 'MySQL'
-def agent_llm_call(state: State):
+def search_llm_call(state: State):
     """LLM decides whether to call a tool or not"""
     structured_sql_gen_llm = state['llm'].with_structured_output(Generated_SQL,
                 strict=True,
