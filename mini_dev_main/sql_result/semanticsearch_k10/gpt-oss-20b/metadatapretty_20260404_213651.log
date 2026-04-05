@@ -1,0 +1,11 @@
+Total Latency (seconds):  292.07s / Latency (minutes):  4.87min
+Avg  Latency (seconds):  13.60
+Avg Gen Input Tokens:   3419.49
+Avg Gen Output Tokens:  445.56
+Max Gen Input Tokens:   6903.00
+Max Gen Output Tokens:  1822.00
+Avg  Latency (seconds):  0.00
+Langgraph gen_llm max_tokens: 2000
+Max Workers: 25
+Max Completion tokens langchain: 2000
+vLLM model max-model-len: 10k

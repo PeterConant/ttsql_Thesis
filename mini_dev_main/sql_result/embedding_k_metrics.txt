@@ -154,108 +154,105 @@ Max Tokens: 17375
 
 ######## CSV Descriptions ######################
 
-
-
-
 k=1
 
 Overall Metrics:
-Average Precision: 77.20%
-Average Recall: 40.01%
-Average F1: 51.00%
-Exact Match Rate: 10.80%
-Gold in Retrieved Rate: 10.80%
+Average Precision: 83.80%
+Average Recall: 43.91%
+Average F1: 55.69%
+Exact Match Rate: 12.60%
+Gold in Retrieved Rate: 12.60%
 Max Tokens: 2616
 
 k=2
 
 Overall Metrics:
-Average Precision: 60.80%
-Average Recall: 61.12%
-Average F1: 59.05%
-Exact Match Rate: 22.20%
-Gold in Retrieved Rate: 35.80%
+Average Precision: 67.30%
+Average Recall: 67.06%
+Average F1: 65.07%
+Exact Match Rate: 25.80%
+Gold in Retrieved Rate: 40.40%
 Max Tokens: 3382
 
 k=3
 
 Overall Metrics:
-Average Precision: 48.93%
-Average Recall: 71.99%
-Average F1: 56.60%
-Exact Match Rate: 3.20%
-Gold in Retrieved Rate: 50.40%
+Average Precision: 51.73%
+Average Recall: 75.46%
+Average F1: 59.61%
+Exact Match Rate: 3.40%
+Gold in Retrieved Rate: 52.80%
 Max Tokens: 4042
 
 k=4
 
 Overall Metrics:
-Average Precision: 40.40%
-Average Recall: 78.10%
-Average F1: 51.86%
+Average Precision: 42.65%
+Average Recall: 81.99%
+Average F1: 54.63%
 Exact Match Rate: 0.00%
-Gold in Retrieved Rate: 58.80%
+Gold in Retrieved Rate: 63.40%
 Max Tokens: 4233
 
 k=5
 
 Overall Metrics:
-Average Precision: 34.52%
-Average Recall: 82.69%
-Average F1: 47.51%
+Average Precision: 36.40%
+Average Recall: 86.31%
+Average F1: 49.96%
 Exact Match Rate: 0.00%
-Gold in Retrieved Rate: 64.60%
+Gold in Retrieved Rate: 71.00%
 Max Tokens: 4686
 
 k=6
 
 Overall Metrics:
-Average Precision: 30.40%
-Average Recall: 86.37%
-Average F1: 43.94%
+Average Precision: 31.73%
+Average Recall: 89.40%
+Average F1: 45.78%
 Exact Match Rate: 0.00%
-Gold in Retrieved Rate: 70.20%
+Gold in Retrieved Rate: 76.40%
 Max Tokens: 5347
 
 k=7
 
 Overall Metrics:
-Average Precision: 27.37%
-Average Recall: 89.97%
-Average F1: 41.08%
+Average Precision: 28.31%
+Average Recall: 92.24%
+Average F1: 42.40%
 Exact Match Rate: 0.00%
-Gold in Retrieved Rate: 77.20%
-Max Tokens: 5800
+Gold in Retrieved Rate: 82.20%
+Max Tokens: 5717
 
 k=8
 
 Overall Metrics:
-Average Precision: 24.57%
-Average Recall: 91.78%
-Average F1: 38.00%
+Average Precision: 25.25%
+Average Recall: 93.76%
+Average F1: 38.99%
 Exact Match Rate: 0.00%
-Gold in Retrieved Rate: 80.80%
-Max Tokens: 5991
+Gold in Retrieved Rate: 85.20%
+Max Tokens: 5968
 
 k=9
 
 Overall Metrics:
-Average Precision: 22.27%
-Average Recall: 93.07%
-Average F1: 35.27%
+Average Precision: 22.82%
+Average Recall: 95.00%
+Average F1: 36.11%
 Exact Match Rate: 0.00%
-Gold in Retrieved Rate: 83.40%
-Max Tokens: 6233
+Gold in Retrieved Rate: 87.20%
+Max Tokens: 6361
 
 k=10
 
 Overall Metrics:
-Average Precision: 20.36%
-Average Recall: 94.39%
-Average F1: 32.91%
+Average Precision: 20.78%
+Average Recall: 95.93%
+Average F1: 33.56%
 Exact Match Rate: 0.00%
-Gold in Retrieved Rate: 86.60%
-Max Tokens: 6529
+Gold in Retrieved Rate: 89.60%
+Max Tokens: 6582
 
 k=15
 

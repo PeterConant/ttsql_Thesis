@@ -1,4 +1,4 @@
-from agents import BaselineAgent, LLMSearchAgent, SemanticSearchAgent
+from agents import BaselineAgent, LLMSearchAgent, SemanticSearchAgent, LLMSearchGenAgent
 import sys
 from pathlib import Path
 
@@ -16,16 +16,17 @@ k = 10
 agent_name = 'semanticsearch' #lowercase
 model_name='gpt-oss-20b'
 llm_path='/home/012155624/.cache/huggingface/hub/models--openai--gpt-oss-20b/snapshots/6cee5e81ee83917806bbde320786a8fb61efebee'
-max_completion_tokens = 2000 #int
+max_completion_tokens = 1000 #int
 vllm_max_model_len = '10k' # str
 
 
-
+max_execution_time = None
 error_catching = True
+threading = True
 max_workers = 10
-data_subset=500
+data_subset= 500
 
-eval = True
+eval = False
 
 results = {}
 metadatadict = {}
@@ -45,25 +46,32 @@ def run_BIRD_test(agent_name:str, llm_path:str, max_completion_tokens:int=2000, 
             agent = BaselineAgent(llm_path,max_completion_tokens)
         case 'llmsearch':
             agent = LLMSearchAgent(llm_path,max_completion_tokens)
+        case 'llmsearchgen':
+            agent = LLMSearchGenAgent(llm_path,max_completion_tokens)
         case 'semanticsearch':
             agent = SemanticSearchAgent(llm_path,max_completion_tokens)
 
-    # Execute Agents in parallel
     results = {}
     metadatadict = {}
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        # Submit all tasks
-        futures = {
-            executor.submit(agent.call_agent, i, entry, error_catching): i 
-            for i, entry in enumerate(mini_dev_sql)
-        }
-        
-        # Process completed tasks with progress bar
-        for future in tqdm(as_completed(futures), total=len(futures)):
-            i, result, metadata = future.result()
+    if not threading:
+        for i, entry in enumerate(tqdm(mini_dev_sql, desc="Processing entries")):
+            i, result, metadata = agent.call_agent(i, entry, error_catching)
             results[str(i)] = result
             metadatadict[str(i)] = metadata
-
+    else:
+    # Execute Agents in parallel
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            # Submit all tasks
+            futures = {
+                executor.submit(agent.call_agent, i, entry, error_catching): i 
+                for i, entry in enumerate(mini_dev_sql)
+            }
+            
+            # Process completed tasks with progress bar
+            for future in tqdm(as_completed(futures), total=len(futures)):
+                i, result, metadata = future.result()
+                results[str(i)] = result
+                metadatadict[str(i)] = metadata
 
     # Aggregate and record results and meta_data
     results = dict(sorted(results.items(), key=lambda x: int(x[0])))
@@ -116,30 +124,24 @@ def run_BIRD_test(agent_name:str, llm_path:str, max_completion_tokens:int=2000, 
         f.write(f"Avg Gen Input Tokens:   {token_stats['input_tokens']['mean']:.2f}\n")
         f.write(f"Avg Gen Output Tokens:  {token_stats['output_tokens']['mean']:.2f}\n")
         f.write(f"Max Gen Input Tokens:   {token_stats['input_tokens']['max']:.2f}\n")
-        f.write(f"Max Gen Output Tokens:  {token_stats['output_tokens']['max']:.2f}\n")
-
-        if agent_name in ['llmsearch']:
-            tool_token_keys = ['tool_input_tokens', 'tool_output_tokens']
-            tool_stats = {}
-            for key in tool_token_keys:
-                values = [entry[key][0] for entry in metadatadict.values() if entry[key] != -1]
-                
-                tool_stats[key] = {
-                    'mean': mean(values),
-                    'median': median(values),
-                    'std': stdev(values) if len(values) > 1 else 0,
-                    'max': max(values),
-                    'min': min(values)
-                }
-            f.write(f"Tool Input Tokens:  {tool_stats['tool_input_tokens']:.2f}\n")
-            f.write(f"Tool Output Tokens: {tool_stats['tool_output_tokens']:.2f}]\n")
-            f.write(f"Avg Tool Input Tokens:   {tool_stats['tool_input_tokens']:.2f}\n")
-            f.write(f"Avg Tool Output Tokens:  {tool_stats['tool_output_tokens']:.2f}\n")  
-
+        f.write(f"Max Gen Output Tokens:  {token_stats['output_tokens']['max']:.2f}\n") 
+        
+        retries_values = [entry['retries'] for entry in metadatadict.values()if entry['retries']!= -1]
+        retries_stats = {
+                'mean': mean(retries_values),
+                'median': median(retries_values),
+                'std': stdev(retries_values) if len(retries_values) > 1 else 0,
+                'max': max(retries_values),
+                'min': min(retries_values)
+            }
+        f.write(f"Avg  Latency (seconds):  {retries_stats['mean']:.2f}\n")
 
 
         f.write(f'Langgraph gen_llm max_tokens: {max_completion_tokens}\n')
-        f.write(f'vLLM model max-model-len: {vllm_max_model_len}\n')
+        f.write(f'Max Workers: {max_workers}\n')
+        f.write(f'Max Completion tokens langchain: {max_completion_tokens}\n')
+        f.write(f'vLLM model max-model-len: {vllm_max_model_len}\n')  
+        
     
     return predicated_path
 

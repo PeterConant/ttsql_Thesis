@@ -1,5 +1,5 @@
-from tools import get_tables, get_tables_tool, get_table_schemas_and_samples, get_table_schemas_tool, get_tables_semantic_search
-from nodes import State, user_node, tool_node, gen_llm_call, search_llm_call, should_continue
+from tools import get_tables, get_tables_tool, get_table_schemas_and_samples, get_table_schemas_tool, get_tables_semantic_search, get_distinct_values_tool, search_columns_for_value_tool
+from nodes import State, user_node, tool_node, gen_llm_call, search_llm_call, should_continue, search_gen_llm_call, should_continue_llm_search, get_tables_by_domain
 
 from langgraph.graph import StateGraph, START, END
 from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
@@ -33,7 +33,7 @@ class Agent:
 
     def invoke_agent(self, messages, entry, call_start_time):
         response = self.agent.invoke({"messages": messages, "llm":self.llm, "llm_path":self.llm_path, "tools":self.tools,
-                            "tables": [], "input_tokens": [], "output_tokens": []})
+                            "retries": 0, 'max_retries': 5, "tables": [], "input_tokens": [], "output_tokens": []})
         
         call_elapsed = time.time() - call_start_time
 
@@ -42,7 +42,7 @@ class Agent:
             'input_tokens': response['input_tokens'], 
             'output_tokens': response['output_tokens'],
             'latency_s': call_elapsed,
-            #'db_id': entry["db_id"]
+            'retries': response['retries']
             }
 
         # if 'secondary_input_token' in response:
@@ -81,10 +81,10 @@ class BaselineAgent(Agent):
 
         messages = [HumanMessage(content=dedent("""{question} Supporting evidence: {evidence}
                                         Here are the all tables available in the database:
-                                        {table_list}""".format(
+                                        {all_table_schemas}""".format(
                 question=entry['question'],
                 evidence=entry['evidence'],
-                table_list=all_table_schemas)))]
+                all_table_schemas=all_table_schemas)))]
         
 
         if(error_catching):
@@ -97,7 +97,7 @@ class BaselineAgent(Agent):
                     'input_tokens': [-1], 
                     'output_tokens': [-1],
                     'latency_s': -1,
-                    #'db_id': entry["db_id"]
+                    'retries': -1
                     }
 
         else: 
@@ -125,16 +125,67 @@ class LLMSearchAgent(Agent):
         # Add edges to connect nodes
 
         agent_builder.add_edge(START, "search_llm_call")
+        agent_builder.add_edge("search_llm_call", "environment")
+        agent_builder.add_edge("environment", "generator_llm_call")
+        agent_builder.add_edge("generator_llm_call", END)
+
+        return agent_builder.compile()
+
+    def call_agent(self, i, entry, error_catching: bool):
+        call_start_time = time.time()
+
+        messages = [HumanMessage(content=dedent("""{question} Supporting evidence: {evidence}""".format(
+                        question=entry['question'],
+                        evidence=entry['evidence'])))]
+        
+
+        if(error_catching):
+            try:
+                sql_result, meta_data = super().invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
+                
+            except Exception as e:
+                sql_result = f"ERROR: {str(e)}"
+                meta_data = {'tables': ['ERROR'], 
+                    'input_tokens': [-1], 
+                    'output_tokens': [-1],
+                    'latency_s': -1,
+                    'retries': -1
+                    }
+
+        else: 
+            sql_result, meta_data = super().invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
+        
+        return i, sql_result, meta_data
+    
+
+class LLMSearchGenAgent(Agent):
+
+    def __init__(self,llm_path, max_completion_tokens, secondar_llm_path:str=None, secondary_max_completion_tokens:str=None):
+        super().__init__(llm_path=llm_path,max_completion_tokens=max_completion_tokens)
+        self.agent = self.build_agent()
+        self.tools = [get_table_schemas_tool]
+
+    def build_agent(self):
+        # Build workflow
+        agent_builder = StateGraph(State)
+
+        # Add nodes
+        agent_builder.add_node("environment", tool_node)
+        agent_builder.add_node("search_generator_llm_call", search_gen_llm_call)
+
+        # Add edges to connect nodes
+
+        agent_builder.add_edge(START, "search_generator_llm_call")
         agent_builder.add_conditional_edges(
-            "search_llm_call",
+            "search_generator_llm_call",
             should_continue,
             {
                 # Name returned by should_continue : Name of next node to visit
                 "Action": "environment",
-                "Finish": "gen_llm_call",
+                END: END,
             },
         )
-        agent_builder.add_edge("environment", "search_llm_call")
+        agent_builder.add_edge("environment", "search_generator_llm_call")
 
         return agent_builder.compile()
 
@@ -161,18 +212,13 @@ class LLMSearchAgent(Agent):
                     'input_tokens': [-1], 
                     'output_tokens': [-1],
                     'latency_s': -1,
-                    #'db_id': entry["db_id"]
+                    'retries': -1
                     }
 
         else: 
             sql_result, meta_data = super().invoke_agent(messages=messages, entry=entry, call_start_time=call_start_time)
         
         return i, sql_result, meta_data
-    
-
-
-
-
 
 
 class SemanticSearchAgent(Agent):
@@ -222,7 +268,7 @@ class SemanticSearchAgent(Agent):
                     'input_tokens': [-1], 
                     'output_tokens': [-1],
                     'latency_s': -1,
-                    #'db_id': entry["db_id"]
+                    'retries': -1
                     }
 
         else: 

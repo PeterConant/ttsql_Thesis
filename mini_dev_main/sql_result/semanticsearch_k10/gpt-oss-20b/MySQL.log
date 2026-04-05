@@ -1,0 +1,20 @@
+
+start calculate EX
+results_20260331_172443.json
+March 31, 2026 17:28:06
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    EX   =====================================
+EX                   62.84                44.40                29.41                46.80               
+===========================================================================================
+Finished EX evaluation for results_20260331_172443.json on Mini Dev set
+
+start calculate Soft-F1
+results_20260331_172443.json
+March 31, 2026 17:31:27
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    Soft-F1   =====================================
+Soft-F1              68.11                50.28                37.04                52.86               
+===========================================================================================
+Finished EX evaluation for results_20260331_172443.json on Mini Dev set

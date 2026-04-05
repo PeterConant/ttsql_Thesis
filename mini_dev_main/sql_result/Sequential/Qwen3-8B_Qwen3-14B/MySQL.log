@@ -1,0 +1,20 @@
+start calculate EX
+results_Qwen3-8B_Qwen3-14B_one-gpu_20260316_113808.json
+April 04, 2026 17:08:04
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    EX   =====================================
+EX                   40.54                19.20                8.82                 23.40               
+===========================================================================================
+Finished EX evaluation for results_Qwen3-8B_Qwen3-14B_one-gpu_20260316_113808.json on Mini Dev set
+
+start calculate Soft-F1
+results_Qwen3-8B_Qwen3-14B_one-gpu_20260316_113808.json
+April 04, 2026 17:12:06
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    Soft-F1   =====================================
+Soft-F1              44.88                23.25                10.65                27.08               
+===========================================================================================
+Finished EX evaluation for results_Qwen3-8B_Qwen3-14B_one-gpu_20260316_113808.json on Mini Dev set
+

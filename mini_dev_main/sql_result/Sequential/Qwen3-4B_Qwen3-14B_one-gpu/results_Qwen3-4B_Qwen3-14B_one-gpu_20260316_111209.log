@@ -1,0 +1,13 @@
+500 entries):
+Tool Input Tokens:  813.81
+Tool Output Tokens: 66.55]
+Avg Tool Input Tokens:   942.00
+Avg Tool Output Tokens:  265.00
+Avg Gen Input Tokens:   863.91
+Avg Gen Output Tokens:  165.91
+Max Gen Input Tokens:   3386.00
+Max Gen Output Tokens:  574.00
+Total Latency (seconds):  358.76s / Latency (minutes):  5.98min
+Avg  Latency (seconds):  6.89/ Avg  Latency (minutes):  0.1148
+Langgraph gen_llm max_tokens: 2048
+vLLM model max-model-len: 8k

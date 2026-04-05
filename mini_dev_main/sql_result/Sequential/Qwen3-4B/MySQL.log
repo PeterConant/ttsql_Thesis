@@ -1,0 +1,20 @@
+start calculate EX
+results_Qwen3-4B__20260314_134158.json
+April 04, 2026 16:02:24
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    EX   =====================================
+EX                   41.22                16.00                7.84                 21.80               
+===========================================================================================
+Finished EX evaluation for results_Qwen3-4B__20260314_134158.json on Mini Dev set
+
+start calculate Soft-F1
+results_Qwen3-4B__20260314_134158.json
+April 04, 2026 16:06:22
+                     simple               moderate             challenging          total               
+count                148                  250                  102                  500                 
+======================================    Soft-F1   =====================================
+Soft-F1              43.51                20.47                11.52                25.46               
+===========================================================================================
+Finished EX evaluation for results_Qwen3-4B__20260314_134158.json on Mini Dev set
+

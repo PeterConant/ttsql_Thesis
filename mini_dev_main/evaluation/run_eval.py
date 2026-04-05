@@ -1,10 +1,7 @@
 import subprocess
 import sys
 
-def run_eval(predicted_sql_path,output_log_path):
-
-    #predicted_sql_path = rf"C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\sql_result\Baseline\results_Qwen3-4B_defualt_max-model-len_20260313_174733.json"
-    #output_log_path = "C:\\Users\\peter\\Documents\\SJSU\\Thesis\\code\\mini_dev_main\\sql_result\\Baseline\\MySQL.log" # Baseline\\MySQL.log
+def run_eval(predicted_sql_path, output_log_path):
 
 
     # Define scripts with their arguments
@@ -30,3 +27,6 @@ def run_eval(predicted_sql_path,output_log_path):
             # sys.exit(result.returncode)
 
     print("\nAll scripts completed!")
+
+run_eval(predicted_sql_path = rf"C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\sql_result\Sequential\Qwen3-14B\results_Qwen3-14B_20260314_133252.json",
+             output_log_path = rf"C:\Users\peter\Documents\SJSU\Thesis\code\mini_dev_main\sql_result\Sequential\Qwen3-14B\MySQL.log")
